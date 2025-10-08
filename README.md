@@ -132,9 +132,9 @@ All devices using latest LibreWolf, currently Librewolf 143.0.4-1
 - [Arkenfox](https://github.com/arkenfox/user.js) - The reference hardening user.js for a reason
 - [Firefox Source Docs](https://firefox-source-docs.mozilla.org/index.html) - Useful for understanding prefs
 ### Useful Test Pages
-https://baldursgate3.game/news/patch-7-now-live_121 - for testing scrolling performance 
-https://licktherock.com/ - for testing rendering performance 
-https://www.lenovo.com/ca/en/c/laptops/thinkpad/ - for testing loading performance & detecting normally hidden breakage
+https://baldursgate3.game/news/patch-7-now-live_121 - for testing scrolling performance     
+https://licktherock.com/ - for testing rendering performance  
+https://www.lenovo.com/ca/en/c/laptops/thinkpad/ - for testing loading performance & detecting normally hidden breakage  
 ## Related Projects:
 - [personal-filter-lists](https://github.com/Mateo-Grgic/personal-filter-lists) - My custom uBlock Origin and AdGuard Home filter lists (564 network + 471 cosmetic rules)
 **Thanks to everyone who works on these valuable projects, and thank you to anyone who might use Reynard**
