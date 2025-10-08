@@ -54,7 +54,8 @@ Reynard is built on several principles:
   **For Native Linux install (pacman, dnf, apt, etc)**  
   Copy browser performance config  
   ```cp librewolf.overrides/librewolf.overrides.cfg ~/.librewolf/```  
-  Find your profile name, look for a directory ending in .default or .default-release (or use the about:profiles page in LibreWolf itself)  
+  Find your profile name, look for a directory ending in .default or .default-release
+  *Tip: Type `about:profiles` in LibreWolf's address bar to see your profile path*
   ```ls ~/.librewolf/```  
   Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
   ```mkdir -p ~/.librewolf/[PROFILE_NAME]/chrome```  
@@ -65,6 +66,7 @@ Reynard is built on several principles:
   Copy browser performance config  
   ```cp librewolf.overrides/librewolf.overrides.cfg ~/.var/app/io.gitlab.librewolf-community/.librewolf/```  
   Find your profile name, look for a directory ending in .default or .default-release  
+  *Tip: Type `about:profiles` in LibreWolf's address bar to see your profile path*
   ```ls ~/.var/app/io.gitlab.librewolf-community/.librewolf/```  
   Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
   ```mkdir -p ~/.var/app/io.gitlab.librewolf-community/.librewolf/[PROFILE_NAME]/chrome```  
@@ -76,6 +78,7 @@ Reynard is built on several principles:
   ```mkdir -p ~/.librewolf```  
   ```cp librewolf.overrides/librewolf.overrides.cfg ~/.librewolf/```  
   Find your profile name, look for a directory ending in .default or .default-release  
+  *Tip: Type `about:profiles` in LibreWolf's address bar to see your profile path*
   ```ls ~/Library/Application\ Support/LibreWolf/```  
   Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
   ```mkdir -p ~/Library/Application\ Support/LibreWolf/[PROFILE_NAME]/chrome```  
@@ -84,7 +87,7 @@ Reynard is built on several principles:
 
 #### 3.) Configure for your hardware
   Edit the librewolf.overrides.cfg file, comment out the currently active Framework 13 profile  
-  Utilize inline comments to deterimine the correct preset for you, uncomment, and make any edits if required  
+  Utilize inline comments to deterimne the correct preset for you, uncomment, and make any edits if required  
   Glance over other prefs, modify any that you think you should  
 
 #### 4.) Restart LibreWolf 
