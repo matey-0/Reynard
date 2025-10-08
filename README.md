@@ -151,13 +151,13 @@ https://fingerprint.com/
 
 ## Preview Images
 **New Tab Page**  
-<img width="2880" height="1856" alt="New Tab" src="https://github.com/user-attachments/assets/a7f47540-ba6b-4c33-a075-beebed6a0143" />
+<img width="2880" height="1856" alt="New Tab" src="https://github.com/user-attachments/assets/a7f47540-ba6b-4c33-a075-beebed6a0143" />  
 **On a webpage (Kagi Search)**  
-<img width="2880" height="1856" alt="Kagi Search (On a page)" src="https://github.com/user-attachments/assets/091b20be-e798-484e-b122-e6e18daf8edd" />
+<img width="2880" height="1856" alt="Kagi Search (On a page)" src="https://github.com/user-attachments/assets/091b20be-e798-484e-b122-e6e18daf8edd" />  
 **Searching styles**  
-<img width="2880" height="1856" alt="Searching Example" src="https://github.com/user-attachments/assets/d48381db-002e-48ae-87dd-040f4615ca57" />
+<img width="2880" height="1856" alt="Searching Example" src="https://github.com/user-attachments/assets/d48381db-002e-48ae-87dd-040f4615ca57" />  
 **Closing a tab style**  
-<img width="2880" height="1856" alt="Tab  X  Fade" src="https://github.com/user-attachments/assets/3d50e5c2-34a6-4bc3-a151-33ed5c2e01a1" />
+<img width="2880" height="1856" alt="Tab  X  Fade" src="https://github.com/user-attachments/assets/3d50e5c2-34a6-4bc3-a151-33ed5c2e01a1" />  
 **Simple Browsing Example**
 ![preview](https://github.com/user-attachments/assets/d85223ad-bf91-41c3-8ef6-b789687706a4)
 
