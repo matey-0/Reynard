@@ -52,35 +52,35 @@ Reynard is built on several principles:
 
 #### 2.) Copy files to correct locations
   **For Native Linux install (pacman, dnf, apt, etc)**  
-  Copy browser performance config  
+  - Copy browser performance config  
   ```cp librewolf.overrides/librewolf.overrides.cfg ~/.librewolf/```  
-  Find your profile name, look for a directory ending in .default or .default-release
+  - Find your profile name, look for a directory ending in .default or .default-release
   *Tip: Type `about:profiles` in LibreWolf's address bar to see your profile path*
   ```ls ~/.librewolf/```  
-  Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
+  - Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
   ```mkdir -p ~/.librewolf/[PROFILE_NAME]/chrome```  
   ```cp css/userChrome.css ~/.librewolf/[PROFILE_NAME]/chrome/```  
   ```cp css/userContent.css ~/.librewolf/[PROFILE_NAME]/chrome/```  
 
 **For Flatpak Linux Install**  
-  Copy browser performance config  
+  - Copy browser performance config  
   ```cp librewolf.overrides/librewolf.overrides.cfg ~/.var/app/io.gitlab.librewolf-community/.librewolf/```  
-  Find your profile name, look for a directory ending in .default or .default-release  
+  - Find your profile name, look for a directory ending in .default or .default-release  
   *Tip: Type `about:profiles` in LibreWolf's address bar to see your profile path*
   ```ls ~/.var/app/io.gitlab.librewolf-community/.librewolf/```  
-  Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
+  - Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
   ```mkdir -p ~/.var/app/io.gitlab.librewolf-community/.librewolf/[PROFILE_NAME]/chrome```  
   ```cp css/userChrome.css ~/.var/app/io.gitlab.librewolf-community/.librewolf/[PROFILE_NAME]/chrome/```  
   ```cp css/userContent.css ~/.var/app/io.gitlab.librewolf-community/.librewolf/[PROFILE_NAME]/chrome/```  
 
 **For macOS Install (Manual or Homebrew)**  
-  Create hidden config directory and copy overrides  
+  - Create hidden config directory and copy overrides  
   ```mkdir -p ~/.librewolf```  
   ```cp librewolf.overrides/librewolf.overrides.cfg ~/.librewolf/```  
-  Find your profile name, look for a directory ending in .default or .default-release  
+  - Find your profile name, look for a directory ending in .default or .default-release  
   *Tip: Type `about:profiles` in LibreWolf's address bar to see your profile path*
   ```ls ~/Library/Application\ Support/LibreWolf/```  
-  Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
+  - Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
   ```mkdir -p ~/Library/Application\ Support/LibreWolf/[PROFILE_NAME]/chrome```  
   ```cp css/userChrome.css ~/Library/Application\ Support/LibreWolf/[PROFILE_NAME]/chrome/```  
   ```cp css/userContent.css ~/Library/Application\ Support/LibreWolf/[PROFILE_NAME]/chrome/```  
