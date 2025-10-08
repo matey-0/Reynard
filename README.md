@@ -131,10 +131,18 @@ All devices using latest LibreWolf, currently Librewolf 143.0.4-1
 - [BrainF+ck](https://brainfucksec.github.io/firefox-hardening-guide-2025) - Comprehensive hardening guide with good explanations
 - [Arkenfox](https://github.com/arkenfox/user.js) - The reference hardening user.js for a reason
 - [Firefox Source Docs](https://firefox-source-docs.mozilla.org/index.html) - Useful for understanding prefs
+- [Ranum](https://www.ranum.com/security/computer_security/editorials/dumb/) - General security blog
+- [RFPTargets](https://searchfox.org/firefox-main/source/toolkit/components/resistfingerprinting/RFPTargets.inc) - For resist fingerprinting targets reference
 ### Useful Test Pages
 https://baldursgate3.game/news/patch-7-now-live_121 - for testing scrolling performance     
 https://licktherock.com/ - for testing rendering performance  
 https://www.lenovo.com/ca/en/c/laptops/thinkpad/ - for testing loading performance & detecting normally hidden breakage  
+### Fingerprinting Test Pages
+https://amiunique.org/  
+https://browserleaks.com/  
+https://coveryourtracks.eff.org/  
+https://abrahamjuliot.github.io/creepjs/  
+https://fingerprint.com/  
 ## Related Projects:
 - [personal-filter-lists](https://github.com/Mateo-Grgic/personal-filter-lists) - My custom uBlock Origin and AdGuard Home filter lists (564 network + 471 cosmetic rules)
 **Thanks to everyone who works on these valuable projects, and thank you to anyone who might use Reynard**
