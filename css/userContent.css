@@ -1,0 +1,10 @@
+/* I think this just makes the new tab page blank? I've forgotten at this point */
+@-moz-document url("about:home"),
+
+url("about:newtab"),url("about:blank") {
+.personalize-button {display: none !important;}
+}
+
+.search-inner-wrapper {
+  display:none !important;
+}
