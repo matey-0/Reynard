@@ -43,6 +43,7 @@ Reynard is built on several principles:
 - Basic understanding of browser internals, troubleshooting skills, basic research
 - Comfortable with mild site breakage
 
+
 ### Installation
 
 ####
@@ -59,7 +60,6 @@ Copy UI styling (replace [PROFILE_NAME] with your actual profile)
 ```mkdir -p ~/.librewolf/[PROFILE_NAME]/chrome```  
 ```cp css/userChrome.css ~/.librewolf/[PROFILE_NAME]/chrome/```  
 ```cp css/userContent.css ~/.librewolf/[PROFILE_NAME]/chrome/```  
-
 #### For Flatpak Linux Install
 Copy browser performance config  
 ```cp librewolf.overrides/librewolf.overrides.cfg ~/.var/app/io.gitlab.librewolf-community/.librewolf/```  
@@ -69,7 +69,6 @@ Copy UI styling (replace [PROFILE_NAME] with your actual profile)
 ```mkdir -p ~/.var/app/io.gitlab.librewolf-community/.librewolf/[PROFILE_NAME]/chrome```  
 ```cp css/userChrome.css ~/.var/app/io.gitlab.librewolf-community/.librewolf/[PROFILE_NAME]/chrome/```  
 ```cp css/userContent.css ~/.var/app/io.gitlab.librewolf-community/.librewolf/[PROFILE_NAME]/chrome/```  
-
 #### For macOS Install (Manual or Homebrew)
 Create hidden config directory and copy overrides  
 ```mkdir -p ~/.librewolf```  
