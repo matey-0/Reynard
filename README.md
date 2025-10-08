@@ -127,7 +127,7 @@ Everything I know came from reading Firefox source documentation, testing config
 
 Reynard has been tested across three hardware platforms (Framework 13, MacBook Air M3, Steam Deck OLED) and refined through daily use. The configurations are opinionated and reflect my specific priorities, but they're decently documented so you can understand the trade-offs and adapt them to your needs.  
 
-This is a personal project shared in the spirit of open-source learning. If you find it useful, great. If you spot improvements or have questions, even better, I'm still learning.  
+This is a personal project shared just in case anyone finds it useful. Thank you for checking out my little project. 
 
 ## Credits
 ### Core Technologies
