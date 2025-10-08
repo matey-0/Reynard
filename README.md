@@ -143,6 +143,9 @@ All devices using latest LibreWolf, currently Librewolf 143.0.4-1
 <img width="2880" height="1856" alt="Searching Example" src="https://github.com/user-attachments/assets/d48381db-002e-48ae-87dd-040f4615ca57" />
 **Closing a tab style**  
 <img width="2880" height="1856" alt="Tab  X  Fade" src="https://github.com/user-attachments/assets/3d50e5c2-34a6-4bc3-a151-33ed5c2e01a1" />
+**Simple Browsing Example**
+![preview](https://github.com/user-attachments/assets/d85223ad-bf91-41c3-8ef6-b789687706a4)
+
 
 ## License
 - Uses MIT license for maximum sharability
