@@ -82,7 +82,7 @@ Copy UI styling (replace [PROFILE_NAME] with your actual profile)
 ## Tested On:
 - Framework 13 (Ryzen AI 9) - [Fedora Linux 42]
 - 15" M3 MacBook Air - [MacOS 26 Tahoe]
-- Steam Deck OLED - [SteamOS Stable Latest]
+- Steam Deck OLED - [SteamOS Stable Latest]  
 All devices using latest LibreWolf, currently Librewolf 143.0.4-1
 ### Untested Templates
 - Low-end, weaker, mid-range, and high-end device templates require third-party testing. Contributions welcome.
