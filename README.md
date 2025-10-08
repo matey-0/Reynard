@@ -161,6 +161,6 @@ https://fingerprint.com/
 
 
 ## License
-- Uses MIT license for maximum sharability
+- Uses MIT license for maximum sharability  
 Feel free to use, modify, and distribute. Attribution not required for personal projects. For public projects, attribution appreciated greatly, but not required.
 
