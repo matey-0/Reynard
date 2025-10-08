@@ -52,8 +52,8 @@ Reynard is built on several principles:
 ### Installation Steps:
 
 #### 1.) Clone the repo:  
-  ```git clone https://github.com/Mateo-Grgic/reynard.git```  
-  ```cd reynard```  
+  ```git clone https://github.com/Mateo-Grgic/Reynard.git```  
+  ```cd Reynard```  
 
 #### 2.) Copy files to correct locations
   **For Native Linux install (pacman, dnf, apt, etc)**  
