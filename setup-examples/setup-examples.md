@@ -1,6 +1,6 @@
 # Examples of my browser setup
 
-## New Tab Page
+# New Tab Page
 <img width="2880" height="1856" alt="New Tab" src="https://github.com/user-attachments/assets/84ead170-5aad-4969-80bb-22b0446e36df" />
 
 ## On a website (Kagi search)
