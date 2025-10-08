@@ -46,8 +46,7 @@ Reynard is built on several principles:
 
 ### Installation
 
-####
-Clone the repo:  
+#### Clone the repo:  
 ```git clone https://github.com/Mateo-Grgic/reynard.git```  
 ```cd reynard```  
 
