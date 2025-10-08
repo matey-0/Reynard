@@ -86,6 +86,7 @@ Thanks to everyone who works on these valuable projects, and thank you to anyone
 - Uses MIT lisence for maximum sharability
 Feel free to use, modify, and distribute. Attribution not required for personal projects. For public projects, attribution apreciated greatly, but not required.
 
+## A few Examples of the Setup
 <img width="2880" height="1856" alt="Kagi Search (On a page)" src="https://github.com/user-attachments/assets/091b20be-e798-484e-b122-e6e18daf8edd" />
 <img width="2880" height="1856" alt="Kagi Search (On a page)" src="https://github.com/user-attachments/assets/a6ef7ecf-d787-4ae0-81b7-bfefd8070c85" />
 
