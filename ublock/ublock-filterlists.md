@@ -1,7 +1,7 @@
 # Find attached the filters I use
 
-All Default Lists Enabled +
-
+All Default Lists Enabled 
++
 Custom Lists:
 * Dandelion Sprout's Annoyances List - https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList
 * AdGuard Tracking Protection Filter - https://filters.adtidy.org/extension/ublock/filters/3.txt
