@@ -44,7 +44,9 @@ Reynard is built on several principles:
 - Comfortable with mild site breakage
 
 ### Installation
-First, clone this repo:  
+
+####
+Clone the repo:  
 ```git clone https://github.com/Mateo-Grgic/reynard.git```  
 ```cd reynard```  
 
@@ -78,6 +80,14 @@ Copy UI styling (replace [PROFILE_NAME] with your actual profile)
 ```mkdir -p ~/Library/Application\ Support/LibreWolf/[PROFILE_NAME]/chrome```  
 ```cp css/userChrome.css ~/Library/Application\ Support/LibreWolf/[PROFILE_NAME]/chrome/```  
 ```cp css/userContent.css ~/Library/Application\ Support/LibreWolf/[PROFILE_NAME]/chrome/```  
+
+#### Configure for your hardware
+Edit the librewolf.overrides.cfg file, comment out the currently active Framework 13 profile  
+Utilize inline comments to deterimine the correct preset for you, uncomment, and make any edits if required  
+Glance over other prefs, modify any that you think you should  
+
+#### Restart LibreWolf 
+Quit and restart, changes should take effect  
 
 ## Tested On:
 - Framework 13 (Ryzen AI 9) - [Fedora Linux 42]
