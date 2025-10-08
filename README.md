@@ -61,7 +61,7 @@ Copy UI styling (replace [PROFILE_NAME] with your actual profile)
 #### For Flatpak Linux Install
 Copy browser performance config  
 ```cp librewolf.overrides/librewolf.overrides.cfg ~/.var/app/io.gitlab.librewolf-community/.librewolf/```  
-Find your profile name, look for a directory ending in .default or .default-release
+Find your profile name, look for a directory ending in .default or .default-release  
 ```ls ~/.var/app/io.gitlab.librewolf-community/.librewolf/```  
 Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
 ```mkdir -p ~/.var/app/io.gitlab.librewolf-community/.librewolf/[PROFILE_NAME]/chrome```  
