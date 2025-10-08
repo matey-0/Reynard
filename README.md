@@ -120,6 +120,15 @@ All devices using latest LibreWolf, currently Librewolf 143.0.4-1
 
 **LibreWolf already has excellent privacy defaults.** Reynard enhances performance and usability, but isn't necessary for privacy beyond a handful of prefs.
 
+## About Reynard
+I've been hardening my browser for the past two years, starting with Firefox when I was ~14. In April of this year, after the Firefox drama around advertising and data collection, I switched to LibreWolf and rebuilt my entire configuration from the ground up. I'm 16 now, and Reynard is the result: six months of work built on years of learning about browser internals, privacy trade-offs, and performance optimisations.  
+
+Everything I know came from reading Firefox source documentation, testing configurations, breaking things, learning from projects like Arkenfox and Betterfox, and being part of the privacy community. I'm no privacy expert or browser engineer, just interested in & aware of what's out there.  
+
+Reynard has been tested across three hardware platforms (Framework 13, MacBook Air M3, Steam Deck OLED) and refined through daily use. The configurations are opinionated and reflect my specific priorities, but they're decently documented so you can understand the trade-offs and adapt them to your needs.  
+
+This is a personal project shared in the spirit of open-source learning. If you find it useful, great. If you spot improvements or have questions, even better, I'm still learning.  
+
 ## Credits
 ### Core Technologies
 - [LibreWolf](https://librewolf.net/) - Privacy-focused Firefox fork
