@@ -121,11 +121,11 @@ All devices using latest LibreWolf, currently Librewolf 143.0.4-1
 **LibreWolf already has excellent privacy defaults.** Reynard enhances performance and usability, but isn't necessary for privacy beyond a handful of prefs.
 
 ## About Reynard
-I've been hardening my browser for the past two years, starting with Firefox when I was ~14. In April of this year, after the Firefox drama around advertising and data collection, I switched to LibreWolf and rebuilt my entire configuration from the ground up. I'm 16 now, and Reynard is the result: six months of work built on years of learning about browser internals, privacy trade-offs, and performance optimisations.  
+I've been hardening my browser for the past two years, starting with Firefox when I was ~14. In April of this year, after the Firefox drama around advertising and data collection, I switched to LibreWolf and rebuilt my entire configuration from the ground up. I'm 16 now, and Reynard is the result: lots of work built on lots of learning about browser internals, privacy trade-offs, and performance optimisations.  
 
-Everything I know came from reading Firefox source documentation, testing configurations, breaking things, learning from projects like Arkenfox and Betterfox, and being part of the privacy community. I'm no privacy expert or browser engineer, just interested in & aware of what's out there.  
+Everything I know about browsers came from reading Firefox source documentation, testing configurations, breaking things, Wikipedia, projects like Arkenfox and Betterfox, and being part of the privacy community. I'm no privacy expert or browser engineer, just interested in & aware of what's out there.  
 
-Reynard has been tested across three hardware platforms (Framework 13, MacBook Air M3, Steam Deck OLED) and refined through daily use. The configurations are opinionated and reflect my specific priorities, but they're decently documented so you can understand the trade-offs and adapt them to your needs.  
+Reynard has been tested on the three hardware platforms I own (Framework 13, MacBook Air M3, Steam Deck OLED) and refined through daily use. The configurations are very opinionated and reflect my specific priorities, but they're decently documented so you can understand the trade-offs and adapt them to your needs.  
 
 This is a personal project shared just in case anyone finds it useful. Thank you for checking out my little project. 
 
@@ -142,6 +142,7 @@ This is a personal project shared just in case anyone finds it useful. Thank you
 - [Firefox Source Docs](https://firefox-source-docs.mozilla.org/index.html) - Useful for understanding prefs
 - [Ranum](https://www.ranum.com/security/computer_security/editorials/dumb/) - General security blog
 - [RFPTargets](https://searchfox.org/firefox-main/source/toolkit/components/resistfingerprinting/RFPTargets.inc) - For resist fingerprinting targets reference
+- [uBlock Wiki](https://github.com/gorhill/uBlock/wiki/) - Very useful toolkit for learning about uBlock Origin features
 ### Useful Test Pages
 https://baldursgate3.game/news/patch-7-now-live_121 - for testing scrolling performance     
 https://licktherock.com/ - for testing rendering performance  
