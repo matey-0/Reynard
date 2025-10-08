@@ -44,7 +44,7 @@ Reynard is built on several principles:
 - Comfortable with mild site breakage
 
 ### Installation
-First, clone this repo
+First, clone this repo:  
 ```git clone https://github.com/Mateo-Grgic/reynard.git```  
 ```cd reynard```  
 
