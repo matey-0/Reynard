@@ -79,7 +79,7 @@ All devices using latest LibreWolf, currently Librewolf 143.0.4-1
 - [Arkenfox](https://github.com/arkenfox/user.js) - The reference hardening user.js for a reason
 - [Firefox/Mozilla](https://www.firefox.com/en-CA/) - Firefox is the whole reason we're here, despite all the shortcomings, they still make the browser base.
 Thanks to everyone who works on these valuable projects, and thank you to anyone who might use Reynard
-**Related Projects:**
+## Related Projects:
 - [personal-filter-lists](https://github.com/Mateo-Grgic/personal-filter-lists) - My custom uBlock Origin and AdGuard Home filter lists (564 network + 471 cosmetic rules)
 
 ## Lisence
