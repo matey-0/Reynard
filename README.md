@@ -138,6 +138,7 @@ https://baldursgate3.game/news/patch-7-now-live_121 - for testing scrolling perf
 https://licktherock.com/ - for testing rendering performance  
 https://www.lenovo.com/ca/en/c/laptops/thinkpad/ - for testing loading performance & detecting normally hidden breakage  
 ### Fingerprinting Test Pages
+**Note:** Reynard makes some privacy/usability trade-offs documented inline in `librewolf.overrides.cfg`. These trade-offs may increase fingerprinting surface compared to maximum-hardened LibreWolf. However, even vanilla LibreWolf is fingerprintable due to its unique characteristics, and due how many surfaces browsers & JavaScript expose. Test your configuration and decide if the trade-offs are acceptable for your threat mode, but know that no browser is truely private, even something like Tor requires caution.  
 https://amiunique.org/  
 https://browserleaks.com/  
 https://coveryourtracks.eff.org/  
