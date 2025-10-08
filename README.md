@@ -47,48 +47,48 @@ Reynard is built on several principles:
 ### Installation Steps:
 
 #### 1.) Clone the repo:  
-```git clone https://github.com/Mateo-Grgic/reynard.git```  
-```cd reynard```  
+  ```git clone https://github.com/Mateo-Grgic/reynard.git```  
+  ```cd reynard```  
 
 #### 2.) Copy files to correct locations
-**For Native Linux install (pacman, dnf, apt, etc)**  
-Copy browser performance config  
-```cp librewolf.overrides/librewolf.overrides.cfg ~/.librewolf/```  
-Find your profile name, look for a directory ending in .default or .default-release (or use the about:profiles page in LibreWolf itself)  
-```ls ~/.librewolf/```  
-Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
-```mkdir -p ~/.librewolf/[PROFILE_NAME]/chrome```  
-```cp css/userChrome.css ~/.librewolf/[PROFILE_NAME]/chrome/```  
-```cp css/userContent.css ~/.librewolf/[PROFILE_NAME]/chrome/```  
+  **For Native Linux install (pacman, dnf, apt, etc)**  
+  Copy browser performance config  
+  ```cp librewolf.overrides/librewolf.overrides.cfg ~/.librewolf/```  
+  Find your profile name, look for a directory ending in .default or .default-release (or use the about:profiles page in LibreWolf itself)  
+  ```ls ~/.librewolf/```  
+  Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
+  ```mkdir -p ~/.librewolf/[PROFILE_NAME]/chrome```  
+  ```cp css/userChrome.css ~/.librewolf/[PROFILE_NAME]/chrome/```  
+  ```cp css/userContent.css ~/.librewolf/[PROFILE_NAME]/chrome/```  
 
 **For Flatpak Linux Install**  
-Copy browser performance config  
-```cp librewolf.overrides/librewolf.overrides.cfg ~/.var/app/io.gitlab.librewolf-community/.librewolf/```  
-Find your profile name, look for a directory ending in .default or .default-release  
-```ls ~/.var/app/io.gitlab.librewolf-community/.librewolf/```  
-Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
-```mkdir -p ~/.var/app/io.gitlab.librewolf-community/.librewolf/[PROFILE_NAME]/chrome```  
-```cp css/userChrome.css ~/.var/app/io.gitlab.librewolf-community/.librewolf/[PROFILE_NAME]/chrome/```  
-```cp css/userContent.css ~/.var/app/io.gitlab.librewolf-community/.librewolf/[PROFILE_NAME]/chrome/```  
+  Copy browser performance config  
+  ```cp librewolf.overrides/librewolf.overrides.cfg ~/.var/app/io.gitlab.librewolf-community/.librewolf/```  
+  Find your profile name, look for a directory ending in .default or .default-release  
+  ```ls ~/.var/app/io.gitlab.librewolf-community/.librewolf/```  
+  Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
+  ```mkdir -p ~/.var/app/io.gitlab.librewolf-community/.librewolf/[PROFILE_NAME]/chrome```  
+  ```cp css/userChrome.css ~/.var/app/io.gitlab.librewolf-community/.librewolf/[PROFILE_NAME]/chrome/```  
+  ```cp css/userContent.css ~/.var/app/io.gitlab.librewolf-community/.librewolf/[PROFILE_NAME]/chrome/```  
 
 **For macOS Install (Manual or Homebrew)**  
-Create hidden config directory and copy overrides  
-```mkdir -p ~/.librewolf```  
-```cp librewolf.overrides/librewolf.overrides.cfg ~/.librewolf/```  
-Find your profile name, look for a directory ending in .default or .default-release  
-```ls ~/Library/Application\ Support/LibreWolf/```  
-Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
-```mkdir -p ~/Library/Application\ Support/LibreWolf/[PROFILE_NAME]/chrome```  
-```cp css/userChrome.css ~/Library/Application\ Support/LibreWolf/[PROFILE_NAME]/chrome/```  
-```cp css/userContent.css ~/Library/Application\ Support/LibreWolf/[PROFILE_NAME]/chrome/```  
+  Create hidden config directory and copy overrides  
+  ```mkdir -p ~/.librewolf```  
+  ```cp librewolf.overrides/librewolf.overrides.cfg ~/.librewolf/```  
+  Find your profile name, look for a directory ending in .default or .default-release  
+  ```ls ~/Library/Application\ Support/LibreWolf/```  
+  Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
+  ```mkdir -p ~/Library/Application\ Support/LibreWolf/[PROFILE_NAME]/chrome```  
+  ```cp css/userChrome.css ~/Library/Application\ Support/LibreWolf/[PROFILE_NAME]/chrome/```  
+  ```cp css/userContent.css ~/Library/Application\ Support/LibreWolf/[PROFILE_NAME]/chrome/```  
 
 #### 3.) Configure for your hardware
-Edit the librewolf.overrides.cfg file, comment out the currently active Framework 13 profile  
-Utilize inline comments to deterimine the correct preset for you, uncomment, and make any edits if required  
-Glance over other prefs, modify any that you think you should  
+  Edit the librewolf.overrides.cfg file, comment out the currently active Framework 13 profile  
+  Utilize inline comments to deterimine the correct preset for you, uncomment, and make any edits if required  
+  Glance over other prefs, modify any that you think you should  
 
 #### 4.) Restart LibreWolf 
-Quit and restart, changes should take effect  
+  Quit and restart, changes should take effect  
 
 ## Tested On:
 - Framework 13 (Ryzen AI 9) - [Fedora Linux 42]
