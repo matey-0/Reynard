@@ -15,38 +15,33 @@ Reynard is built on several principles:
 ### librewolf.overrides.cfg file
 - Contains sensible defaults
 - Maintains privacy standards
-- Comprehensive in-line commenting
+- Comprehensive inline commenting
 - Device specific profiles and optimizations
-### UI Styling
-- Custom userChrome.ss & userContent.css files
+### UI Styling (userChrome.css & userContent.css files)
 - Distraction free
 - Minimalistic design
 - Blank new tabs page
 ### Custom-ish Theme
 - Minimalistic dark theme included
-- Similar to 'Dark Space by Nicothin', with various improvmements
+- Similar to 'Dark Space by Nicothin', with various improvements
 ### uBlock Origin Hard Mode Configs & Settings 
 - Guide for using Hard Mode
-- Currated filter lists
+- Curated filter lists
 - Dynamic rules for starting base (selective noop)
 - Default Deny policy
 - Optional advanced optimisations and settings
 - Personal filter lists
 ### AdGuard Home basic configurations 
-- Curated Fitler lists
-- Upstream DNS providers (HTTPS, TLC, QUIC)
+- Curated Filter lists
+- Upstream DNS providers (HTTPS, TLS, QUIC)
 
 ## Quick Start 
 ### Requirements
 - Librewolf 143+
 - Linux-based operating system (preferable), macOS support work in progress
-  - Windows support is not planned, I don't have acess to a Windows machine
+  - Windows support is not planned, I don't have access to a Windows machine
 - Basic understanding of browser internals, troubleshooting skills, basic research
 - Comfortable with mild site breakage
-### Installation
-- Refer to each sections' README for installation details
-- See component parts' README files for setup, modifications, best practices, etc
-- Each directory contains a README with detailed setup instructions
 
 ## Tested On:
 - Framework 13 (Ryzen AI 9) - [Fedora Linux 42]
@@ -71,23 +66,24 @@ All devices using latest LibreWolf, currently Librewolf 143.0.4-1
 **LibreWolf already has excellent privacy defaults.** Reynard enhances performance and usability, but isn't necessary for privacy beyond a handful of prefs.
 
 ## Credits
+### Core Technologies
 - [LibreWolf](https://librewolf.net/) - Privacy-focused Firefox fork
 - [uBlock Origin](https://github.com/gorhill/uBlock) - Efficient content blocker
 - [AdGuard Home](https://adguard.com/en/adguard-home/overview.html) - Network-wide ad blocking
+- [Firefox/Mozilla](https://www.firefox.com/en-CA/) - Firefox is the whole reason we're here, despite all the shortcomings, they still make the browser base.
+### Configuration Inspiration & Reference
 - [Betterfox](https://github.com/yokoffing/Betterfox) - Smoothfox, Peskyfox, Fastfox, Securefox configs
 - [BrainF+ck](https://brainfucksec.github.io/firefox-hardening-guide-2025) - Comprehensive hardening guide with good explanations
 - [Arkenfox](https://github.com/arkenfox/user.js) - The reference hardening user.js for a reason
-- [Firefox/Mozilla](https://www.firefox.com/en-CA/) - Firefox is the whole reason we're here, despite all the shortcomings, they still make the browser base.
-Thanks to everyone who works on these valuable projects, and thank you to anyone who might use Reynard
 ## Related Projects:
 - [personal-filter-lists](https://github.com/Mateo-Grgic/personal-filter-lists) - My custom uBlock Origin and AdGuard Home filter lists (564 network + 471 cosmetic rules)
+**Thanks to everyone who works on these valuable projects, and thank you to anyone who might use Reynard**
 
-## Lisence
-- Uses MIT lisence for maximum sharability
-Feel free to use, modify, and distribute. Attribution not required for personal projects. For public projects, attribution apreciated greatly, but not required.
-
-## A few Examples of the Setup
+## Preview Images
 <img width="2880" height="1856" alt="Kagi Search (On a page)" src="https://github.com/user-attachments/assets/091b20be-e798-484e-b122-e6e18daf8edd" />
 <img width="2880" height="1856" alt="Kagi Search (On a page)" src="https://github.com/user-attachments/assets/a6ef7ecf-d787-4ae0-81b7-bfefd8070c85" />
 
+## License
+- Uses MIT license for maximum sharability
+Feel free to use, modify, and distribute. Attribution not required for personal projects. For public projects, attribution appreciated greatly, but not required.
 
