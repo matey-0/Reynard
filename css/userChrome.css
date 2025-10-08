@@ -1,0 +1,147 @@
+/* userchrome.css for my Firefox, has some fun things */
+/********************** BEGIN **********************/
+
+
+/* i have no idea what these do, but it's probably important */
+.urlbar-go-button {display: none !important;}
+.search-setting-button {display: none !important;}
+.tab-icon-overlay {display: none;}
+.tab-icon-image {opacity: 1 !important;}
+
+
+/**** START TAB CLOSE BUTTON FADE CSS ****/
+/* Remove tab close button. Appear on hover with smooth transitions */
+  .tabbrowser-tab:not([pinned]) .tab-close-button {
+	display: -moz- !important;
+	opacity: 0;
+	visibility: collapse !important;
+	transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+
+  }
+
+  .tabbrowser-tab:not([pinned]):hover  .tab-close-button {
+	opacity: 1;
+	visibility: visible !important;
+	transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+  }
+  .tabbrowser-tab:not([pinned]):hover  .tab-close-button:hover {
+	fill: #FF0000 !important;
+	transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+    /* Fix mask size */
+  .tabbrowser-tab {
+	--tab-label-mask-size: 1em !important;
+  }
+
+.close-icon{
+	transition: fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+  }
+  .close-icon:hover {
+	fill: #FF0000 !important;
+  }
+
+  .tab-background{
+	border-radius: 4px !important;
+	border: transparent !important;
+  }
+	.tab-background[selected="true"] {
+		background: linear-gradient(to right, rgb(159, 26, 255, 0.3), rgb(159, 26, 255, 0.3), rgb(138, 70, 255, 0.3), rgb(118, 93, 255, 0.3), rgb(93, 125, 255, 0.3), rgb(62, 140, 255, 0.3), rgb(28, 153, 255, 0.3), rgb(0, 165, 255, 0.3), rgb(0, 180, 255, 0.3), rgb(0, 195, 255, 0.3), rgb(0, 208, 255, 0.3), rgb(0, 221, 255, 0.3)) no-repeat !important;
+
+	}
+
+	  /*container indicator bar to the sides of the tab */
+	#tabbrowser-tabs .tab-context-line {
+		display: none;
+	}
+
+	.tabbrowser-tab[class*="identity-color-"] .tab-background {
+		border-right: solid 2px var(--identity-icon-color) !important;
+		border-left: solid 2px var(--identity-icon-color) !important;
+		transition: all .15s ease-in-out !important;
+	}
+
+	.tabbrowser-tab[class*="identity-color-"] .tab-background[selected="true"] {
+		border-right: solid 4px var(--identity-icon-color) !important;
+		border-left: solid 4px var(--identity-icon-color) !important;
+
+        }      
+/**** END TAB CLOSE BUTTON FADE CSS ****/
+
+
+/* change left padding of urlbar text */
+#urlbar {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+
+/* hide the tracking protection thingy on a webpage */
+#tracking-protection-icon-container {
+    display: none !important;
+}
+
+
+/* hide magnifying glass icon on the next row of the search results suggestions*/
+.urlbarView-favicon {
+    visibility: collapse !important;
+}
+
+
+/* reduce padding on the one-offs */
+.search-one-offs{
+    padding-block: 4px !important
+}
+
+
+/* make the menu bar spacers smaller*/
+.titlebar-spacer{
+    width: 10px !important;
+}
+
+
+
+/* make the search pre-fetch results(?) go away, without taking away search one-offs */
+.urlbarView-body-outer {
+    padding: 0px !important;
+    display: none !important;
+    visibility: collapse !important;
+}
+
+
+/* make url bar better */
+.urlbarView{
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+}
+
+
+/* hide idenity box without breaking prompts */
+#identity-box {
+    max-width: 3px !important;
+    min-width: 3px !important;
+    padding-top: 8px !important;
+    padding-left: 3.2px !important;
+    margin: 0 !important;
+    border: none !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+}
+
+/* removes the search plug-in suggestions */
+#urlbar-engine-one-off-item-engine--1, .menuitem-iconic.searchmode-switcher-addEngine,
+#searchbar-engine-one-off-item-engine--1, .searchbar-search-icon-overlay {
+  display: none !important;
+}
+
+
+/* remove forced empty space when using vertical tabs */
+#vertical-spacer{
+    width: 0px !important;
+    padding 0px !important;
+    display: none !important;
+    visibility: collapse !important;
+}
+
+/********************** END **********************/
