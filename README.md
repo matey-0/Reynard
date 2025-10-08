@@ -1,3 +1,92 @@
-placeholder text for now!
+# Reynard 
 
-readme coming soon
+Reynard transforms LibreWolf into a faster, more comfortable browser without major sacrifices in privacy. Designed for advanced users who understand browser internals and are comfortable with occasional breakage.
+
+## Philosophy
+Reynard is built on several principles:
+- **Privacy-first**: Respects LibreWolf's excellent defaults, enhances where sensible, reduces where practical
+- **Performance-optimized**: Hardware-specific tuning for my Framework 13, Steam Deck, m3 MacBook Air, and includes generic profiles for other devices
+- **Usable**: Minimalist UI, smooth scrolling, sensible trade-offs
+- **Transparent**: Most preferences documented with inline comments
+- **Reproducible**: Clear instructions, tested configurations
+- **Sensible Defaults** - Most default prefs are designed to be sensible, you can use as-is or modify to your heart's content
+
+## What's included
+### librewolf.overrides.cfg file
+- Contains sensible defaults
+- Maintains privacy standards
+- Comprehensive in-line commenting
+- Device specific profiles and optimizations
+### UI Styling
+- Custom userChrome.ss & userContent.css files
+- Distraction free
+- Minimalistic design
+- Blank new tabs page
+### Custom-ish Theme
+- Minimalistic dark theme included
+- Similar to 'Dark Space by Nicothin', with various improvmements
+### uBlock Origin Hard Mode Configs & Settings 
+- Guide for using Hard Mode
+- Currated filter lists
+- Dynamic rules for starting base (selective noop)
+- Default Deny policy
+- Optional advanced optimisations and settings
+- Personal filter lists
+### AdGuard Home basic configurations 
+- Curated Fitler lists
+- Upstream DNS providers (HTTPS, TLC, QUIC)
+
+## Quick Start 
+### Requirements
+- Librewolf 143+
+- Linux-based operating system (preferable), macOS support work in progress
+  - Windows support is not planned, I don't have acess to a Windows machine
+- Basic understanding of browser internals, troubleshooting skills, basic research
+- Comfortable with mild site breakage
+### Installation
+- Refer to each sections' README for installation details
+- See component parts' README files for setup, modifications, best practices, etc
+- Each directory contains a README with detailed setup instructions
+
+## Tested On:
+- Framework 13 (Ryzen AI 9) - [Fedora Linux 42]
+- 15" M3 MacBook Air - [MacOS 26 Tahoe]
+- Steam Deck OLED - [SteamOS Stable Latest]
+All devices using latest LibreWolf, currently Librewolf 143.0.4-1
+## Untested Templates
+- Low-end, weaker, mid-range, and high-end device templates require third-party testing. Contributions welcome.
+
+## Disclaimer
+**This configuration suite is for advanced users.** Expect:
+- Occasional site breakage (especially with uBlock Origin Hard Mode)
+- Need to manually adjust performance settings for your hardware
+- Some privacy/security prefs disabled for compatibility (documented inline)
+- Some privacy/security prefs enabled for my use-cases (document inline)
+**Not recommended if:**
+- You want a "set it and forget it" experience, without the manual work
+- You're uncomfortable troubleshooting browser issues
+- You need maximum compatibility with all websites
+- You need maximum privacy in all situations
+
+**LibreWolf already has excellent privacy defaults.** Reynard enhances performance and usability, but isn't necessary for privacy beyond a handful of prefs.
+
+## Credits
+- [LibreWolf](https://librewolf.net/) - Privacy-focused Firefox fork
+- [uBlock Origin](https://github.com/gorhill/uBlock) - Efficient content blocker
+- [AdGuard Home](https://adguard.com/en/adguard-home/overview.html) - Network-wide ad blocking
+- [Betterfox](https://github.com/yokoffing/Betterfox) - Smoothfox, Peskyfox, Fastfox, Securefox configs
+- [BrainF+ck](https://brainfucksec.github.io/firefox-hardening-guide-2025) - Comprehensive hardening guide with good explanations
+- [Arkenfox](https://github.com/arkenfox/user.js) - The reference hardening user.js for a reason
+- [Firefox/Mozilla](https://www.firefox.com/en-CA/) - Firefox is the whole reason we're here, despite all the shortcomings, they still make the browser base.
+Thanks to everyone who works on these valuable projects, and thank you to anyone who might use Reynard
+**Related Projects:**
+- [personal-filter-lists](https://github.com/Mateo-Grgic/personal-filter-lists) - My custom uBlock Origin and AdGuard Home filter lists (564 network + 471 cosmetic rules)
+
+## Lisence
+- Uses MIT lisence for maximum sharability
+Feel free to use, modify, and distribute. Attribution not required for personal projects. For public projects, attribution apreciated greatly, but not required.
+
+<img width="2880" height="1856" alt="Kagi Search (On a page)" src="https://github.com/user-attachments/assets/091b20be-e798-484e-b122-e6e18daf8edd" />
+<img width="2880" height="1856" alt="Kagi Search (On a page)" src="https://github.com/user-attachments/assets/a6ef7ecf-d787-4ae0-81b7-bfefd8070c85" />
+
+
