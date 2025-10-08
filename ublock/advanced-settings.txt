@@ -1,0 +1,47 @@
+   allowGenericProceduralFilters true
+               assetFetchTimeout 30
+       autoCommentFilterTemplate {{date}} {{origin}}
+      autoUpdateAssetFetchPeriod 5
+      autoUpdateDelayAfterLaunch 10
+                autoUpdatePeriod 1
+             benchmarkDatasetURL unset
+                blockingProfiles 11111/#F00 11010/#C0F 11001/#00F 00001
+         cacheStorageCompression true
+cacheStorageCompressionThreshold 65536
+         cacheStorageMultithread 2
+   cacheControlForFirefox1376932 unset
+         cloudStorageCompression true
+                 cnameIgnoreList unset
+             cnameIgnore1stParty true
+           cnameIgnoreExceptions true
+         cnameIgnoreRootDocument true
+              cnameReplayFullURL false
+                 consoleLogLevel unset
+                 debugAssetsJson false
+                 debugScriptlets false
+          debugScriptletInjector false
+              differentialUpdate true
+              disableWebAssembly false
+                     dnsCacheTTL 600
+               dnsResolveEnabled true
+      extensionUpdateForceReload false
+                filterAuthorMode true
+                 loggerPopupType normal
+    manualUpdateAssetFetchPeriod 500
+              modifyWebextFlavor unset
+                  noScriptingCSP script-src http: https:
+                   popupFontSize unset
+      popupPanelDisabledSections 0
+            popupPanelHeightMode 0
+        popupPanelLockedSections 0
+           popupPanelOrientation unset
+     requestJournalProcessPeriod 1000
+            requestStatsDisabled false
+            selfieDelayInSeconds 53
+    strictBlockingBypassDuration 120
+           toolbarWarningTimeout 60
+             trustedListPrefixes ublock- adguard- easylist- user- mateo- https://raw.githubusercontent.com/Mateo-Grgic/personal-filter-lists/refs/heads/main/Mateo's%20Personal%20Cosmetic%20Filterlist https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/ubo-link-shorteners.txt
+                   uiPopupConfig unset
+                        uiStyles unset
+   updateAssetBypassBrowserCache true
+           userResourcesLocation unset
