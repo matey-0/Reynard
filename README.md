@@ -44,12 +44,12 @@ Reynard is built on several principles:
 - Comfortable with mild site breakage
 
 ### Installation
-#### For Native Linux install (pacman, dnf, apt, etc)
-Copy browser performance config
+#### For Native Linux install (pacman, dnf, apt, etc)  
+Copy browser performance config  
 ```cp librewolf.overrides/librewolf.overrides.cfg ~/.librewolf/```
-Find your profile name, Look for a directory ending in .default or .default-release (or use the about:profiles page in LibreWolf itself)
+Find your profile name, Look for a directory ending in .default or .default-release (or use the about:profiles page in LibreWolf itself)  
 ```ls ~/.librewolf/```
-Copy UI styling (replace [PROFILE_NAME] with your actual profile)
+Copy UI styling (replace [PROFILE_NAME] with your actual profile)  
 ```mkdir -p ~/.librewolf/[PROFILE_NAME]/chrome```
 ```cp css/userChrome.css ~/.librewolf/[PROFILE_NAME]/chrome/```
 ```cp css/userContent.css ~/.librewolf/[PROFILE_NAME]/chrome/```
