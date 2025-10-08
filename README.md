@@ -81,7 +81,7 @@ All devices using latest LibreWolf, currently Librewolf 143.0.4-1
 
 ## Preview Images
 <img width="2880" height="1856" alt="Kagi Search (On a page)" src="https://github.com/user-attachments/assets/091b20be-e798-484e-b122-e6e18daf8edd" />
-<img width="2880" height="1856" alt="Kagi Search (On a page)" src="https://github.com/user-attachments/assets/a6ef7ecf-d787-4ae0-81b7-bfefd8070c85" />
+<img width="2880" height="1856" alt="New Tab" src="https://github.com/user-attachments/assets/a7f47540-ba6b-4c33-a075-beebed6a0143" />
 
 ## License
 - Uses MIT license for maximum sharability
