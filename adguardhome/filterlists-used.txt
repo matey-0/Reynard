@@ -1,0 +1,10 @@
+AdGuard DNS Filter 
+OISD Big 
+StevenBlack/Hosts
+Dandelion Sprout's Anti-Malware List
+Mateo's Misc Tracker Block List 
+HaGeZi's Threat Intelligence Block List
+uBlock Filters - Badware Risks
+1Hosts (Lite)
+HaGeZi's Refferal Allowlist
+HaGeZi's Ultimate Blocklist
