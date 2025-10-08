@@ -34,6 +34,9 @@ Reynard is built on several principles:
 ### AdGuard Home basic configurations 
 - Curated Filter lists
 - Upstream DNS providers (HTTPS, TLS, QUIC)
+### Extention Setup and Recommendations 
+- Optimised for privacy, functionality, complete coverage, speed
+- Proper compatability and collaborative functionality
 
 ## Quick Start 
 ### Requirements
