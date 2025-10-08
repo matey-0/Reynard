@@ -87,7 +87,7 @@ Reynard is built on several principles:
 
 #### 3.) Configure for your hardware
   Edit the librewolf.overrides.cfg file, comment out the currently active Framework 13 profile  
-  Utilize inline comments to deterimne the correct preset for you, uncomment, and make any edits if required  
+  Utilise inline comments to determine the correct preset for you, uncomment, and make any edits if required  
   Glance over other prefs, modify any that you think you should  
 
 #### 4.) Restart LibreWolf 
