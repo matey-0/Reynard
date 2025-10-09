@@ -1,13 +1,5 @@
-/* userchrome.css for my Firefox, has some fun things */
+/* userchrome.css for my LibreWolf, has some fun things */
 /********************** BEGIN **********************/
-
-
-/* i have no idea what these do, but it's probably important */
-.urlbar-go-button {display: none !important;}
-.search-setting-button {display: none !important;}
-.tab-icon-overlay {display: none;}
-.tab-icon-image {opacity: 1 !important;}
-
 
 /**** START TAB CLOSE BUTTON FADE CSS ****/
 /* Remove tab close button. Appear on hover with smooth transitions */
@@ -144,4 +136,9 @@
     visibility: collapse !important;
 }
 
+/* i have no idea what these do, but it's probably important */
+.urlbar-go-button {display: none !important;}
+.search-setting-button {display: none !important;}
+.tab-icon-overlay {display: none;}
+.tab-icon-image {opacity: 1 !important;}
 /********************** END **********************/
