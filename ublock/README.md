@@ -161,7 +161,7 @@ After 2-3 weeks of daily browsing, you'll rarely encounter new breakage, and whe
 
 ### Understanding the uBlock Origin Matrix
 When you click the uBlock Origin icon on any webpage, you'll see the dynamic filtering matrix (if you've expanded uBlock fully):  
-> Example image
+> Example image:  
 > <img width="1264" height="1092" alt="image" src="https://github.com/user-attachments/assets/ce2f7d90-5c71-4634-b748-e2e50b26f1d7" />  
 
 **What you're looking at:**
@@ -178,13 +178,180 @@ When you click the uBlock Origin icon on any webpage, you'll see the dynamic fil
 - **3rd-party frame row:** Red in both columns (all 3rd-party frames blocked by default)
 - **3rd-party row:** Red in both columns (all other 3rd-party content blocked by default)
 
-### Falling back to easier modes 
-### Troubleshooting 
+### How to Noop Domains
+#### Global Noop (Allow Everywhere)
+Use this only for trusted CDNs, APIs, and infrastructure domains you encounter on multiple sites. Whilst it's best to be careful and conservative, if you using a comprehensive set of filter lists, you should be fine for the most part if you aren't super careful.
 
-## Performance impact 
+**Steps:**
+1. Click the uBlock Origin icon on the broken webpage
+2. Scroll down below the top section of matrix to see the individual domains blocked
+3. Find likely culprits (CDNs like `cloudflare.com`, APIs like `googleapis.com`, JS frameworks like `jquery.com`)
+4. Click the domain name to add a temporary rule
+5. Click to go from red (blocked) → gray (noop)
+7. Reload the page and test
+6. If you have a winning combo of domains to noop, click the padlock icon at the top to make the rule permanent
+
+**Result:** That domain is now nooped globally—on all websites. It will pass through to your static filter layer unhindered.
+
+#### Per-Site Noop (Allow Only on Current Site)
+
+Use this for domains you don't fully trust, or that are specific to one website.
+
+**Steps:**
+1. Same as above, but click the domain in the site-specific column (column on the left)
+2. Click once to noop (gray)
+3. Reload the page to test
+3. Click the padlock icon to make it permanent
+
+**Result:** That domain is only nooped for the current website.
+
+### Which Domains Should You Noop?
+#### Usually Safe to Noop Globally:
+
+**CDNs (Content Delivery Networks):**
+Stuff like:  
+- `cloudflare.com`, `akamaihd.net`, `fastly.net`, `jsdelivr.net`, `unpkg.com`, `cloudfront.net`, `azureedge.net`, `stackpathcdn.com`
+
+**Google Infrastructure:**
+Stuff like:  
+- `googleapis.com`, `gstatic.com`, `googleusercontent.com`, `google.com` (if needed for fonts, but be cautious with google. I block googlefonts by default)
+
+**JS Frameworks & Libraries:**
+Stuff like:  
+- `jquery.com`, `bootstrapcdn.com`, `fontawesome.com`
+
+**Media CDNs:**
+Stuff like:  
+- `imgur.com`, `giphy.com`, `vimeocdn.com`
+
+**Cloud Storage:**
+Stuff like:  
+- `s3.amazonaws.com`, `storage.googleapis.com`
+
+**Rule of thumb:** If it's infrastructure (delivering content) and used across many sites, global noop is usually fine. Your static filters will still catch trackers/ads served from these domains.
+
+#### Noop Per-Site Only:
+
+**Social Media Widgets:**
+Stuff like:  
+- `facebook.com`, `twitter.com`, `linkedin.com`
+- Only noop on sites where you need the widget (e.g., embedded facebook posts, or on facebook itself)
+
+**Site-Specific Domains:**
+- Anything that looks unique to one company/site
+- Example: `shopify-assets.com` only needed on Shopify stores, etc
+
+#### Stuff you don't noop
+
+**Analytics:**
+Don't noop these ever:  
+- `google-analytics.com`, `googletagmanager.com`
+- (Don't noop at all, these are pure tracking)
+
+**Ad Networks:**
+Don't noop these ever: 
+- `doubleclick.net`, `adsense.com`
+- (Don't noop, let Hard Mode block them)
+
+### When in Doubt
+
+1. Start with per-site noop
+2. If you encounter the same domain breaking multiple sites, promote to global noop
+3. Check my `trimmed-dynamic-rules.txt` for examples, if a domain is in there, I've personally verified it's safe to noop globally
+
+**You can always undo:**
+- Go to My rules tab in uBlock dashboard
+- Find the rule (format: `example.com * example.com noop`)
+- Delete the line
+- Click commit, then save
+
+#### Medium Mode (Recommended Fallback)
+
+Blocks 3rd-party scripts and frames, but allows other 3rd-party content (images, CSS, etc.).
+
+**How to switch:**
+1. uBlock Origin dashboard → **My rules** tab
+2. Change global rules from:
+```* * 3rd-party-script block```  
+```* * 3rd-party-frame block```  
+```* * 3rd-party block```  
+To:  
+```* * 3rd-party-script block```  
+```* * 3rd-party-frame block```  
+**i.e.** delete the `* * 3rd-party block` line  
+3. Commit & Save
+
+
+**Result:** Most sites work out-of-the-box. You still block the dangerous stuff (scripts, frames) but allow images, fonts, CSS from 3rd-parties. You can also use medium mode on a per site basis: for example, I have github set to medium mode, because it breaks in hard mode.
+
+#### Normal Mode (uBlock Origin default blocking mode)
+**How to switch:**
+1. Go to the dynamic filter pane
+2. Select everything, delete
+3. Commit & Save  
+**Result:** Almost all sites will *just work*. They will also load slower, and you leave yourself at higher risk. No shame in using normal mode over harder modes; they're much higher maintenance.  
+**Recommendation:** Give hard mode a try for a few weeks, if it doesn't click by then, reduce to normal mode. Hard mode is really worth it, though.
+
+### Too many sites breaking?
+**Recomendations:**
+1. Fall back to Medium Mode temporarily while you build your ruleset
+2. Ask for help: Check the uBlock Origin subreddit or GitHub discussions, others may have solved the same site
+3. As a last resort, switch to normal mode. Having uBlock is better than no uBlock.
+
+
+### Final Note: Be conservative with global noops. If you're unsure, noop per-site first.
+
+## Performance Impact
+
+Hard Mode is more performant than default uBlock Origin setups:
+
+**Benefits:**
+- Less RAM usage - Blocking requests before they load means less memory overhead
+- Faster page loads - Fewer network requests = faster rendering
+- Reduced bandwidth - Blocked 3rd-party content never downloads
+
+**Costs:**
+- Initial mental overhead
+- Occasional 5-10 seconds fixing a broken site
+
+
+Hard Mode is faster & lighter than default uBlock setups, and you have complete control over what runs in your browser. 
 
 ## Related/Further reading/cross-references
+**Community Resources:**
+- [r/uBlockOrigin](https://www.reddit.com/r/uBlockOrigin/) - Active community for troubleshooting
+- [uBlock Origin GitHub Issues](https://github.com/gorhill/uBlock/issues) - Report bugs or ask questions
+- **Official uBlock Origin Resources:**
+- [uBlock Origin Wiki - Blocking Mode: Hard Mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-hard-mode)
+- [uBlock Origin Wiki - Dynamic Filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering)
+- [uBlock Origin Wiki - Per-site Switches](https://github.com/gorhill/uBlock/wiki/Per-site-switches)
 
 ## Contributing 
+**Found a CDN that should be nooped globally?**
+
+If you've discovered a widely-used CDN, API, JS framework, etc that should be in the `trimmed-dynamic-rules.txt` list, feel free to open an issue with:
+
+1. Domain name (e.g., `example-cdn.com`)
+2. What it's used for (e.g., "Serves images for WordPress sites")
+3. Where you encountered it (e.g., "Broke 5+ news sites I visit")
+
+I maintain the CDN allowlist based on my browsing habits, so suggestions for common infrastructure domains are welcome.
+
+**Not accepting:**
+- Tracking/analytics domains (those should stay blocked)
+- Site-specific domains (noop those per-site, for yourself)
+
+**Other contributions welcome:**
+- Documentation improvements (typos, clarity, examples)
+- Troubleshooting tips for common issues
+- Better explanations of Hard Mode concepts
 
 ## Credits
+**uBlock Origin:**
+- [gorhill](https://github.com/gorhill) and all uBlock Origin contributors for creating the most powerful content blocker available
+- The uBlock Origin community for documentation, guides, and support
+
+**Filter List Maintainers:**
+- Dandelion Sprout, Fanboy, AdGuard, EasyList team, and all filter list maintainers whose work powers the second filtering layer
+
+**Reynard** is my personal implementation of Hard Mode principles, refined over 6 months of daily use. All mistakes are mine, not uBlock or anyone else's
