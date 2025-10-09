@@ -23,6 +23,7 @@ See `dns-providers.txt` for full list.
 | **HaGeZi Referral Allowlist** | Fixes false positives |
 | **Mateo's Misc Tracker Block** | My custom additions |
 
+**Note:** These lists are quite strict, be prepared to whitelist and troubleshoot if you use my lists.
 **Layered defense:** Multiple lists with different sources catch more than any single list.
 
 ## Installation
