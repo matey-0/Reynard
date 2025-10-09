@@ -1,3 +1,4 @@
+# Reynard's librewolf.overrides.cfg file 
 ## What is a librewolf.overrides.cfg?
 The librewolf.overrides.cfg file is a simple JavaScript file that stores, sets, and overrides preferences. It's a more efficient way of mass-applying advanced preferences than using the about:config pane built into LibreWolf/Firefox. Due to LibreWolf's browser policies, some preferences aren't able to be modified using the GUI, so you must use the librewolf.overrides.cfg file to change them.
 
@@ -41,18 +42,18 @@ This librewolf.overrides.cfg file contains:
   ```cp librewolf.overrides/librewolf.overrides.cfg ~/.librewolf/```
 
 #### 3.) Configure for your hardware
-* Comment out my active Framework 13 profile (around line 180) by adding /* before the section, and */ afterwards.  
-* Scroll up and find the template that best matches the hardware specs you have. Modify preferences like `dom.ipc.processCount` & `layout.frame_rate` to match your physical hardware, and tune `mousewheel.default.delta_multiplier_x/y/z` to your preferred scrolling speed.  
-* Glance over all preferences, change any you find personally problematic or worth changing.  
+- Comment out my active Framework 13 profile (around line 180) by adding /* before the section, and */ afterwards.  
+- Scroll up and find the template that best matches the hardware specs you have. Modify preferences like `dom.ipc.processCount` & `layout.frame_rate` to match your physical hardware, and tune `mousewheel.default.delta_multiplier_x/y/z` to your preferred scrolling speed.  
+- Glance over all preferences, change any you find personally problematic or worth changing.  
 
 #### 4.) Restart LibreWolf 
   Quit and restart, changes should take effect.
 
 #### 5.) Verify it loaded:
-* Open LibreWolf
-* Type `about:config` in the address bar
-* Search for a unique preference like `browser.compactmode.show`
-* If it's set to true, your config loaded successfully
+- Open LibreWolf
+- Type `about:config` in the address bar
+- Search for a unique preference like `browser.compactmode.show`
+- If it's set to true, your config loaded successfully
 
 ## Understanding the Performance Templates
 
@@ -69,7 +70,7 @@ The config file includes several hardware-specific performance templates (low-en
 4. Uncomment the template closest to your hardware (remove `/*` and `*/`)
 5. Adjust specific values like `dom.ipc.processCount` (set to your CPU core count ± 2) and `layout.frame_rate` (set to your display refresh rate)
 6. Make sure you've commented my default (active) Framework 13 profile, it's at the end and will take precedence if you don't comment it out. 
-6. Save, restart LibreWolf
+7. Save, restart LibreWolf
 
 **Only one template should be active at a time.** Make sure all others stay commented out.
 
@@ -82,7 +83,7 @@ Everything should be documented in the config file itself (if it's not, I'm curr
 
 ## Platform-Specific Settings (Linux & macOS)
 
-> **Platform support:** This config is optimised for Linux (Wayland + GTK specifically, Qt should work natively as well, but less tested). I've tested it on Fedora and SteamOS. macOS works but isn't specifically optimised. Windows isn't considered at all, I don't use or have access to a Windows device.
+> **Platform support:** This config is optimised for Linux (Wayland + GTK specifically, Qt should work natively as well, but is less tested). I've tested it on Fedora and SteamOS. macOS works but isn't specifically optimised. Windows isn't considered at all, I don't use or have access to a Windows device.
 
 ### What's Included
 
@@ -101,14 +102,14 @@ The platform-specific preferences are documented in the config file. Read the in
 
 ## Note on privacy & security
 
-> **My approach:** This config prioritizes usability over maximum hardening. I don't use `privacy.resistFingerprinting`. Your browser can be fingerprinted reliably and consistently in seconds regardless (unless you're using Tor browser with no javascript or something, which isn't usable). I used resistFingerprinting for a couple years and know the trade-offs. It breaks 95% of sites in minor ways and 20% of sites in major ways. Not worth it *for me*. 
+> **My approach:** This config prioritizes usability over maximum hardening. I don't use `privacy.resistFingerprinting`. Your browser can be fingerprinted reliably and consistently in seconds regardless (unless you're using Tor Browser with no JavaScript or something, which isn't usable). I used resistFingerprinting for a couple years and know the trade-offs. It breaks 95% of sites in minor ways and 20% of sites in major ways. Not worth it *for me*. 
 
 ### Philosophy
 
 This setup is already better than 99% of browser configurations. LibreWolf's baseline hardening (no telemetry, no Mozilla bloat, strict defaults) does the heavy lifting. I make trade-offs where they matter:
 
 **Where I reduce privacy:**
-- Referer policy relaxed (breaks payment processors, banking sites)
+* Referer policy relaxed (breaks payment processors, banking sites)
 - WebGL enabled (breaks interactive maps, some games)
 - ResistFingerprinting disabled 
 - etc (see the file itself for a complete list)
