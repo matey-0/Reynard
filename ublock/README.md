@@ -76,7 +76,7 @@ This is the core of Hard Mode, your curated list of 'good' domains.
 2. You'll see two panes: "Temporary rules" (top) and "Permanent rules" (bottom)
 3. Open `trimmed-dynamic-rules.txt` from the Reynard `ublock/` directory
 4. Copy all contents from the file
-5. Paste into the "tempoary rules" pane (bottom section)
+5. Paste into the "temporary rules" pane (bottom section)
 6. Click Save (top right)
 7. Click commit (top right)
 8. Make sure all the rules copied are in your "permanent rules" pane
@@ -92,8 +92,8 @@ Fine-tune uBlock's behavior for optimal Hard Mode performance.
 3. A new pane will open with `key: value` pairs
 4. Open `advanced-settings.txt` from the Reynard `ublock/` directory
 5. Copy the entire `advanced-settings.txt` file
-6. Delete the entire default settings file 
-7. Past the entire contents of the `advanced-settings.txt` file
+6. Select the entire text block, and delete it
+7. Paste the entire contents of the `advanced-settings.txt` file
 6. Click Apply changes (top left of the advanced settings pane)
 
 **Note:** This step is optional. The advanced settings file contains minor refinements, Hard Mode will work fine without them.
@@ -128,7 +128,6 @@ Time to set up the second filtering layer (static filters).
 **If you see red cells in all 3 of the 3rd-party rows, Hard Mode is working.**
 
 ### What to Expect on First Use
-
 **Some sites will break.** This is normal and expected, even with ~500 nooped CDNs.
 
 **Common issues you'll encounter:**
@@ -141,7 +140,7 @@ Time to set up the second filtering layer (static filters).
 
 **The fix:** Noop additional domains on a per-site or global basis. See "How to Use Hard Mode Effectively" below for the daily workflow.
 
-**Hard Mode is a one-time setup cost for long-term control and privacy.** Stick with it for 2-3 weeks and it becomes second nature. You'll thank your protectiveness when you hear about some new domain that p'wnd people en masse, that you managed to avoid by blocking everything. That's not to say you're 100% safe. You're not, even with the most advanced setup possible (which this is not), or the least advanced setup: user error is still the #1 source of failure.
+**Hard Mode is a one-time setup cost for long-term control and privacy.** Stick with it for 2-3 weeks and it becomes second nature. You'll thank your protectiveness when you hear about some new domain that pwned people en-masse, that you managed to avoid by blocking everything. That's not to say you're 100% safe. You're not, even with the most advanced setup possible (which this is not), or the least advanced setup: user error is still the #1 source of failure.
 
 ## How to use Hard Mode effectively
 ### Daily Workflow
@@ -261,7 +260,7 @@ Don't noop these ever:
 
 **You can always undo:**
 - Go to My rules tab in uBlock dashboard
-- Find the rule (format: `example.com * example.com noop`)
+- Find the rule (format: `example.com example.com * noop`)
 - Delete the line
 - Click commit, then save
 
@@ -320,8 +319,9 @@ Hard Mode is faster & lighter than default uBlock setups, and you have complete 
 ## Related/Further reading/cross-references
 **Community Resources:**
 - [r/uBlockOrigin](https://www.reddit.com/r/uBlockOrigin/) - Active community for troubleshooting
-- [uBlock Origin GitHub Issues](https://github.com/gorhill/uBlock/issues) - Report bugs or ask questions
-- **Official uBlock Origin Resources:**
+- [uBlock Origin GitHub Issues](https://github.com/gorhill/uBlock/issues) - Report bugs or ask questions  
+
+**Official uBlock Origin Resources:**  
 - [uBlock Origin Wiki - Blocking Mode: Hard Mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-hard-mode)
 - [uBlock Origin Wiki - Dynamic Filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering)
 - [uBlock Origin Wiki - Per-site Switches](https://github.com/gorhill/uBlock/wiki/Per-site-switches)
