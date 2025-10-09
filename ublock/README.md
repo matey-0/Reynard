@@ -352,6 +352,6 @@ I maintain the CDN allowlist based on my browsing habits, so suggestions for com
 - The uBlock Origin community for documentation, guides, and support
 
 **Filter List Maintainers:**
-- Dandelion Sprout, Fanboy, AdGuard, EasyList team, and all filter list maintainers whose work powers the second filtering layer
+- Dandelion Sprout, Fanboy, AdGuard, EasyList team, and all filter list maintainers whose work powers all the filterlists we rely on
 
 **Reynard** is my personal implementation of Hard Mode principles, refined over 6 months of daily use. All mistakes are mine, not uBlock or anyone else's
