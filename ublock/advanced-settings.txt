@@ -40,7 +40,7 @@ cacheStorageCompressionThreshold 65536
             selfieDelayInSeconds 53
     strictBlockingBypassDuration 120
            toolbarWarningTimeout 60
-             trustedListPrefixes ublock- adguard- easylist- user- mateo- https://raw.githubusercontent.com/Mateo-Grgic/personal-filter-lists/refs/heads/main/Mateo's%20Personal%20Cosmetic%20Filterlist https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/ubo-link-shorteners.txt
+             trustedListPrefixes ublock- adguard- easylist- user- https://raw.githubusercontent.com/Mateo-Grgic/personal-filter-lists/refs/heads/main/Mateo's%20Personal%20Cosmetic%20Filterlist https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList
                    uiPopupConfig unset
                         uiStyles unset
    updateAssetBypassBrowserCache true
