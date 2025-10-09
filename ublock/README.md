@@ -141,9 +141,43 @@ Time to set up the second filtering layer (static filters).
 
 **The fix:** Noop additional domains on a per-site or global basis. See "How to Use Hard Mode Effectively" below for the daily workflow.
 
-**Hard Mode is a one-time setup cost for long-term control and privacy.** Stick with it for 2-3 weeks and it becomes second nature. You'll thank your protectiveness when you hear about some new domain that p'wnd people en masse, that you managed to avoid by blocking everything. That's not to say you're 100% safe. You're not, even with the most advanced setup (which this is not), user error is the #1 source of failure.
+**Hard Mode is a one-time setup cost for long-term control and privacy.** Stick with it for 2-3 weeks and it becomes second nature. You'll thank your protectiveness when you hear about some new domain that p'wnd people en masse, that you managed to avoid by blocking everything. That's not to say you're 100% safe. You're not, even with the most advanced setup possible (which this is not), or the least advanced setup: user error is still the #1 source of failure.
 
 ## How to use Hard Mode effectively
+### Daily Workflow
+
+Hard Mode becomes manageable once you learn the pattern. Here's what happens 90% of the time:
+
+1. Visit a website
+2. Something breaks (content missing, features don't work, blank page)
+3. Open uBlock Origin panel (click extension icon, or set a shortcut to open uBlock Origin quickly: I use control+shift+u)
+4. Identify blocked 3rd-party domains (red cells in the matrix)
+5. Noop the likely culprit (usually a CDN, API, or content delivery domain)
+6. Reload the page and test
+7. Repeat if still broken (usually 1-3 noops per site)
+8. When you identify the offending site(s), confirm & save your preference to your dynamic rules
+
+After 2-3 weeks of daily browsing, you'll rarely encounter new breakage, and when you do, unbreaking is nearly instant. The setup pain is temporary, the control is permanent. 
+
+### Understanding the uBlock Origin Matrix
+
+<img width="1264" height="1092" alt="image" src="https://github.com/user-attachments/assets/ce2f7d90-5c71-4634-b748-e2e50b26f1d7" />  
+When you click the uBlock Origin icon on any webpage, you'll see the dynamic filtering matrix (if you've expanded uBlock fully):
+
+**What you're looking at:**
+- **Rows:** Resource types (all, image, css, media, script, frame, etc.)
+- **Columns:** Global rules (left) vs Per-site rules (right)
+- **Cell colors:**
+  - **Red:** Blocked
+  - **Green:** Allowed (skips all steps, including static filtering)
+  - **Gray:** Noop (no rule, falls through to static filters)
+  - **Light gray (only on right side):** Inherited rule from global scope
+
+**Hard Mode shows:**
+- **3rd-party script row:** Red in both columns (all 3rd-party scripts blocked by default)
+- **3rd-party frame row:** Red in both columns (all 3rd-party frames blocked by default)
+- **3rd-party row:** Red in both columns (all other 3rd-party content blocked by default)
+
 ### Falling back to easier modes 
 ### Troubleshooting 
 
