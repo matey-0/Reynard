@@ -98,6 +98,8 @@ Reynard is built on several principles:
 #### 4.) Restart LibreWolf 
   Quit and restart, changes should take effect  
 
+**Note:** The preference structure is the same between librewolf.overrides.cfg & standard Firefox user.js files. You can copy the contents of my librewolf.overrides.cfg into a user.js file and use it with stock Firefox, but other hardening steps will need to be applied afterwards, as many hardening prefs are left out of Reynard's librewolf.overrides.cfg file just because LibreWolf has them built-in already.
+
 ## Tested On:
 - Framework 13 (Ryzen AI 9) - [Fedora Linux 42]
 - 15" M3 MacBook Air - [MacOS 26 Tahoe]
