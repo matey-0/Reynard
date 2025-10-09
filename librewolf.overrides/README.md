@@ -101,6 +101,38 @@ The platform-specific preferences are documented in the config file. Read the in
 
 ## Note on privacy & security
 
+> **My approach:** This config prioritizes usability over maximum hardening. I don't use `privacy.resistFingerprinting`. Your browser can be fingerprinted reliably and consistently in seconds regardless (unless you're using Tor browser with no javascript or something, which isn't usable). I used resistFingerprinting for a couple years and know the trade-offs. It breaks 95% of sites in minor ways and 20% of sites in major ways. Not worth it *for me*. 
+
+### Philosophy
+
+This setup is already better than 99% of browser configurations. LibreWolf's baseline hardening (no telemetry, no Mozilla bloat, strict defaults) does the heavy lifting. I make trade-offs where they matter:
+
+**Where I reduce privacy:**
+- Referer policy relaxed (breaks payment processors, banking sites)
+- WebGL enabled (breaks interactive maps, some games)
+- ResistFingerprinting disabled 
+- etc (see the file itself for a complete list)
+
+These break too many things. The alternative is constantly troubleshooting or maintaining site-specific exceptions.  
+
+
+**Where I increase privacy:**
+- Disk caching disabled (writes browsing data to disk—hard no)
+- Geolocation disabled
+- Push notifications disabled
+- etc (see the file itself for a complete list)
+
+These break almost nothing and have decent payoffs.
+
+### The Trade-off Principle
+
+**I reduce privacy only when breakage is high. I increase privacy when breakage is low.**
+
+If you want maximum hardening at all costs, just use stock LibreWolf: they follow Arkenfox fairly closely. Reynard is for people who want a hardened browser that actually works well for daily driving.
+
+All specific privacy/security preferences are documented in the config file with inline comments.
+
+
 ## Common Customisations
 
 ## Credits/See Also 
