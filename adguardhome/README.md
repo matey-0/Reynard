@@ -28,7 +28,7 @@ See `dns-providers.txt` for full list.
 ## Installation
 
 1. Install [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)
-2. Add DNS providers from `dns-providers.txt` as upstreams
+2. Add DNS providers from `dns-providers.txt` as upstreams (set DNS settings to parallel requests)
 3. Add filter lists from `filterlists-used.txt`
 
 **Note:** This is documentation of my personal laptop setup.
