@@ -57,7 +57,7 @@ Reynard is built on several principles:
 
 #### 2.) Copy files to correct locations
   **For Native Linux install (pacman, dnf, apt, etc)**  
-  - Copy browser performance config  
+  - Copy the ```librewolf.overrides.cfg file``` to the proper path
   ```cp librewolf.overrides/librewolf.overrides.cfg ~/.librewolf/```  
   - Find your profile name, look for a directory ending in .default or .default-release
   *Tip: Type `about:profiles` in LibreWolf's address bar to see your profile path*
@@ -68,7 +68,7 @@ Reynard is built on several principles:
   ```cp css/userContent.css ~/.librewolf/[PROFILE_NAME]/chrome/```  
 
 **For Flatpak Linux Install**  
-  - Copy browser performance config  
+  - Copy the ```librewolf.overrides.cfg file``` to the proper path 
   ```cp librewolf.overrides/librewolf.overrides.cfg ~/.var/app/io.gitlab.librewolf-community/.librewolf/```  
   - Find your profile name, look for a directory ending in .default or .default-release  
   *Tip: Type `about:profiles` in LibreWolf's address bar to see your profile path*
@@ -98,6 +98,14 @@ Reynard is built on several principles:
 #### 4.) Restart LibreWolf 
   Quit and restart, changes should take effect  
 
+#### 5.) For other components or detailed guides, follow individual READMEs  
+  For the ```librewolf.overrides.cfg``` file, [librewolf.overrides.cfg setup](../librewolf.overrides/README.md)  
+  For the CSS setup, [userChrome.css & userContent.css setup](../css/README.md)  
+  For uBlock, [uBlock Origin Hard Mode Guide](../ublock/README.md)  
+  For a guide to general extentions, [Extentions Guide](../extensions/README.md)  
+  For AdGuard Home, [AdGuard Home customisations](../adguardhome/README.md)  
+  For the theme, [Theme install](../theme/README.md)  
+  
 **Note:** The preference structure is the same between librewolf.overrides.cfg & standard Firefox user.js files. You can copy the contents of my librewolf.overrides.cfg into a user.js file and use it with stock Firefox, but other hardening steps will need to be applied afterwards, as many hardening prefs are left out of Reynard's librewolf.overrides.cfg file just because LibreWolf has them built-in already.
 
 ## Tested On:
