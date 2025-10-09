@@ -57,11 +57,11 @@ Reynard is built on several principles:
 
 #### 2.) Copy files to correct locations
   **For Native Linux install (pacman, dnf, apt, etc)**  
-  - Copy the ```librewolf.overrides.cfg file``` to the proper path  
+  - Copy the librewolf.overrides.cfg file to the proper path  
   ```cp librewolf.overrides/librewolf.overrides.cfg ~/.librewolf/```  
 
 **For Flatpak Linux Install**  
-   - Copy the ```librewolf.overrides.cfg file``` to the proper path  
+   - Copy the librewolf.overrides.cfg file to the proper path  
   ```cp librewolf.overrides/librewolf.overrides.cfg ~/.var/app/io.gitlab.librewolf-community/.librewolf/```   
 
 **For macOS Install (Manual or Homebrew)**  
@@ -78,7 +78,7 @@ Reynard is built on several principles:
   Quit and restart, changes should take effect   
 
 #### 5.) For other components or detailed guides, follow individual READMEs  
-  For the ```librewolf.overrides.cfg``` file, [librewolf.overrides.cfg setup](../librewolf.overrides/README.md)  
+  For the librewolf.overrides.cfg file, [librewolf.overrides.cfg setup](../librewolf.overrides/README.md)  
   For the CSS setup, [userChrome.css & userContent.css setup](../css/README.md)  
   For uBlock, [uBlock Origin Hard Mode Guide](../ublock/README.md)  
   For a guide to general extentions, [Extentions Guide](../extensions/README.md)  
