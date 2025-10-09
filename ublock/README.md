@@ -160,9 +160,9 @@ Hard Mode becomes manageable once you learn the pattern. Here's what happens 90%
 After 2-3 weeks of daily browsing, you'll rarely encounter new breakage, and when you do, unbreaking is nearly instant. The setup pain is temporary, the control is permanent. 
 
 ### Understanding the uBlock Origin Matrix
-
-<img width="1264" height="1092" alt="image" src="https://github.com/user-attachments/assets/ce2f7d90-5c71-4634-b748-e2e50b26f1d7" />  
-When you click the uBlock Origin icon on any webpage, you'll see the dynamic filtering matrix (if you've expanded uBlock fully):
+When you click the uBlock Origin icon on any webpage, you'll see the dynamic filtering matrix (if you've expanded uBlock fully):  
+> Example image
+> <img width="1264" height="1092" alt="image" src="https://github.com/user-attachments/assets/ce2f7d90-5c71-4634-b748-e2e50b26f1d7" />  
 
 **What you're looking at:**
 - **Rows:** Resource types (all, image, css, media, script, frame, etc.)
