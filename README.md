@@ -147,7 +147,7 @@ This is a personal project shared just in case anyone finds it useful. Thank you
 **Thanks to everyone who works on these valuable projects, and thank you to anyone who might use Reynard**
 
 ### Useful Test Pages
-- [Baldur's Gate 3 patch 7 Release Notes](https://baldursgate3.game/news/patch-7-now-live_121) - for testing scrolling performance     
+- [Baldur's Gate 3 - Patch 7 Release Notes](https://baldursgate3.game/news/patch-7-now-live_121) - for testing scrolling performance     
 - [MSCHF's Lick The Rock Release Page](https://licktherock.com/) - for testing rendering performance
 - [Lenovo Thinkpad Home Page](https://www.lenovo.com/ca/en/c/laptops/thinkpad/) - for testing loading performance & detecting normally hidden breakage  
 ### Fingerprinting Test Pages
