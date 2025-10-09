@@ -135,6 +135,15 @@ All specific privacy/security preferences are documented in the config file with
 
 ## Common Customisations
 
+**You'll probably want to change:**
+- **Scroll speed:** `mousewheel.default.delta_multiplier_y`
+- **Display refresh rate:** `layout.frame_rate` (match your display)
+- **Tab width:** `browser.tabs.tabMinWidth` (default: 75px, I use 110px)
+- **Process count:** `dom.ipc.processCount` (set to your CPU core count ± 2)
+
+Most/all preferences are documented in the config file. Search for the preference name, adjust the value, save, restart.
+
+
 ## Credits/See Also 
 ### Credits:
 - [Betterfox](https://github.com/yokoffing/Betterfox) - Smoothfox, Peskyfox, Fastfox, Securefox configs
