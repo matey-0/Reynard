@@ -16,10 +16,10 @@ This librewolf.overrides.cfg file contains:
 ## Installation & Setup
 
 > **Note on Firefox compatibility:**  
-> With my ```librewolf.overrides.cfg``` file, there is very little reason to actually use Firefox.  
-> - However, if you really need to use Firefox for some reason, the ```librewolf.overrides.cfg``` file could just be renamed to ```user.js```, and then installed in the typical manner: placed in your Firefox user-profile.  
-> - Whilst this is possible, it is not recommend, because Reynard's ```librewolf.overrides.cfg``` file assumes LibreWolf's hardening is applied by default. LibreWolf removes all the Firefox telemetry, analytics, and also significantly hardens Firefox in numerous other ways.
-> - If you decide to adapt Reynard's ```librewolf.overrides.cfg``` file into a ```user.js``` file, I highly recommend you follow either BrainF+ck Sec's hardening guide, or the Arkenfox guide (Linked later in this guide, and in the main README).
+> With my `librewolf.overrides.cfg` file, there is very little reason to actually use Firefox.  
+> - However, if you really need to use Firefox for some reason, the `librewolf.overrides.cfg` file could just be renamed to `user.js`, and then installed in the typical manner: placed in your Firefox user-profile.  
+> - Whilst this is possible, it is not recommended, because Reynard's `librewolf.overrides.cfg` file assumes LibreWolf's hardening is applied by default. LibreWolf removes all the Firefox telemetry, analytics, and also significantly hardens Firefox in numerous other ways.
+> - If you decide to adapt Reynard's `librewolf.overrides.cfg` file into a `user.js` file, I highly recommend you follow either BrainF+ck Sec's hardening guide, or the Arkenfox guide (Linked later in this guide, and in the main README).
 ### Installation Steps:
 
 #### 1.) Clone the repo:  
@@ -41,22 +41,50 @@ This librewolf.overrides.cfg file contains:
   ```cp librewolf.overrides/librewolf.overrides.cfg ~/.librewolf/```
 
 #### 3.) Configure for your hardware
-  Edit the librewolf.overrides.cfg file, comment out the currently active Framework 13 profile.  
-  Utilise inline comments to determine the correct preset for you, uncomment, and make any edits if required  
-  Glance over other prefs, modify any that you think you should.  
+* Comment out my active Framework 13 profile (around line 180) by adding /* before the section, and */ afterwards.  
+* Scroll up and find the template that best matches the hardware specs you have. Modify preferences like `dom.ipc.processCount` & `layout.frame_rate` to match your physical hardware, and tune `mousewheel.default.delta_multiplier_y` to your preferred scrolling speed.  
+* Glance over all preferences, change any you find personally problematic or worth changing.  
 
 #### 4.) Restart LibreWolf 
-  Quit and restart, changes should take effect  
+  Quit and restart, changes should take effect.
 
-## Understanding the performance templates 
+#### 5.) Verify it loaded:
+* Open LibreWolf
+* Type `about:config` in the address bar
+* Search for a unique preference like `browser.compactmode.show`
+* If it's set to true, your config loaded successfully
+
+## Understanding the Performance Templates
+
+> **Note:** This is a browser. Browsers are relatively lightweight compared to compiling code or rendering video. These performance tweaks are probably overkill for most people, your browser will be fine with the defaults. However, that being said, I like having a faster browser.
+
+### Quick Guide
+
+The config file includes several hardware-specific performance templates (low-end, mid-range, high-end, plus my custom configs for my Framework 13, Steam Deck, and MacBook Air).
+
+**How to use them:**
+1. Open `librewolf.overrides.cfg` in a text editor
+2. Find the performance template section (around line 90)
+3. Read the inline comments—they explain what each preference does
+4. Uncomment the template closest to your hardware (remove `/*` and `*/`)
+5. Adjust specific values like `dom.ipc.processCount` (set to your CPU core count ± 2) and `layout.frame_rate` (set to your display refresh rate)
+6. Make sure you've commented my default (active) Framework 13 profile, it's at the end and will take precedence if you don't comment it out. 
+6. Save, restart LibreWolf
+
+**Only one template should be active at a time.** Make sure all others stay commented out.
+
+**Key things to tune:**
+- `dom.ipc.processCount` → Your physical CPU core count ± 2
+- `layout.frame_rate` → Your display refresh rate (60, 90, 120, 144, etc.)
+- `mousewheel.default.delta_multiplier_y` → Scroll speed is platform dependant and up to personal preference
+
+Everything should be documented in the config file itself (if it's not, I'm currently working on adding documentation inline). If you want to understand what a specific preference does, the inline comments explain it.
 
 ## Platform specific settings (Linux & macOS)
 
 ## Note on privacy & security
 
 ## Common Customisations
-
-## Troubleshooting 
 
 ## Credits/See Also 
 ### Credits:
