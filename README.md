@@ -78,12 +78,12 @@ Reynard is built on several principles:
   Quit and restart, changes should take effect   
 
 #### 5.) For other components or detailed guides, follow individual READMEs  
-  For the librewolf.overrides.cfg file, [librewolf.overrides.cfg setup](../librewolf.overrides/README.md)  
-  For the CSS setup, [userChrome.css & userContent.css setup](../css/README.md)  
-  For uBlock, [uBlock Origin Hard Mode Guide](../ublock/README.md)  
-  For a guide to general extentions, [Extentions Guide](../extensions/README.md)  
-  For AdGuard Home, [AdGuard Home customisations](../adguardhome/README.md)  
-  For the theme, [Theme install](../theme/README.md)  
+  For the librewolf.overrides.cfg file, [librewolf.overrides.cfg setup](../blob/main/librewolf.overrides/README.md)  
+  For the CSS setup, [userChrome.css & userContent.css setup](../blob/main/css/README.md)  
+  For uBlock, [uBlock Origin Hard Mode Guide](../blob/main/ublock/README.md)  
+  For a guide to general extentions, [Extentions Guide](../blob/main/extensions/README.md)  
+  For AdGuard Home, [AdGuard Home customisations](../blob/main/adguardhome/README.md)  
+  For the theme, [Theme install](../blob/main/theme/README.md)  
   
 **Note:** The preference structure is the same between librewolf.overrides.cfg & standard Firefox user.js files. You can copy the contents of my librewolf.overrides.cfg into a user.js file and use it with stock Firefox, but other hardening steps will need to be applied afterwards, as many hardening prefs are left out of Reynard's librewolf.overrides.cfg file just because LibreWolf has them built-in already.
 
