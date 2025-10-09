@@ -42,7 +42,7 @@ This librewolf.overrides.cfg file contains:
 
 #### 3.) Configure for your hardware
 * Comment out my active Framework 13 profile (around line 180) by adding /* before the section, and */ afterwards.  
-* Scroll up and find the template that best matches the hardware specs you have. Modify preferences like `dom.ipc.processCount` & `layout.frame_rate` to match your physical hardware, and tune `mousewheel.default.delta_multiplier_y` to your preferred scrolling speed.  
+* Scroll up and find the template that best matches the hardware specs you have. Modify preferences like `dom.ipc.processCount` & `layout.frame_rate` to match your physical hardware, and tune `mousewheel.default.delta_multiplier_x/y/z` to your preferred scrolling speed.  
 * Glance over all preferences, change any you find personally problematic or worth changing.  
 
 #### 4.) Restart LibreWolf 
@@ -80,7 +80,24 @@ The config file includes several hardware-specific performance templates (low-en
 
 Everything should be documented in the config file itself (if it's not, I'm currently working on adding documentation inline). If you want to understand what a specific preference does, the inline comments explain it.
 
-## Platform specific settings (Linux & macOS)
+## Platform-Specific Settings (Linux & macOS)
+
+> **Platform support:** This config is optimised for Linux (Wayland + GTK specifically, Qt should work natively as well, but less tested). I've tested it on Fedora and SteamOS. macOS works but isn't specifically optimised. Windows isn't considered at all, I don't use or have access to a Windows device.
+
+### What's Included
+
+Reynard's librewolf.overrides.cfg file includes Linux-specific optimizations for:
+- WebRender GPU acceleration (Wayland compositing)
+- GTK integration (native file pickers, portal support, gestures)
+- Hardware video acceleration (VA-API)
+- Touchpad gestures and swipes
+- Proper ffmpeg usage
+
+**On macOS:** Most of these prefs either apply, do nothing, or are harmless. However, I've had issues with webrender on macOS in the past using different preferences. If your Mac is using CPU rendering instead of GPU, try disabling `gfx.webrender.all` in the config.
+
+**On Windows:** Not tested, not supported: Might be completely broken.
+
+The platform-specific preferences are documented in the config file. Read the inline comments for details on what each one does.
 
 ## Note on privacy & security
 
