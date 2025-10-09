@@ -143,10 +143,13 @@ This is a personal project shared just in case anyone finds it useful. Thank you
 - [Ranum](https://www.ranum.com/security/computer_security/editorials/dumb/) - General security blog
 - [RFPTargets](https://searchfox.org/firefox-main/source/toolkit/components/resistfingerprinting/RFPTargets.inc) - For resist fingerprinting targets reference
 - [uBlock Wiki](https://github.com/gorhill/uBlock/wiki/) - Very useful toolkit for learning about uBlock Origin features
+
+**Thanks to everyone who works on these valuable projects, and thank you to anyone who might use Reynard**
+
 ### Useful Test Pages
-https://baldursgate3.game/news/patch-7-now-live_121 - for testing scrolling performance     
-https://licktherock.com/ - for testing rendering performance  
-https://www.lenovo.com/ca/en/c/laptops/thinkpad/ - for testing loading performance & detecting normally hidden breakage  
+- [Baldur's Gate 3 patch 7 Release Notes](https://baldursgate3.game/news/patch-7-now-live_121) - for testing scrolling performance     
+- [MSCHF's Lick The Rock Release Page](https://licktherock.com/) - for testing rendering performance
+- [Lenovo Thinkpad Home Page](https://www.lenovo.com/ca/en/c/laptops/thinkpad/) - for testing loading performance & detecting normally hidden breakage  
 ### Fingerprinting Test Pages
 > **Note:** Reynard makes privacy/usability trade-offs documented inline in `librewolf.overrides.cfg`. These may increase fingerprinting surface compared to maximum-hardened LibreWolf. However, even vanilla LibreWolf is fingerprintable due to its unique characteristics and the many surfaces browsers & JavaScript expose. Test your configuration and decide if the trade-offs are acceptable for your threat model—but know that no browser is truly private. Even Tor requires caution.
 
@@ -155,9 +158,9 @@ https://browserleaks.com/
 https://coveryourtracks.eff.org/  
 https://abrahamjuliot.github.io/creepjs/  
 https://fingerprint.com/  
+
 ## Related Projects:
-- [personal-filter-lists](https://github.com/Mateo-Grgic/personal-filter-lists) - My custom uBlock Origin and AdGuard Home filter lists (564 network + 471 cosmetic rules)
-**Thanks to everyone who works on these valuable projects, and thank you to anyone who might use Reynard**
+- [personal-filter-lists](https://github.com/Mateo-Grgic/personal-filter-lists) - My custom uBlock Origin filter lists
 
 ## Preview Images
 **New Tab Page**  
