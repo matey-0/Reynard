@@ -7,7 +7,7 @@ Instead of using a list with millions of trackers, ads, malware, telemetry, and 
 
 **Think of the default deny policy in terms of a castle.** A 'good' castle doesn't let just anyone in; it blocks everyone from entering by default, and only lets in the handful of people verified to be good, manually. A 'bad' castle lets anyone and everyone in, unless they're on the _naughty list_. The 'good' castle will be safe from spies & sieges for far longer than the 'bad' castle ever could, no matter how fast that _naughty list_ grows. 
 
-The only reason a default deny policy isn't used more often, is that it requires knowledge to maintain & use, and requires a large amount of initial setup work.
+The only reason(s) a default deny policy isn't used more often, is that it requires knowledge to maintain & use, and requires a large amount of initial setup work.
 
 uBlock Origin has two main component parts for blocking: static filter lists, and dynamic rules. Domains are first parsed through the dynamic filtering rules, where it's determined if they go through or not. If they're allowed, they can then go through to static filters, where their content is parsed and modified. Otherwise, their content never touches your computer.  
 
