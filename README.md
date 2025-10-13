@@ -38,7 +38,12 @@ Reynard is built on several principles:
 - Upstream DNS providers (HTTPS, TLS, QUIC)
 ### Extension Setup and Recommendations 
 - Optimised for privacy, functionality, complete coverage, speed
-- Proper compatibility and collaborative functionality
+- Proper compatibility and collaborative functionality  
+
+## Regarding VPNs
+> **Note:** VPNs don't make you anonymous, they are just an extra layer of security/privacy. They are mainly useful for preventing your ISP from tracking you, circumventing location or network-based censorship, and for preventing IP-address based tracking.   
+
+I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN. If you decide to use a VPN, you will need to setup AdGuard Home to work properly with the VPN. A VPN is not essential, but very useful.  
 
 ## Quick Start 
 ### Requirements
@@ -110,11 +115,6 @@ All devices using latest LibreWolf, currently Librewolf 143.0.4-1
 - You need maximum privacy in all situations
 
 **LibreWolf already has excellent privacy defaults.** Reynard enhances performance and usability, but isn't necessary for privacy beyond a handful of prefs.
-
-## Regarding VPNs
-> **Note:** VPNs don't make you anonymous, they are just an extra layer of security/privacy. They are mainly useful for preventing your ISP from tracking you, circumventing location or network-based censorship, and for preventing IP-address based tracking.   
-
-I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN. If you decide to use a VPN, you will need to setup AdGuard Home to work properly with the VPN.  
 
 ## About Reynard
 I've been hardening my browser for the past two years, starting with Firefox when I was ~14. In April of this year, after the Firefox drama around advertising and data collection, I switched to LibreWolf and rebuilt my entire configuration from the ground up. I'm 16 now, and Reynard is the result: lots of work built on lots of learning about browser internals, privacy trade-offs, and performance optimisations.  
