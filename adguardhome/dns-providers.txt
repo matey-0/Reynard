@@ -1,9 +1,0 @@
-# Mullvad DNS (Primary DNS Resolver)
-tls://dns.mullvad.net
-
-
-# Fallback DNS Servers (ControlD, Quad9, NextDNS, UncensoredDNS)
-tls://p0.freedns.controld.com
-tls://dns.quad9.net
-tls://dns.nextdns.io
-https://anycast.uncensoreddns.org/dns-query
