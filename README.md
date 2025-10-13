@@ -150,6 +150,11 @@ https://coveryourtracks.eff.org/
 https://abrahamjuliot.github.io/creepjs/  
 https://fingerprint.com/  
 
+## Regarding VPNs
+> **Note:** VPNs don't make you anonymous, they are just an extra layer of security/privacy. They are mainly useful for preventing your ISP from tracking you, circumventing location or network-based censorship, and for preventing IP-address based tracking.   
+
+I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN. If you decide to use a VPN, you will need to setup AdGuard Home to work properly with the VPN.  
+
 ## Related Projects:
 - [personal-filter-lists](https://github.com/Mateo-Grgic/personal-filter-lists) - My custom uBlock Origin filter lists
 
