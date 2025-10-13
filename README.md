@@ -90,7 +90,7 @@ Reynard is built on several principles:
 ## Regarding VPNs
 > **Note:** VPNs don't make you anonymous, they are just an extra layer of security/privacy. They are mainly useful for preventing your ISP from tracking you, circumventing location or network-based censorship, and for preventing IP-address based tracking.   
 
-A VPN is not essential, but I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN. If you decide to use a VPN and AdGuard Home (like I do), you will need to setup AdGuard Home to work properly with the VPN.  
+A VPN is not essential, but I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN. However, because I use Mullvad VPN, I use their upstream DNS provider (it's fast & quick), so my AdGuard Home setup is only used when not connected to Mullvad VPN. You technically can use AdGuard Home with Mullvad VPN, but I personally have had nothing but issue with trying to do that, and it's somewhat slow. 
 
 ## Tested On:
 - Framework 13 (Ryzen AI 9) - [Fedora Linux 42]
