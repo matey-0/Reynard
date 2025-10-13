@@ -7,7 +7,7 @@ My curated list of LibreWolf/Firefox extensions. Minimal, focused on privacy and
 | Extension | Why I Use It | Link |
 |-----------|--------------|------|
 | **uBlock Origin** | The content blocker. Efficient, lightweight, highly configurable. See my [Hard Mode guide](../ublock/README.md) for setup. | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) |
-| **LocalCDN** | Blocks tracking through CDNs by redirecting to local resources. Complements uBlock Origin nicely. | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes) |
+| **LocalCDN** | Blocks tracking through CDNs by redirecting to local resources. Complements uBlock Origin nicely. Slighly speeds up loading times of pages. | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes) |
 | **Violentmonkey** | Userscript manager. Open source, supports tons of scripts for site customization and automation. | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/) |
 
 **Note:** For uBlock Origin configuration, see my [Hard Mode guide](../ublock/README.md).
