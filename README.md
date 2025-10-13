@@ -43,9 +43,10 @@ Reynard is built on several principles:
 ## Regarding VPNs
 > **Note:** VPNs don't make you anonymous, they are just an extra layer of security/privacy. They are mainly useful for preventing your ISP from tracking you, circumventing location or network-based censorship, and for preventing IP-address based tracking.   
 
-A VPN is not essential, but very useful, that being said, I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN. If you decide to use a VPN and AdGuard Home (like I do), you will need to setup AdGuard Home to work properly with the VPN.   
+A VPN is not essential, but I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN. If you decide to use a VPN and AdGuard Home (like I do), you will need to setup AdGuard Home to work properly with the VPN.   
 
 ## Quick Start 
+> TL;DR: Clone repo → Copy config → Edit for your hardware → Restart LibreWolf
 ### Requirements
 - Librewolf 143+
 - Linux-based operating system (preferable), macOS support work in progress
@@ -85,7 +86,7 @@ A VPN is not essential, but very useful, that being said, I recommend using a we
   For the librewolf.overrides.cfg file, [librewolf.overrides.cfg setup](../main/librewolf.overrides/README.md)  
   For the CSS setup, [userChrome.css & userContent.css setup](../main/css/README.md)  
   For uBlock, [uBlock Origin Hard Mode Guide](../main/ublock/README.md)  
-  For a guide to general extentions, [Extentions Guide](../main/extensions/README.md)  
+  For a guide to general Extensions, [Extensions Guide](../main/extensions/README.md)  
   For AdGuard Home, [AdGuard Home customisations](../main/adguardhome/README.md)  
   For the theme, [Theme install](../main/theme/README.md)  
   
@@ -102,7 +103,7 @@ All devices using latest LibreWolf, currently Librewolf 143.0.4-1
 - Low-end, weaker, mid-range, and high-end device templates require third-party testing. Contributions welcome.
 
 ## Disclaimer
-**This configuration suite is for advanced users.** Expect:
+**This configuration suite is for advanced users**, Expect:  
 - Occasional site breakage (especially with uBlock Origin Hard Mode)
 - Need to manually adjust performance settings for your hardware
 - Some privacy/security prefs disabled for compatibility (documented inline)
@@ -116,7 +117,7 @@ All devices using latest LibreWolf, currently Librewolf 143.0.4-1
 **LibreWolf already has excellent privacy defaults.** Reynard enhances performance and usability, but isn't necessary for privacy beyond a handful of prefs.
 
 ## About Reynard
-I've been hardening my browser for the past two years, starting with Firefox when I was ~14. In April of this year, after the Firefox drama around advertising and data collection, I switched to LibreWolf and rebuilt my entire configuration from the ground up. I'm 16 now, and Reynard is the result: lots of work built on lots of learning about browser internals, privacy trade-offs, and performance optimisations.  
+I've been hardening my browser for the past two years, starting with Firefox when I was ~14. In April of this year, after the Firefox drama around advertising and data collection, I switched to LibreWolf and rebuilt my entire configuration from the ground up. I made this repo in October of 2025 (When I was 16), and I've been updating it since.
 
 Everything I know about browsers came from reading Firefox source documentation, testing configurations, breaking things, Wikipedia, projects like Arkenfox and Betterfox, and being part of the privacy community. I'm no privacy expert or browser engineer, just interested in & aware of what's out there.  
 
