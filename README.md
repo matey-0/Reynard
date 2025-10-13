@@ -33,9 +33,6 @@ Reynard is built on several principles:
 - Default Deny policy
 - Optional advanced optimisations and settings
 - Personal filter lists
-### AdGuard Home basic configurations 
-- Curated Filter lists
-- Upstream DNS providers (HTTPS, TLS, QUIC)
 ### Extension Setup and Recommendations 
 - Optimised for privacy, functionality, complete coverage, speed
 - Proper compatibility and collaborative functionality   
@@ -82,7 +79,6 @@ Reynard is built on several principles:
   For the CSS setup, [userChrome.css & userContent.css setup](../main/css/README.md)  
   For uBlock, [uBlock Origin Hard Mode Guide](../main/ublock/README.md)  
   For a guide to general Extensions, [Extensions Guide](../main/extensions/README.md)  
-  For AdGuard Home, [AdGuard Home customisations](../main/adguardhome/README.md)  
   For the theme, [Theme install](../main/theme/README.md)  
   
 **Note:** The preference structure is the same between librewolf.overrides.cfg & standard Firefox user.js files. You can copy the contents of my librewolf.overrides.cfg into a user.js file and use it with stock Firefox, but other hardening steps will need to be applied afterwards, as many hardening prefs are left out of Reynard's librewolf.overrides.cfg file just because LibreWolf has them built-in already.
@@ -90,7 +86,7 @@ Reynard is built on several principles:
 ## Regarding VPNs
 > **Note:** VPNs don't make you anonymous, they are just an extra layer of security/privacy. They are mainly useful for preventing your ISP from tracking you, circumventing location or network-based censorship, and for preventing IP-address based tracking.   
 
-A VPN is not essential, but I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN. However, because I use Mullvad VPN, I use their upstream DNS provider (it's fast & quick), so my AdGuard Home setup is only used when not connected to Mullvad VPN. You technically can use AdGuard Home with Mullvad VPN, but I personally have had nothing but issue with trying to do that, and it's somewhat slow. 
+A VPN is not essential, but I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN.  
 
 ## Tested On:
 - Framework 13 (Ryzen AI 9) - [Fedora Linux 42]
@@ -130,7 +126,6 @@ This is a personal project shared just in case anyone finds it useful. Thank you
 ### Core Technologies
 - [LibreWolf](https://librewolf.net/) - Privacy-focused Firefox fork
 - [uBlock Origin](https://github.com/gorhill/uBlock) - Efficient content blocker
-- [AdGuard Home](https://adguard.com/en/adguard-home/overview.html) - Network-wide ad blocking
 - [Firefox/Mozilla](https://www.firefox.com/en-CA/) - Firefox is the whole reason we're here, despite all the shortcomings, they still make the browser base.
 ### Configuration Inspiration & Reference
 - [Betterfox](https://github.com/yokoffing/Betterfox) - Smoothfox, Peskyfox, Fastfox, Securefox configs
