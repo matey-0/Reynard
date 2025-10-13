@@ -1,51 +1,9 @@
-# ControlD
-https://freedns.controld.com/p0
-https://freedns.controld.com/uncensored
-https://freedns.controld.com/no-ads
-https://freedns.controld.com:443/x-oisd-basic
-tls://uncensored.freedns.controld.com
-tls://x-oisd-basic.freedns.controld.com
-tls://p0.freedns.controld.com
-
-# Wikimedia DNS
-https://wikimedia-dns.org/dns-query
-tls://wikimedia-dns.org
-
-# Quad9
-https://dns.quad9.net/dns-query
-https://dns10.quad9.net/dns-query
-https://dns11.quad9.net/dns-query
-tls://dns.quad9.net
-
-# LibreDNS
-https://doh.libredns.gr/dns-query
-https://doh.libredns.gr/noads
-tls://dot.libredns.gr
-tls://noads.libredns.gr
-
-# Mullvad DNS
-https://dns.mullvad.net/dns-query
-https://adblock.dns.mullvad.net/dns-query
+# Mullvad DNS (Primary DNS Resolver)
 tls://dns.mullvad.net
-tls://adblock.dns.mullvad.net
 
-# AdGuard DNS
-https://unfiltered.adguard-dns.com/dns-query
-https://dns.adguard-dns.com/dns-query
-tls://dns.adguard-dns.com
 
-# dns0
-https://dns0.eu
-https://zero.dns0.eu
-tls://zero.dns0.eu
-quic://zero.dns0.eu
-
-# UncensoredDNS
-https://unicast.uncensoreddns.org/dns-query
-https://anycast.uncensoreddns.org/dns-query
-
-# NextDNS
-https://dns.nextdns.io
-https://anycast.dns.nextdns.io
+# Fallback DNS Servers (ControlD, Quad9, NextDNS, UncensoredDNS)
+tls://p0.freedns.controld.com
+tls://dns.quad9.net
 tls://dns.nextdns.io
-tls://anycast.dns.nextdns.io
+https://anycast.uncensoreddns.org/dns-query
