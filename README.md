@@ -7,7 +7,7 @@ Reynard transforms LibreWolf into a faster, more comfortable browser without maj
 ## Philosophy
 Reynard is built on several principles:
 - **Privacy-first**: Respects LibreWolf's excellent defaults, enhances where sensible, reduces where practical
-- **Performance-optimized**: Hardware-specific tuning for my Framework 13, Steam Deck, m3 MacBook Air, and includes generic profiles for other devices
+- **Performance-optimized**: Hardware-specific tuning for my Framework 13, Steam Deck, M3 MacBook Air, and includes generic profiles for other devices
 - **Usable**: Minimalist UI, smooth scrolling, sensible trade-offs
 - **Transparent**: Most preferences documented with inline comments
 - **Reproducible**: Clear instructions, tested configurations
