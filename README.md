@@ -38,12 +38,7 @@ Reynard is built on several principles:
 - Upstream DNS providers (HTTPS, TLS, QUIC)
 ### Extension Setup and Recommendations 
 - Optimised for privacy, functionality, complete coverage, speed
-- Proper compatibility and collaborative functionality  
-
-## Regarding VPNs
-> **Note:** VPNs don't make you anonymous, they are just an extra layer of security/privacy. They are mainly useful for preventing your ISP from tracking you, circumventing location or network-based censorship, and for preventing IP-address based tracking.   
-
-A VPN is not essential, but I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN. If you decide to use a VPN and AdGuard Home (like I do), you will need to setup AdGuard Home to work properly with the VPN.   
+- Proper compatibility and collaborative functionality   
 
 ## Quick Start 
 > TL;DR: Clone repo → Copy config → Edit for your hardware → Restart LibreWolf
@@ -91,6 +86,11 @@ A VPN is not essential, but I recommend using a well-regarded VPN in addition to
   For the theme, [Theme install](../main/theme/README.md)  
   
 **Note:** The preference structure is the same between librewolf.overrides.cfg & standard Firefox user.js files. You can copy the contents of my librewolf.overrides.cfg into a user.js file and use it with stock Firefox, but other hardening steps will need to be applied afterwards, as many hardening prefs are left out of Reynard's librewolf.overrides.cfg file just because LibreWolf has them built-in already.
+
+## Regarding VPNs
+> **Note:** VPNs don't make you anonymous, they are just an extra layer of security/privacy. They are mainly useful for preventing your ISP from tracking you, circumventing location or network-based censorship, and for preventing IP-address based tracking.   
+
+A VPN is not essential, but I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN. If you decide to use a VPN and AdGuard Home (like I do), you will need to setup AdGuard Home to work properly with the VPN.  
 
 ## Tested On:
 - Framework 13 (Ryzen AI 9) - [Fedora Linux 42]
