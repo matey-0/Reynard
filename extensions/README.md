@@ -26,7 +26,7 @@ My curated list of LibreWolf/Firefox extensions. Minimal, focused on privacy and
 
 - **uBlock Origin** - Can't be replaced, essential
 - **LocalCDN** - Small but effective privacy win, slightly speeds up loading times
--- **Violentmonkey** - Flexible tool when you need it, can replace most extensions
+- **Violentmonkey** - Flexible tool when you need it, can replace most extensions
 
 Everything else is disabled by default and enabled only when needed.
 
