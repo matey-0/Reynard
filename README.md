@@ -103,7 +103,8 @@ All devices using latest LibreWolf, currently Librewolf 143.0.4-1
 - Low-end, weaker, mid-range, and high-end device templates require third-party testing. Contributions welcome.
 
 ## Disclaimer
-**This configuration suite is for advanced users**, Expect:  
+**This configuration suite is for advanced users.**   
+Expect:  
 - Occasional site breakage (especially with uBlock Origin Hard Mode)
 - Need to manually adjust performance settings for your hardware
 - Some privacy/security prefs disabled for compatibility (documented inline)
