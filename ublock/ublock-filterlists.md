@@ -1,5 +1,5 @@
 # Filterlists I use
-> ## Note: Enabling all lists is probably overkill, especially with hard mode. The uBlock Developers do warn about conflicting rules, however I've noticed no breakage, and my experience has been only positive. YMMV.
+> ### Note: Enabling all lists is probably overkill, especially with hard mode. The uBlock Developers do warn about conflicting rules, however I've noticed no breakage, and my experience has been only positive. YMMV.
 
 Built-In:  
 <img width="1004" height="508" alt="image" src="https://github.com/user-attachments/assets/d7ede2c7-e2bf-4995-b267-862e532a75ad" />  
@@ -10,7 +10,7 @@ Ads:
 Privacy:  
 <img width="1036" height="314" alt="image" src="https://github.com/user-attachments/assets/7efbaaa8-4adf-48ee-ac3d-89a5a1c6f3bd" />  
 
-Malware protection, security:  
+Malware protection, security: 
 <img width="942" height="188" alt="image" src="https://github.com/user-attachments/assets/f9c48acd-b4b4-4a3e-867f-4aa5eaddda4d" />  
 
 Multipurpose:  
