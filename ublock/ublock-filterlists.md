@@ -1,5 +1,5 @@
 # Filterlists I use
-### Note: Enabling all lists is probably overkill, especially with hard mode. However, I've noticed no breakage, and my experience has been only positive. YMMV.
+### Note: Enabling all lists is probably overkill, especially with hard mode. The uBlock Developers do warn about conflicting rules, however I've noticed no breakage, and my experience has been only positive. YMMV.
 
 Built-In:  
 <img width="1004" height="508" alt="image" src="https://github.com/user-attachments/assets/d7ede2c7-e2bf-4995-b267-862e532a75ad" />  
@@ -26,7 +26,7 @@ Annoyances:
 <img width="962" height="752" alt="image" src="https://github.com/user-attachments/assets/be49cf1e-9dc5-40d4-b87d-00a053aa9a66" />  
 
 Custom:  
-<img width="1122" height="504" alt="image" src="https://github.com/user-attachments/assets/3e84da52-e5f4-4f1d-aeba-e40872deef65" />  
+<img width="1110" height="438" alt="image" src="https://github.com/user-attachments/assets/5397f136-8350-4469-93c2-d923f9d770e7" />
 
 ### Recommended Filter Lists
 
@@ -36,17 +36,18 @@ My setup uses **all of the default uBlock Origin lists** (ads, privacy, malware,
 - [Dandelion Sprout's Annoyances List](https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList) - Cookie banners, newsletter popups, etc.
 - [Fanboy's Annoyances](https://secure.fanboy.co.nz/fanboy-annoyance_ubo.txt) - Social widgets, annoying UI elements
 - [I don't care about cookies](https://www.i-dont-care-about-cookies.eu/abp/) - Cookie banners
-- [Mateo's Personal Cosmetic Filter List](https://raw.githubusercontent.com/Mateo-Grgic/personal-filter-lists/refs/heads/main/Mateo's%20Personal%20Cosmetic%20Filterlist) - My personal cosmetic filters - **Use with caution, very opinionated**
 
 **Privacy & Tracking:**
 - [AdGuard Tracking Protection Filter](https://filters.adtidy.org/extension/ublock/filters/3.txt) - Additional tracker coverage beyond EasyPrivacy
 - [ClearURLs For uBo (Unofficial)](https://raw.githubusercontent.com/DandelionSprout/adfilt/refs/heads/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt) - Strips tracking parameters from URLs
-- [Mateo's Misc Tracker Block List](https://raw.githubusercontent.com/Mateo-Grgic/personal-filter-lists/refs/heads/main/Mateo's%20Misc%20Tracker%20Block%20List) - My personal tracker list
+
+**Privacy, Tracking, Annoyances, etc**
+- [Personal Unified Filterlist](https://raw.githubusercontent.com/Mateo-Grgic/Personal-Filterlists/refs/heads/main/Unified.txt) - My personal filterlists, combined into one list. 
 
 **Why this combination?**  
 The default lists provide extremely comprehensive baseline coverage. Custom lists fill gaps in annoyance blocking and tracking protection that the uBlock team *choose* to not filter (not maliciously, just not to break everything & bloat the default lists). My personal lists are extremely aggressive. Consider them optional or use as inspiration for your own rules.
 
-**Important:** If you import my personal cosmetic filter list, expect site breakage. It's designed for my browsing habits and aggressively hides elements I find annoying. The tracker list is safer for general use.
+**Important:** If you import my personal lists (especially cosmetic or unified), expect site breakage. It's designed for my browsing habits and aggressively hides elements I find annoying.
 
 
 
