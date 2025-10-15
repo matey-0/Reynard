@@ -1,5 +1,5 @@
 # Filterlists I use
-### Note: Enabling all lists is probably overkill, especially with hard mode. The uBlock Developers do warn about conflicting rules, however I've noticed no breakage, and my experience has been only positive. YMMV.
+> ## Note: Enabling all lists is probably overkill, especially with hard mode. The uBlock Developers do warn about conflicting rules, however I've noticed no breakage, and my experience has been only positive. YMMV.
 
 Built-In:  
 <img width="1004" height="508" alt="image" src="https://github.com/user-attachments/assets/d7ede2c7-e2bf-4995-b267-862e532a75ad" />  
