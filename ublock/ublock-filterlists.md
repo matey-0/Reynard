@@ -47,7 +47,7 @@ My setup uses **all of the default uBlock Origin lists** (ads, privacy, malware,
 **Why this combination?**  
 The default lists provide extremely comprehensive baseline coverage. Custom lists fill gaps in annoyance blocking and tracking protection that the uBlock team *choose* to not filter (not maliciously, just not to break everything & bloat the default lists). My personal lists are extremely aggressive. Consider them optional or use as inspiration for your own rules.
 
-**Important:** If you import my personal lists (especially cosmetic or unified), expect site breakage. It's designed for my browsing habits and aggressively hides elements I find annoying.
+**Important:** If you import my personal lists (especially cosmetic or unified), expect site breakage. It's designed for my browsing habits, and agressively blocks trackers & 'annoying' elements.
 
 
 
