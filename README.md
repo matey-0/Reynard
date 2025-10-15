@@ -152,7 +152,7 @@ https://abrahamjuliot.github.io/creepjs/
 https://fingerprint.com/  
 
 ## Related Projects:
-- [personal-filter-lists](https://github.com/Mateo-Grgic/personal-filter-lists) - My custom uBlock Origin filter lists
+- [Personal-Filterlists](https://github.com/Mateo-Grgic/Personal-Filterlists) - My custom uBlock Origin filter lists
 
 ## Preview Images
 **New Tab Page**  
