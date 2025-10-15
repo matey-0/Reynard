@@ -114,7 +114,7 @@ Expect:
 **LibreWolf already has excellent privacy defaults.** Reynard enhances performance and usability, but isn't necessary for privacy beyond a handful of prefs.
 
 ## About Reynard
-I've been hardening my browser for the past two years, starting with Firefox when I was ~14. In April of this year, after the Firefox drama around advertising and data collection, I switched to LibreWolf and rebuilt my entire configuration from the ground up. I created this repo in October of 2025 (When I was 16), and I've been updating it since.
+I've been hardening my browser for the past two years, starting with Firefox when I was ~14. In Febuary of this 2025, after the Firefox drama around advertising and data collection (amongst other things, I was looking to switch before that anyways), I switched to LibreWolf and rebuilt my entire configuration from the ground up. I created this repo in October of 2025 (When I was 16), and I've been updating it since.
 
 Everything I know about browsers came from reading Firefox source documentation, testing configurations, breaking things, Wikipedia, projects like Arkenfox and Betterfox, and being part of the privacy community. I'm no privacy expert or browser engineer, just interested in & aware of what's out there.  
 
