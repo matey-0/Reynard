@@ -40,7 +40,7 @@ Reynard is built on several principles:
 ## Quick Start 
 > TL;DR: Clone repo → Copy config → Edit for your hardware → Restart LibreWolf
 ### Requirements
-- Librewolf 143+
+- Librewolf 144+
 - Linux-based operating system (preferable), macOS support work in progress
   - Windows support is not planned, I don't have access to a Windows machine
 - Basic understanding of browser internals, troubleshooting skills, basic research
