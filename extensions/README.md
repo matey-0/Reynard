@@ -9,6 +9,7 @@ My curated list of LibreWolf/Firefox extensions. Minimal, focused on privacy and
 | **uBlock Origin** | The content blocker. Efficient, lightweight, highly configurable. See my [Hard Mode guide](../ublock/README.md) for setup. | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) |
 | **LocalCDN** | Blocks tracking through CDNs by redirecting to local resources. Complements uBlock Origin nicely. Slighly speeds up loading times of pages. | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes) |
 | **Violentmonkey** | Userscript manager. Open source (unlike Tampermonkey), supports tons of scripts for site customization and automation. | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/) |
+| **Mullvad Browser Extension** | Improve Mullvad VPN experience, choose website proxies. Only use if you also use Mullvad VPN | [mullvad.net](https://mullvad.net/en/download/browser/extension) |
 
 **Note:** For uBlock Origin configuration, see my [Hard Mode guide](../ublock/README.md).
 
@@ -28,6 +29,7 @@ My curated list of LibreWolf/Firefox extensions. Minimal, focused on privacy and
 - **LocalCDN** - Small but effective privacy win, slightly speeds up loading times
 - **Violentmonkey** - Flexible tool when you need it, can replace most extensions
   - **Note:** Userscripts are just as dangerous as installing more extensions; they have full access (dangerous), increase fingerprinting surface, and add more attack vectors. I typically use them sparingly, review the code properly, and most of the time modify/write scripts instead of using stock scripts.
+- **Mullvad Browser Extension** - Very useful when websites block you for using Mullvad VPN, you can choose per-site proxies. This extension is effectively useless if you aren't using Mullvad VPN as well. 
 
 ## See Also
 
