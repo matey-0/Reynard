@@ -23,7 +23,7 @@ My curated list of LibreWolf/Firefox extensions. Minimal, focused on privacy and
 
 ## Philosophy
 
-**Less is more.** Every extension is a potential attack surface and performance hit. I only run extensions that provide clear value and can't be replaced by native browser features or configs.
+**Less is more.** Every extension is a potential attack surface and performance hit. I only run extensions that provide clear value and can't be replaced by native browser features or configs (or native operating system features, if applicable).
 
 - **uBlock Origin** - Can't be replaced, essential
 - **LocalCDN** - Small but effective privacy win, slightly speeds up loading times
