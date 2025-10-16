@@ -86,7 +86,7 @@ Reynard is built on several principles:
 ## Regarding VPNs
 > **Note:** VPNs don't make you anonymous, they are just an extra layer of security/privacy. They are mainly useful for preventing your ISP from tracking you, circumventing location or network-based censorship, and for preventing IP-address based tracking.   
 
-A VPN is not essential, but I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN (with multihop, entry is the closest node geographically to reduce latency, exit is your chosen destination).  
+A VPN is not essential, but I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN (I set it up with multihop, entry is the closest node geographically to reduce latency, exit is your chosen destination. I also have Mullvad's DNS content blockers enabled: Ads, Trackers, Malware).  
 
 ## Tested On:
 - Framework 13 (Ryzen AI 9) - [Fedora Linux 42]
