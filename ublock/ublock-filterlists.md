@@ -26,26 +26,21 @@ Annoyances:
 <img width="962" height="752" alt="image" src="https://github.com/user-attachments/assets/be49cf1e-9dc5-40d4-b87d-00a053aa9a66" />  
 
 Custom:  
-<img width="1110" height="438" alt="image" src="https://github.com/user-attachments/assets/5397f136-8350-4469-93c2-d923f9d770e7" />
+<img width="1108" height="388" alt="image" src="https://github.com/user-attachments/assets/80673162-4f8c-484f-8712-e26ee2ca0962" />
 
 ### Recommended Filter Lists
 
 My setup uses **all of the default uBlock Origin lists** (ads, privacy, malware, etc.) **minus the regional filters**, plus these custom lists for additional coverage:
 
-**Annoyances:**
+**Where to Find the Lists**:
 - [Dandelion Sprout's Annoyances List](https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList) - Cookie banners, newsletter popups, etc.
 - [Fanboy's Annoyances](https://secure.fanboy.co.nz/fanboy-annoyance_ubo.txt) - Social widgets, annoying UI elements
 - [I don't care about cookies](https://www.i-dont-care-about-cookies.eu/abp/) - Cookie banners
-
-**Privacy & Tracking:**
 - [AdGuard Tracking Protection Filter](https://filters.adtidy.org/extension/ublock/filters/3.txt) - Additional tracker coverage beyond EasyPrivacy
-- [ClearURLs For uBo (Unofficial)](https://raw.githubusercontent.com/DandelionSprout/adfilt/refs/heads/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt) - Strips tracking parameters from URLs
-
-**Privacy, Tracking, Annoyances, etc**
 - [Personal Unified Filterlist](https://raw.githubusercontent.com/Mateo-Grgic/Personal-Filterlists/refs/heads/main/Unified.txt) - My personal filterlists, combined into one list. 
 
 **Why this combination?**  
-The default lists provide extremely comprehensive baseline coverage. Custom lists fill gaps in annoyance blocking and tracking protection that the uBlock team *choose* to not filter (not maliciously, just not to break everything & bloat the default lists). My personal lists are extremely aggressive. Consider them optional or use as inspiration for your own rules.
+The default lists provide extremely comprehensive baseline coverage. Custom lists fill gaps in annoyance blocking and tracking protection that the uBlock team *choose* to not filter (Not maliciously, just not to break everything & bloat the default lists. Somes lists are also agressive or experimental). My personal lists are extremely aggressive. Consider them optional or use as inspiration for your own rules.
 
 **Important:** If you import my personal lists (especially cosmetic or unified), expect site breakage. It's designed for my browsing habits, and agressively blocks trackers & 'annoying' elements.
 
