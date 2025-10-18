@@ -1,4 +1,4 @@
-/* userchrome.css for my LibreWolf, has some fun things */
+/* userchrome.css for my LibreWolf/Firefox/Reynard */
 /********************** BEGIN **********************/
 
 /**** START TAB CLOSE BUTTON FADE CSS ****/
@@ -60,6 +60,11 @@
         }      
 /**** END TAB CLOSE BUTTON FADE CSS ****/
 
+/* i have no idea what these do, but it's probably important */
+.urlbar-go-button {display: none !important;}
+.search-setting-button {display: none !important;}
+.tab-icon-overlay {display: none;}
+.tab-icon-image {opacity: 1 !important;}
 
 /* change left padding of urlbar text */
 #urlbar {
@@ -136,9 +141,23 @@
     visibility: collapse !important;
 }
 
-/* i have no idea what these do, but it's probably important */
-.urlbar-go-button {display: none !important;}
-.search-setting-button {display: none !important;}
-.tab-icon-overlay {display: none;}
-.tab-icon-image {opacity: 1 !important;}
+/* new firefox 145+ hyper round UI is ugly as hell, revert to pre-update UI roundedness*/
+#nav-bar *,
+#PersonalToolbar *,
+.toolbar-items * {
+    border-radius: 4px !important;
+}
+
+#urlbar-background,
+.toolbarbutton-1,
+#searchbar,
+.findbar-textbox,
+button {
+    border-radius: 4px !important;
+}
+
+:root {
+    --toolbarbutton-border-radius: 4px !important;
+    --urlbar-border-radius: 4px !important;
+}
 /********************** END **********************/
