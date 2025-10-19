@@ -17,9 +17,6 @@
 .tabbrowser-tab {--tab-label-mask-size: 1em !important;}
 .close-icon{transition: fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;}
 .close-icon:hover {fill: #FF0000 !important;}
-.tab-background{
-	border-radius: 4px !important;
-	border: transparent !important;}
 
 /* Minimalist URL bar & search experience */
 #urlbar {
@@ -48,19 +45,34 @@
 #urlbar-engine-one-off-item-engine--1, .menuitem-iconic.searchmode-switcher-addEngine,
 #searchbar-engine-one-off-item-engine--1, .searchbar-search-icon-overlay {display: none !important;}
 
+/* Make the tabs slightly thinner - requires compact mode */
+#TabsToolbar {
+  height: 30px !important;
+  padding-block: 0px !important;}
+.tab-background {
+  height: 30px !important;
+  margin-block: auto !important;}
+.tab-content {
+  padding: -1px -1px !important;
+  padding-left: -2px !important;
+  display: flex !important;
+  align-items: center !important;}
+.tab-close-button {
+  align-self: center !important;}
+:root {--tab-min-height: 30px !important;}
+
 /* remove container indicator line, instead make tab text colour match chosen containers' colour */
 #tabbrowser-tabs .tab-context-line {display: none;}
 .tabbrowser-tab[class*="identity-color-"] .tab-label {
 		color: var(--identity-icon-color) !important;}
 
 /* Give tab favicons a very slight rounded effect, for consistency and aesthetics */ 
-.tab-icon-image{border-radius: 2px !important;}
+.tab-icon-image{
+  border-radius: 1px !important;
+  opacity: 1 !important}
 
 /* Hide misc stupid elements */
 .urlbar-go-button, .search-setting-button, .tab-icon-overlay {display: none !important;}
-
-/* Not sure what this does, but it might be important */
-.tab-icon-image {opacity: 1 !important;}
 
 /* Make the menu bar spacers slightly smaller*/
 .titlebar-spacer{width: 10px !important;}
@@ -73,7 +85,7 @@
     visibility: collapse !important;
 }
 
-/* New Firefox 145+ hyper round UI is ugly as hell, revert to pre-update UI roundedness */
+/* New Firefox 145+ hyper round UI is ugly as hell */
 #nav-bar *,
 #PersonalToolbar *,
 .toolbar-items * {border-radius: 4px !important;}
