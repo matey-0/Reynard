@@ -45,7 +45,7 @@
 #urlbar-engine-one-off-item-engine--1, .menuitem-iconic.searchmode-switcher-addEngine,
 #searchbar-engine-one-off-item-engine--1, .searchbar-search-icon-overlay {display: none !important;}
 
-/* Make the tabs slightly thinner - requires compact mode */
+/* Make the tabs slightly thinner - looks best with compact mode */
 #TabsToolbar {
   height: 30px !important;
   padding-block: 0px !important;}
