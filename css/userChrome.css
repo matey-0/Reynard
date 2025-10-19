@@ -60,11 +60,13 @@
         }      
 /**** END TAB CLOSE BUTTON FADE CSS ****/
 
+
 /* i have no idea what these do, but it's probably important */
 .urlbar-go-button {display: none !important;}
 .search-setting-button {display: none !important;}
 .tab-icon-overlay {display: none;}
 .tab-icon-image {opacity: 1 !important;}
+
 
 /* change left padding of urlbar text */
 #urlbar {
@@ -113,6 +115,12 @@
 }
 
 
+/* Give tab favicons a slightly more rounded effect for consistency */ 
+.tab-icon-image{
+    border-radius: 2px !important;
+}
+
+
 /* hide idenity box without breaking prompts */
 #identity-box {
     max-width: 3px !important;
@@ -141,7 +149,8 @@
     visibility: collapse !important;
 }
 
-/* new firefox 145+ hyper round UI is ugly as hell, revert to pre-update UI roundedness*/
+
+/* new firefox 145+ hyper round UI is ugly as hell, revert to pre-update UI roundedness */
 #nav-bar *,
 #PersonalToolbar *,
 .toolbar-items * {
@@ -153,7 +162,5 @@
     --urlbar-border-radius: 4px !important;
 }
 
-.tab-icon-image{
-    border-radius: 2px !important;
-}
+
 /********************** END **********************/
