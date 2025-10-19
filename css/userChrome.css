@@ -61,9 +61,10 @@
 
 
 /* Hide misc stupid elements */
-.urlbar-go-button {display: none !important;}
-.search-setting-button {display: none !important;}
-.tab-icon-overlay {display: none;}
+.urlbar-go-button, .search-setting-button, .tab-icon-overlay {display: none !important;}
+
+
+/* Not sure what this does, but it might be important */
 .tab-icon-image {opacity: 1 !important;}
 
 
