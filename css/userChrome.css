@@ -148,16 +148,12 @@
     border-radius: 4px !important;
 }
 
-#urlbar-background,
-.toolbarbutton-1,
-#searchbar,
-.findbar-textbox,
-button {
-    border-radius: 4px !important;
-}
-
 :root {
     --toolbarbutton-border-radius: 4px !important;
     --urlbar-border-radius: 4px !important;
+}
+
+.tab-icon-image{
+    border-radius: 2px !important;
 }
 /********************** END **********************/
