@@ -21,7 +21,6 @@
 	border-radius: 4px !important;
 	border: transparent !important;}
 
-
 /* Minimalist URL bar & search experience */
 #urlbar {
     padding-left: 0px !important;
@@ -49,28 +48,22 @@
 #urlbar-engine-one-off-item-engine--1, .menuitem-iconic.searchmode-switcher-addEngine,
 #searchbar-engine-one-off-item-engine--1, .searchbar-search-icon-overlay {display: none !important;}
 
-
 /* remove container indicator line, instead make tab text colour match chosen containers' colour */
 #tabbrowser-tabs .tab-context-line {display: none;}
 .tabbrowser-tab[class*="identity-color-"] .tab-label {
 		color: var(--identity-icon-color) !important;}
 
-
 /* Give tab favicons a very slight rounded effect, for consistency and aesthetics */ 
 .tab-icon-image{border-radius: 2px !important;}
-
 
 /* Hide misc stupid elements */
 .urlbar-go-button, .search-setting-button, .tab-icon-overlay {display: none !important;}
 
-
 /* Not sure what this does, but it might be important */
 .tab-icon-image {opacity: 1 !important;}
 
-
 /* Make the menu bar spacers slightly smaller*/
 .titlebar-spacer{width: 10px !important;}
-
 
 /* Remove forced empty space when using built-in vertical tabs */
 #vertical-spacer{
@@ -79,7 +72,6 @@
     display: none !important;
     visibility: collapse !important;
 }
-
 
 /* New Firefox 145+ hyper round UI is ugly as hell, revert to pre-update UI roundedness */
 #nav-bar *,
