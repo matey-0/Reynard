@@ -171,7 +171,5 @@ https://fingerprint.com/
 ![searching](https://github.com/user-attachments/assets/2b5f0f31-ae83-42de-8295-7dda3784c6a0)
 
 ## License
-- Uses MIT license for maximum sharability
-
 Feel free to use, modify, and distribute. Attribution not required for personal projects. For public projects, attribution appreciated greatly, but not required.
 
