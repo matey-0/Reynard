@@ -156,20 +156,19 @@ https://fingerprint.com/
 
 ## Preview Images
 **New Tab Page**  
-<img width="2880" height="1856" alt="New Tab" src="https://github.com/user-attachments/assets/a7f47540-ba6b-4c33-a075-beebed6a0143" />  
+<img width="2880" height="1856" alt="blank tab" src="https://github.com/user-attachments/assets/6935e53e-e43d-40f4-aee8-051202653d36" />
 
 **On a webpage (Kagi Search)**  
-<img width="2880" height="1856" alt="Kagi Search (On a page)" src="https://github.com/user-attachments/assets/091b20be-e798-484e-b122-e6e18daf8edd" />  
+<img width="2880" height="1856" alt="kagi search" src="https://github.com/user-attachments/assets/ed6c62a4-3ad2-4c77-8efc-776d91209981" />
 
 **Searching styles**  
-<img width="2880" height="1856" alt="Searching Example" src="https://github.com/user-attachments/assets/d48381db-002e-48ae-87dd-040f4615ca57" />  
+<img width="2880" height="1856" alt="searching" src="https://github.com/user-attachments/assets/6c044b13-b1cb-4295-9246-3d0ad0bdfbc4" />
 
 **Closing a tab style**  
-<img width="2880" height="1856" alt="Tab  X  Fade" src="https://github.com/user-attachments/assets/3d50e5c2-34a6-4bc3-a151-33ed5c2e01a1" />  
+<img width="2880" height="1856" alt="closing tab" src="https://github.com/user-attachments/assets/5ce1fc47-6455-4a1c-b41d-65dbd17e78f7" />
 
 **Simple Browsing Example**
-![preview](https://github.com/user-attachments/assets/d85223ad-bf91-41c3-8ef6-b789687706a4)
-
+![searching](https://github.com/user-attachments/assets/2b5f0f31-ae83-42de-8295-7dda3784c6a0)
 
 ## License
 - Uses MIT license for maximum sharability
