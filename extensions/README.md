@@ -25,11 +25,10 @@ My curated list of LibreWolf/Firefox extensions. Minimal, focused on privacy and
 
 **Less is more.** Every extension is a potential attack surface and performance hit. I only run extensions that provide clear value and can't be replaced by native browser features or configs (or native operating system features, if applicable).
 
+- **Mullvad Browser Extension** - Very useful when websites block you for using Mullvad VPN, you can choose per-site proxies. This extension is effectively useless if you aren't using Mullvad VPN as well. 
 - **uBlock Origin** - Can't be replaced, essential
-- **LocalCDN** - Small but effective privacy win, slightly speeds up loading times
 - **Violentmonkey** - Flexible tool when you need it, can replace most extensions
   - **Note:** Userscripts are just as dangerous as installing more extensions; they have full access (dangerous), increase fingerprinting surface, and add more attack vectors. I typically use them sparingly, review the code properly, and most of the time modify/write scripts instead of using stock scripts.
-- **Mullvad Browser Extension** - Very useful when websites block you for using Mullvad VPN, you can choose per-site proxies. This extension is effectively useless if you aren't using Mullvad VPN as well. 
 
 ## See Also
 
