@@ -7,7 +7,6 @@ My curated list of LibreWolf/Firefox extensions. Minimal, focused on privacy and
 | Extension | Why I Use It | Link |
 |-----------|--------------|------|
 | **uBlock Origin** | The content blocker. Efficient, lightweight, highly configurable. See my [Hard Mode guide](../ublock/README.md) for setup. | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) |
-| **LocalCDN** | Blocks tracking through CDNs by redirecting to local resources. Complements uBlock Origin nicely. Slighly speeds up loading times of pages. | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes) |
 | **Violentmonkey** | Userscript manager. Open source (unlike Tampermonkey), supports tons of scripts for site customization and automation. | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/) |
 | **Mullvad Browser Extension** | Improve Mullvad VPN experience, choose website proxies. Only use if you also use Mullvad VPN | [mullvad.net](https://mullvad.net/en/download/browser/extension) |
 
@@ -20,6 +19,7 @@ My curated list of LibreWolf/Firefox extensions. Minimal, focused on privacy and
 | **Bypass Paywalls Clean** | Useful for bypassing news paywalls, but I only enable it when needed. | [GitFlic.ru](https://gitflic.ru/project/magnolia1234/bypass-paywalls-firefox-clean/release/0facfab5-936b-43ab-8b88-be067ee6a81a)|
 | **Dark Reader** | Forces dark mode on all sites. It is quite slow, so I only use sometimes, and only at night | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/darkreader/) |
 | **Instapaper** | Saves articles to read on my Kobo e-reader. Enable to save pages, disable immediately after. | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/instapaper/) |
+| **LocalCDN** | Blocks tracking through CDNs by redirecting to local resources. Slighly speeds up loading times of pages. Largely useless with dFPI (enabled by default). | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes) |
 
 ## Philosophy
 
