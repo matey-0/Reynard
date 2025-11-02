@@ -10,7 +10,7 @@ Copy `userChrome.css` and `userContent.css` to your LibreWolf profile's `chrome`
 > Make sure that the titles of each file is perfect; the files and folders are case sensitive as well. 
 - Linux: `~/.librewolf/[profile]/chrome/`
 - Flatpak: `~/.var/app/io.gitlab.librewolf-community/.librewolf/[profile]/chrome/`
-- macOS: `~/Library/Application Support/LibreWolf/Profiles/[profile]/chrome/`
+- macOS: `~/Library/Application\ Support/LibreWolf/Profiles/[profile]/chrome/`
 
 Restart LibreWolf.
 
