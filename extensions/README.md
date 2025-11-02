@@ -9,7 +9,7 @@ My curated list of LibreWolf/Firefox extensions. Minimal, focused on privacy and
 ## Extensions I Use
 
 | Extension | Why I Use It | Note(s): | Link |
-|-----------|--------------|--------------|------|
+|-----------|--------------|--------|------|
 | **LocalCDN** | Slightly speeds up page load times, cleans up CDN calls. Largely useless when using dFPI, but still value add with my setup; decide for yourself if you need it or not. | Lorem ipsum | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/) |
 | **Mullvad Browser Extension** | Very useful when websites block you for using Mullvad VPN, you can choose per-site proxies. | This extension is effectively useless if you aren't using Mullvad VPN as well. |  [mullvad.net](https://mullvad.net/en/download/browser/extension) |
 | **NoScript** | Extremely granular permissions control for JavaScript and other web technologies for tracking; very useful for preventing tracking & general utility. | Not recommended unless you are experienced with un-breaking things (In uBlock Origin Hard mode, for example). | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/noscript/) |
