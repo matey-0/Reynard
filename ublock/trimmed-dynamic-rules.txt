@@ -1,8 +1,15 @@
 no-cosmetic-filtering: www.apple.com true
+no-cosmetic-filtering: archive.org true
+no-cosmetic-filtering: filterlists.com true
+no-cosmetic-filtering: gemini.google.com true
+no-cosmetic-filtering: www.jetbrains.com true
+no-cosmetic-filtering: www.translate.kagi.com true
 no-cosmetic-filtering: www.pinterest.com true
+no-cosmetic-filtering: www.quora.com true
 no-csp-reports: * true
 no-large-media: behind-the-scene false
 no-scripting: dictionary.cambridge.org true
+no-scripting: jeewan.ca true
 no-scripting: www.tomshardware.com true
 * * 3p block
 * * 3p-frame block
@@ -27,6 +34,7 @@ no-scripting: www.tomshardware.com true
 * akami.net * noop
 * algolianet.com * noop
 * alia-cloudflare.com * noop
+* alicdn.com * noop
 * allstatics.com * noop
 * am-static.com * noop
 * am-usercontent.com * noop
@@ -59,6 +67,7 @@ no-scripting: www.tomshardware.com true
 * libs.baidu.com * noop
 * lib.baomitu.com * noop
 * baqend.com * noop
+* bbycastatic.ca * noop
 * apps.bdimg.com * noop
 * betacdn.net * noop
 * bigcommerce.com * noop
@@ -79,7 +88,9 @@ no-scripting: www.tomshardware.com true
 * sessions.bugsnag.com * block
 * builder.io * noop
 * bustle.com * noop
+* bynder.com * noop
 * log.byteoversea.com * block
+* ca.cdn.cloudflare.net * noop
 * cachefly.net * noop
 * canada.ca * noop
 * captcha-delivery.com * noop
@@ -89,6 +100,7 @@ no-scripting: www.tomshardware.com true
 * cdn77.org * noop
 * cdngslb.com * noop
 * cdnst.net * noop
+* chargebee.com * noop
 * chatgpt.com * noop
 * chimpstatic.com * noop
 * classifiedscloud.io * noop
@@ -113,6 +125,7 @@ no-scripting: www.tomshardware.com true
 * creativecdn.com * noop
 * crystalcommerce.info * noop
 * csp.withgoogle.com * block
+* ctfassets.net * noop
 * d.akamai.net * noop
 * cdn.datatables.net * noop
 * dealerinspire.com * noop
@@ -143,11 +156,13 @@ no-scripting: www.tomshardware.com true
 * use.fontawesome.com * noop
 * fonts.googleapis.com * block
 * forter.com * noop
+* frontastic.live * noop
 * fuseplatform.net * noop
 * futurecdn.net * noop
 * geekadm.net * noop
 * sdn.inbond.gslb.geekzu.org * noop
 * sdn.geekzu.org * noop
+* geoip-js.com * noop
 * getbootstrap.com * noop
 * ggpht.com * noop
 * gitbook.com * noop
@@ -179,6 +194,8 @@ no-scripting: www.tomshardware.com true
 * hcaptcha.com * noop
 * hclsoftware.cloud * noop
 * hdnux.com * noop
+* hsforms.net * noop
+* hubspot.com * noop
 * hurimg.com * noop
 * cds.s5x3j6q5.hwcdn.net * noop
 * ibb.co * noop
@@ -200,11 +217,14 @@ no-scripting: www.tomshardware.com true
 * jwplayer.com * noop
 * jwpltx.com * noop
 * jwpsrv.com * noop
+* kaptcha.com * noop
 * ketchcdn.com * noop
 * keyshorts.com * noop
 * akamai-webcdn.kgstatic.net * noop
 * klarna.com * noop
+* klarna.net * noop
 * klarnaservices.com * noop
+* klaviyo.com * noop
 * ksd.akamaiedge.net * noop
 * kustomerapp.com * noop
 * kustomerhostedcontent.com * noop
@@ -235,6 +255,7 @@ no-scripting: www.tomshardware.com true
 * ajax.microsoft.com * noop
 * microsoftazuread-sso.com * noop
 * login.microsoftonline.com * noop
+* micstatic.com * noop
 * tracking.rus.miui.com * block
 * mrf.io * noop
 * msauth.net * noop
@@ -270,6 +291,7 @@ no-scripting: www.tomshardware.com true
 * pagecdn.io * noop
 * parastorage.com * noop
 * paypalobjects.com * noop
+* pelmorex.com * noop
 * pexels.com * noop
 * ads.pinterest.com * block
 * analytics.pinterest.com * block
@@ -316,6 +338,7 @@ no-scripting: www.tomshardware.com true
 * shop.app * noop
 * shopify.com * noop
 * shopifycdn.com * noop
+* shopifyinc.com * noop
 * shopifysvc.com * noop
 * shoplightspeed.com * noop
 * shops.myshopify.com * noop
@@ -340,6 +363,8 @@ no-scripting: www.tomshardware.com true
 * storage.googleapis.com * noop
 * storyblok.com * noop
 * stripe.com * noop
+* stripe.network * noop
+* stripecdn.com * noop
 * substackcdn.com * noop
 * svc.domains * noop
 * svdcdn.com * noop
@@ -389,12 +414,16 @@ no-scripting: www.tomshardware.com true
 * website-files * noop
 * weebly.com * noop
 * wezhan.net * noop
+* widen.net * noop
 * widencdn.net * noop
+* wikidata.org * noop
 * wikimedia.org * noop
 * commons.wikimedia.org * noop
 * wikipedia.org * noop
 * windows.net * noop
 * wistia.net * noop
+* wix.com * noop
+* wixapps.net * noop
 * wixmp.com * noop
 * wixstatic.com * noop
 * wp.com * noop
@@ -429,16 +458,32 @@ no-scripting: www.tomshardware.com true
 * vjs.zencdn.net * noop
 * ziffstatic.com * noop
 * zuora.com * noop
+adguard-dns.io * 3p noop
+adguard-dns.io adguard-dns.com * noop
+adguard-dns.io adguardcdn.com * noop
+adguard-dns.io agrd.eu * noop
+adguard.com adguardcdn.com * noop
+adguard.com agrd.eu * noop
+auth.adguardaccount.com agrd.eu * noop
 www.amazon.ca amazon.com * noop
 www.amazon.ca amazon.dev * noop
 www.amazon.ca hereapi.com * noop
+annas-archive.org archive.org * noop
+annas-archive.org cdn-zlib.sk * noop
+annas-archive.org libgen.li * noop
 apple.com aaplimg.com * noop
 apple.com apple-dns.net * noop
 apple.com cdn-apple.com * noop
 apple.com com.akadns.net * noop
+account.apple.com apple-dns.net * noop
+account.apple.com cdn-apple.com * noop
+account.apple.com com.akadns.net * noop
+investor.apple.com q4app.com * noop
+investor.apple.com q4cdn.com * noop
 www.apple.com cdn-apple.com * noop
 www.apple.com dscf.akamaiedge.net * noop
 www.apple.com dscw154.akamai.net * noop
+archive.org archive.org * noop
 behind-the-scene * * noop
 behind-the-scene * 1p-script noop
 behind-the-scene * 3p noop
@@ -446,6 +491,12 @@ behind-the-scene * 3p-frame noop
 behind-the-scene * 3p-script noop
 behind-the-scene * image noop
 behind-the-scene * inline-script noop
+chatgpt.com files.oaiusercontent.com * noop
+chatgpt.com cdn.oaistatic.com * allow
+developer.chrome.com fonts.googleapis.com * allow
+claude.ai anthropic.com * noop
+claude.ai hexagon-cdn.com * noop
+claude.ai intercom.io * noop
 discord.com discord.com * noop
 discord.com discord.gg * noop
 discord.com discordapp.com * noop
@@ -458,31 +509,37 @@ www.ebay.ca a.akamaiedge.net * noop
 www.ebay.ca ebayimg.com * noop
 www.ebay.ca ebaystatic.com * noop
 www.ebay.com ebaystatic.com * noop
-www.facebook.com arkoselabs.com * noop
-www.facebook.com fbsbx.com * noop
-frame.work iubenda.com * noop
-knowledgebase.frame.work kustomer.help * noop
 github.blog github.com * noop
 github.com * 3p noop
 github.com arkoselabs.com * noop
 gitlab.com * 3p noop
 google.com fonts.googleapis.com * allow
 classroom.google.com * 3p-frame noop
+classroom.google.com youtubeeducation.com * noop
+docs.google.com content-espresso-pa.googleapis.com * noop
 docs.google.com google.com * allow
 docs.google.com docs.google.com * allow
 docs.google.com googleusercontent.com * allow
 docs.google.com gstatic.com * allow
+drive.google.com * 3p noop
+drive.google.com * 3p-frame noop
+drive.google.com * 3p-script noop
+drive.google.com google.com * allow
+drive.google.com youtube.googleapis.com * allow
 gemini.google.com gemini.google.com * noop
 mail.google.com ampproject.org * noop
 play.google.com play.google.com * noop
 www.google.com streetviewpixels-pa.googleapis.com * noop
+www.icloud.com apple-dns.net * noop
+www.icloud.com apple-mapkit.com * noop
+www.icloud.com apple.com * noop
+www.icloud.com cdn-apple.com * noop
+www.icloud.com icloud-content.com * noop
 kagi.com * 3p noop
 kagi.com * 3p-frame noop
 kagi.com kagi.com * noop
-www.lenovo.com adobedtm.com * noop
-www.lenovo.com go-mpulse.net * noop
-www.lenovo.com lenovo.com * noop
-www.lenovo.com www.lenovo.com * noop
+account.live.com fb-t-msedge.net * noop
+login.live.com microsoft.com * noop
 localhost * * noop
 localhost * 3p noop
 localhost * 3p-frame noop
@@ -497,32 +554,43 @@ login.microsoftonline.com live.com * noop
 login.microsoftonline.com microsoft.com * noop
 login.microsoftonline.com msauthimages.net * noop
 login.microsoftonline.com msftauthimages.net * noop
+monkeytype.com instatus.com * noop
+monkeytype.com monkeytype.com * noop
 support.mozilla.org mozgcp.net * noop
+auth.openai.com * * noop
+auth.openai.com browser-intake-datadoghq.com * noop
+auth.openai.com prodregistryv2.org * noop
 www.phoronix.com fonts.googleapis.com * allow
 www.phoronix.com openbenchmarking.org * noop
 www.phoronix.com phoronix.net * noop
-www.photopea.com vecpea.com * noop
-www.quora.com quoracdn.net * noop
+ca.pinterest.com pinimg.com * noop
+www.pinterest.com pinimg.com * noop
+proton.me protonweb.com * noop
 www.reddit.com cdn77.org * noop
 www.reddit.com redd.it * noop
 www.reddit.com redgifs.com * noop
 www.reddit.com www.redgifs.com * noop
 www.reddit.com rlcdn.com * noop
 www.speedtest.net * 3p noop
+www.speedtest.net fibernetics.ca * noop
 www.speedtest.net ooklaserver.net * noop
 www.speedtest.net packetworks.net * noop
+www.speedtest.net rogers.com * noop
 open.spotify.com scdn.co * noop
 open.spotify.com spotifycdn.com * noop
+shop.staplescopyandprint.ca staples.ca * noop
 steamcommunity.com steampowered.com * noop
 steamcommunity.com steamusercontent.com * noop
 store.steampowered.com steamcommunity.com * noop
-www.tiktok.com byteoversea.net * noop
-www.tiktok.com ibyteimg.com * noop
-www.tiktok.com tiktokcdn-eu.com * noop
-www.tiktok.com tiktokcdn-us.com * noop
-www.tiktok.com tiktokcdn.com * noop
-www.tiktok.com tiktokv.com * noop
-www.tiktok.com ttwstatic.com * noop
+www.techpowerup.com tpucdn.com * noop
+tenor.com tenor.googleapis.com * noop
+www.walmart.ca wal.co * noop
+www.walmart.ca www.walmart.ca * noop
+www.walmart.ca walmartimages.ca * noop
+www.walmart.ca walmartimages.com * noop
+www.walmart.com walmartimages.com * noop
+staplescanada.webprint.com staples.ca * noop
+staplescanada.webprint.com staplescopyandprint.ca * noop
 www.youtube.com csp.withgoogle.com * block
 www.youtube.com doubleclick.net * block
 www.youtube.com google.ca * noop
