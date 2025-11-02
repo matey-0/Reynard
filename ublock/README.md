@@ -35,7 +35,7 @@ From uBlock Origin Wiki:
 
 ### What Makes This Setup Different?
 
-Recall that I mentioned one of the only reasons a default-deny policy isn't used more often is the large setup cost. I've solved that issue by including a curated list of ~500 verified 'good' CDNs and resources, giving you a solid starting point to build from. This means you can start using Hard Mode immediately without spending weeks building your noop-list from scratch.
+Recall that I mentioned one of the only reasons a default-deny policy isn't used more often is the large setup cost. I've solved that issue by including a curated list of ~600 verified 'good' CDNs and resources, giving you a solid starting point to build from. This means you can start using Hard Mode immediately without spending weeks building your noop-list from scratch.
 
 The other barrier is the knowledge required to maintain a default deny policy, and unfortunately, I can't package that in a GitHub repo. However, it's easy enough to learn through practice. Using Hard Mode day-to-day is covered in the "How to Use Hard Mode" section later in this README.
 
@@ -45,7 +45,7 @@ This directory contains most/everything needed to replicate my uBlock Origin Har
 
 ### Core Files
 
-**`trimmed-dynamic-rules.txt`** - The heart of Hard Mode: ~500 curated 'noop' rules for commonly-used CDNs, APIs, JS frameworks, etc. These are the domains I've personally verified as safe to allow through the first dynamic filtering layer. This list also contains the rules to enable Hard Mode. Import these into uBlock Origin's "My rules" pane to get started with Hard Mode immediately.  
+**`trimmed-dynamic-rules.txt`** - The heart of Hard Mode: ~600 curated 'noop' rules for commonly-used CDNs, APIs, JS frameworks, etc. These are the domains I've personally verified as safe to allow through the first dynamic filtering layer. This list also contains the rules to enable Hard Mode. Import these into uBlock Origin's "My rules" pane to get started with Hard Mode immediately.  
 
 **`advanced-settings.txt`** - Advanced uBlock Origin configuration settings (accessible via the gear icon next to "I am an advanced user" in the Settings tab). These fine-tune uBlock's behavior for optimal performance. Completely optional: contains mainly minor refinements. 
 
@@ -68,7 +68,7 @@ This directory contains most/everything needed to replicate my uBlock Origin Har
 4. Scroll down and check "I am an advanced user"
 5. A gear icon will appear next to the checkbox, you can either configure advanced settings now or later, order shouldn't matter. For clarity sake, I'm going to cover it later in the guide. 
 
-### Step 2: Import Dynamic Rules (~500 CDN Noops)
+### Step 2: Import Dynamic Rules (~600 CDN Noops)
 
 This is the core of Hard Mode, your curated list of 'good' domains.
 
@@ -81,7 +81,7 @@ This is the core of Hard Mode, your curated list of 'good' domains.
 7. Click commit (top right)
 8. Make sure all the rules copied are in your "permanent rules" pane
 
-**What this does:** Allows ~500 verified CDNs/APIs/JS frameworks to pass through the first filtering layer (to be handled by the second layer, static filtering), preventing immediate breakage on most sites.
+**What this does:** Allows ~600 verified CDNs/APIs/JS frameworks to pass through the first filtering layer (to be handled by the second layer, static filtering), preventing immediate breakage on most sites.
 
 ### Step 3: Import Advanced Settings (Optional)
 
@@ -128,7 +128,7 @@ Time to set up the second filtering layer (static filters).
 **If you see red cells in all 3 of the 3rd-party rows, Hard Mode is working.**
 
 ### What to Expect on First Use
-**Some sites will break.** This is normal and expected, even with ~500 nooped CDNs.
+**Some sites will break.** This is normal and expected, even with ~600 nooped CDNs.
 
 **Common issues you'll encounter:**
 - Images don't load (CDN blocked)
