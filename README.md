@@ -152,6 +152,7 @@ https://browserleaks.com/
 https://coveryourtracks.eff.org/  
 https://abrahamjuliot.github.io/creepjs/  
 https://fingerprint.com/  
+https://arkenfox.github.io/TZP/tzp.html  
 
 ## Related Projects:
 - [Personal-Filterlists](https://github.com/Mateo-Grgic/Personal-Filterlists) - My custom uBlock Origin filter lists
