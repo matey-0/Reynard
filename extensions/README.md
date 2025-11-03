@@ -27,4 +27,4 @@ My curated list of LibreWolf/Firefox extensions. Minimal, focused on privacy and
 
 - [Main Reynard README](../README.md)
 - [uBlock Origin Hard Mode Guide](../ublock/README.md)
-- [librewolf.overrides.cfg Guide](../librewolf-overrides/README.md)
+- [librewolf.overrides.cfg Guide](../librewolf.overrides/README.md)
