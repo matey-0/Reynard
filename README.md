@@ -1,5 +1,7 @@
 # Reynard 
 
+<img width="2880" height="1856" alt="image" src="https://github.com/user-attachments/assets/91d47e17-d7e6-4ba8-bba6-7a419f410309" />
+
 > **Note:** Reynard is my personal LibreWolf configuration, shared publicly in case it's useful to others. Consider this a beta/work-in-progress, configurations, preference, settings are tested on my hardware & operating system, but may need adjustments for yours.
 
 Reynard transforms LibreWolf into a faster, more comfortable browser without major sacrifices in privacy. Designed for advanced users who understand browser internals and are comfortable with occasional breakage.
