@@ -31,10 +31,19 @@
 .urlbarView{
     padding-left: 1px !important;
     padding-right: 1px !important;}
+#tracking-protection-icon-container {display: none !important;}
+#identity-box {
+    max-width: 3px !important;
+    min-width: 3px !important;
+    padding-top: 8px !important;
+    padding-left: 3.2px !important;
+    margin: 0 !important;
+    border: none !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;}
 #urlbar-engine-one-off-item-engine--1, .menuitem-iconic.searchmode-switcher-addEngine,
 #searchbar-engine-one-off-item-engine--1, .searchbar-search-icon-overlay {display: none !important;}
-#urlbar-search-splitter{visibility: show !important;}
-.searchbar-search-button, .searchbar-search-icon{visibility: collapse !important;}
 
 /* Make the tabs slightly thinner - looks best with compact mode */
 #TabsToolbar {
@@ -51,34 +60,6 @@
 .tab-close-button {
   align-self: center !important;}
 :root {--tab-min-height: 30px !important;}
-
-/* Hide most of the junk in the URL bar, keep canvas icon */
-#tracking-protection-icon-container {
-    visibility: collapse !important;
-    max-width: 0px !important;
-    min-width: 0px !important;
-    padding-top: 0px !important;
-    padding-left: 0px !important;
-    margin: -1px !important;
-    border: none !important;
-    opacity: 0 !important;
-    overflow: hidden !important;
-    pointer-events: none !important;
-}
-#identity-box{margin: 1px !important;}
-#identity-icon-box{
-  border: none !important;
-  visibility: hidden !important;
-  overflow: hidden !important;
-  visibility: collapse !important;
-  pointer-events: none !important;
-  opacity: 0 !important;
-}
-#canvas-notification-icon{
-  visibility: show !important;
-  padding: 0px !important;
-  margin-right: 1px
-}
 
 /* remove container indicator line, instead make tab text colour match chosen containers' colour */
 #tabbrowser-tabs .tab-context-line {display: none;}
