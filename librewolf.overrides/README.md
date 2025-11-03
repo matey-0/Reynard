@@ -44,7 +44,7 @@ This librewolf.overrides.cfg file contains:
   ```cp librewolf.overrides/librewolf.overrides.cfg ~/.librewolf/```
 
 #### 3.) Configure for your hardware
-- Comment out my active Framework 13 profile (around line 180) by adding /* before the section, and */ afterwards.  
+- Comment out my active Framework 13 profile (around line 210) by adding /* before the section, and */ afterwards.  
 - Scroll up and find the template that best matches the hardware specs you have. Modify preferences like `dom.ipc.processCount` & `layout.frame_rate` to match your physical hardware, and tune `mousewheel.default.delta_multiplier_x/y/z` to your preferred scrolling speed.  
 - Glance over all preferences, change any you find personally problematic or worth changing.  
 
