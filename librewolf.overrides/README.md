@@ -102,18 +102,13 @@ Reynard's librewolf.overrides.cfg file includes Linux-specific optimizations for
 
 The platform-specific preferences are documented in the config file. Read the inline comments for details on what each one does.
 
-## Note on privacy & security
-
-> **My approach:** This config prioritizes usability over maximum hardening. I don't use `privacy.resistFingerprinting`. Your browser can be fingerprinted reliably and consistently in seconds regardless (unless you're using Tor Browser with no JavaScript or something, which isn't usable). I used resistFingerprinting for a couple years and know the trade-offs. It breaks 95% of sites in minor ways and 20% of sites in major ways. Not worth it *for me*. 
-
 ### Philosophy
 
 This setup is already better than 99% of browser configurations. LibreWolf's baseline hardening (no telemetry, no Mozilla bloat, strict defaults) does the heavy lifting. I make trade-offs where they matter:
 
 **Where I reduce privacy:**
 * Referer policy relaxed (breaks payment processors, banking sites)
-- WebGL enabled (breaks interactive maps, some games)
-- ResistFingerprinting disabled 
+- WebGL enabled (disabling this breaks interactive maps, some games)
 - etc (see the file itself for a complete list)
 
 These break too many things. The alternative is constantly troubleshooting or maintaining site-specific exceptions.  
