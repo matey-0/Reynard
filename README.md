@@ -1,6 +1,6 @@
 # Reynard 
 
-<img width="2880" height="1856" alt="image" src="https://github.com/user-attachments/assets/91d47e17-d7e6-4ba8-bba6-7a419f410309" />
+<img width="2880" height="1856" alt="image" src="https://github.com/user-attachments/assets/91d47e17-d7e6-4ba8-bba6-7a419f410309" />  
 
 > **Note:** Reynard is my personal LibreWolf configuration, shared publicly in case it's useful to others. Consider this a beta/work-in-progress, configurations, preference, settings are tested on my hardware & operating system, but may need adjustments for yours.
 
