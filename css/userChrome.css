@@ -2,36 +2,69 @@
 /********************** BEGIN **********************/
 
 /* Remove tab close button. Appear on hover with smooth transitions */
+/* START */
 .tabbrowser-tab:not([pinned]) .tab-close-button {
-	display: -moz- !important;
-	opacity: 0;
-	visibility: collapse !important;
-	transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;}
-.tabbrowser-tab:not([pinned]):hover  .tab-close-button {
-	opacity: 1;
-	visibility: visible !important;
-	transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;}
-.tabbrowser-tab:not([pinned]):hover  .tab-close-button:hover {
-	fill: #FF0000 !important;
-	transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;}
-.tabbrowser-tab {--tab-label-mask-size: 1em !important;}
-.close-icon{transition: fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;}
-.close-icon:hover {fill: #FF0000 !important;}
+    display: -moz- !important;
+    opacity: 0;
+    visibility: collapse !important;
+    transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+.tabbrowser-tab:not([pinned]):hover .tab-close-button {
+    opacity: 1;
+    visibility: visible !important;
+    transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+.tabbrowser-tab:not([pinned]):hover .tab-close-button:hover {
+    fill: #FF0000 !important;
+    transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+.tabbrowser-tab {
+    --tab-label-mask-size: 1em !important;
+}
+
+.close-icon {
+    transition: fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+.close-icon:hover {
+    fill: #FF0000 !important;
+}
+
+/* END */
 
 /* Minimalist URL bar & search experience */
+/* START */
 #urlbar {
     padding-left: 0px !important;
-    padding-right: 0px !important;}
-.urlbarView-favicon {visibility: collapse !important;}
-.search-one-offs{padding-block: 4px !important}
+    padding-right: 0px !important;
+}
+
+.urlbarView-favicon {
+    visibility: collapse !important;
+}
+
+.search-one-offs {
+    padding-block: 4px !important
+}
+
 .urlbarView-body-outer {
     padding: 0px !important;
     display: none !important;
-    visibility: collapse !important;}
-.urlbarView{
+    visibility: collapse !important;
+}
+
+.urlbarView {
     padding-left: 1px !important;
-    padding-right: 1px !important;}
-#tracking-protection-icon-container {display: none !important;}
+    padding-right: 1px !important;
+}
+
+#tracking-protection-icon-container {
+    display: none !important;
+}
+
 #identity-box {
     max-width: 3px !important;
     min-width: 3px !important;
@@ -41,44 +74,79 @@
     border: none !important;
     opacity: 0 !important;
     overflow: hidden !important;
-    pointer-events: none !important;}
-#urlbar-engine-one-off-item-engine--1, .menuitem-iconic.searchmode-switcher-addEngine,
-#searchbar-engine-one-off-item-engine--1, .searchbar-search-icon-overlay {display: none !important;}
+    pointer-events: none !important;
+}
+
+#urlbar-engine-one-off-item-engine--1,
+.menuitem-iconic.searchmode-switcher-addEngine,
+#searchbar-engine-one-off-item-engine--1,
+.searchbar-search-icon-overlay {
+    display: none !important;
+}
+
+/* END */
 
 /* Make the tabs slightly thinner - looks best with compact mode */
+/* START */
 #TabsToolbar {
-  height: 30px !important;
-  padding-block: 0px !important;}
+    height: 30px !important;
+    padding-block: 0px !important;
+}
+
 .tab-background {
-  height: 30px !important;
-  margin-block: auto !important;}
+    height: 30px !important;
+    margin-block: auto !important;
+}
+
 .tab-content {
-  padding: -1px -1px !important;
-  padding-left: -2px !important;
-  display: flex !important;
-  align-items: center !important;}
+    padding: -1px -1px !important;
+    padding-left: -2px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
 .tab-close-button {
-  align-self: center !important;}
-:root {--tab-min-height: 30px !important;}
+    align-self: center !important;
+}
+
+:root {
+    --tab-min-height: 30px !important;
+}
+
+/* END */
 
 /* remove container indicator line, instead make tab text colour match chosen containers' colour */
-#tabbrowser-tabs .tab-context-line {display: none;}
-.tabbrowser-tab[class*="identity-color-"] .tab-label {
-		color: var(--identity-icon-color) !important;}
+/* START */
+#tabbrowser-tabs .tab-context-line {
+    display: none;
+}
 
-/* Give tab favicons a very slight rounded effect, for consistency and aesthetics */ 
-.tab-icon-image{
-  border-radius: 1px !important;
-  opacity: 1 !important}
+.tabbrowser-tab[class*="identity-color-"] .tab-label {
+    color: var(--identity-icon-color) !important;
+}
+
+/* END */
+
+/* Give tab favicons a very slight rounded effect, for consistency and aesthetics */
+.tab-icon-image {
+    border-radius: 1px !important;
+    opacity: 1 !important
+}
 
 /* Hide misc stupid elements */
-.urlbar-go-button, .search-setting-button, .tab-icon-overlay {display: none !important;}
+.urlbar-go-button,
+.search-setting-button,
+.tab-icon-overlay {
+    display: none !important;
+}
 
 /* Make the menu bar spacers slightly smaller*/
-.titlebar-spacer{width: 10px !important;}
+.titlebar-spacer {
+    width: 10px !important;
+}
 
 /* Remove forced empty space when using built-in vertical tabs */
-#vertical-spacer{
+#vertical-spacer {
     width: 0px !important;
     padding 0px !important;
     display: none !important;
@@ -86,12 +154,20 @@
 }
 
 /* New Firefox 145+ hyper round UI is ugly as hell */
+/* START */
 #nav-bar *,
 #PersonalToolbar *,
-.toolbar-items * {border-radius: 4px !important;}
+.toolbar-items * {
+    border-radius: 4px !important;
+}
+
 :root {
     --toolbarbutton-border-radius: 4px !important;
     --urlbar-border-radius: 4px !important;
 }
 
+/* END */
+
 /********************** END **********************/
+
+

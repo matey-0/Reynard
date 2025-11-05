@@ -1,6 +1,10 @@
 /* make the new tab page perpetually blank, no pesky elements of any sort */
 @-moz-document url("about:home"),
 
-url("about:newtab"),url("about:blank"),url("about:home") {
-.personalize-button, .search-inner-wrapper {display: none !important;}
+url("about:newtab"), url("about:blank"), url("about:home") {
+
+    .personalize-button,
+    .search-inner-wrapper {
+        display: none !important;
+    }
 }
