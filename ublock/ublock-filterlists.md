@@ -26,7 +26,8 @@ Annoyances:
 <img width="962" height="752" alt="image" src="https://github.com/user-attachments/assets/be49cf1e-9dc5-40d4-b87d-00a053aa9a66" />  
 
 Custom:  
-<img width="1108" height="388" alt="image" src="https://github.com/user-attachments/assets/80673162-4f8c-484f-8712-e26ee2ca0962" />
+<img width="1134" height="434" alt="image" src="https://github.com/user-attachments/assets/a5b79360-131e-4c60-bb77-9c8c2e10683b" />  
+
 
 ### Recommended Filter Lists
 
@@ -34,9 +35,10 @@ My setup uses **all of the default uBlock Origin lists** (ads, privacy, malware,
 
 **Where to Find the Lists**:
 - [Dandelion Sprout's Annoyances List](https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList) - Cookie banners, newsletter popups, etc.
+- [AdGuard Tracking Protection Filter](https://filters.adtidy.org/extension/ublock/filters/3.txt) - Additional tracker coverage beyond EasyPrivacy
+- [Bypass Paywalls Clean Filter](https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt)
 - [Fanboy's Annoyances](https://secure.fanboy.co.nz/fanboy-annoyance_ubo.txt) - Social widgets, annoying UI elements
 - [I don't care about cookies](https://www.i-dont-care-about-cookies.eu/abp/) - Cookie banners
-- [AdGuard Tracking Protection Filter](https://filters.adtidy.org/extension/ublock/filters/3.txt) - Additional tracker coverage beyond EasyPrivacy
 - [Personal Unified Filterlist](https://raw.githubusercontent.com/Mateo-Grgic/Personal-Filterlists/refs/heads/main/Unified.txt) - My personal filterlists, combined into one list. 
 
 **Why this combination?**  
