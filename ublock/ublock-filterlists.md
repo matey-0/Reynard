@@ -26,8 +26,8 @@ Annoyances:
 <img width="962" height="752" alt="image" src="https://github.com/user-attachments/assets/be49cf1e-9dc5-40d4-b87d-00a053aa9a66" />  
 
 Custom:  
-<img width="1134" height="434" alt="image" src="https://github.com/user-attachments/assets/a5b79360-131e-4c60-bb77-9c8c2e10683b" />  
-
+<img width="1134" height="444" alt="image" src="https://github.com/user-attachments/assets/4e2e1c95-e3ba-429c-81f0-d81976aa6b12" />  
+ 
 
 ### Recommended Filter Lists
 
