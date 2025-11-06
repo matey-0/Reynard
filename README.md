@@ -171,7 +171,7 @@ https://arkenfox.github.io/TZP/tzp.html
 <img width="2880" height="1856" alt="closing tab" src="https://github.com/user-attachments/assets/5ce1fc47-6455-4a1c-b41d-65dbd17e78f7" />
 
 **Simple Browsing Example**
-![searching](https://github.com/user-attachments/assets/2b5f0f31-ae83-42de-8295-7dda3784c6a0)
+![browsing](https://github.com/user-attachments/assets/28516635-83f9-4d55-8d9f-9a0d315f0623)  
 
 ## License (MIT)
 Feel free to use, modify, and distribute. Attribution not required for personal projects. For public projects, attribution appreciated greatly, but not required.
