@@ -165,7 +165,7 @@ https://arkenfox.github.io/TZP/tzp.html
 <img width="2880" height="1856" alt="kagi search" src="https://github.com/user-attachments/assets/ed6c62a4-3ad2-4c77-8efc-776d91209981" />
 
 **Searching styles**  
-<img width="2880" height="1856" alt="searching" src="https://github.com/user-attachments/assets/6c044b13-b1cb-4295-9246-3d0ad0bdfbc4" />
+<img width="2880" height="1856" alt="image" src="https://github.com/user-attachments/assets/c14dc715-3029-44a0-937d-09cdbfbe97cd" />  
 
 **Closing a tab style**  
 <img width="2880" height="1856" alt="closing tab" src="https://github.com/user-attachments/assets/5ce1fc47-6455-4a1c-b41d-65dbd17e78f7" />
