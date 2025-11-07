@@ -83,6 +83,8 @@
     display: none;}
 .tabbrowser-tab[class*="identity-color-"] .tab-label {
     color: var(--identity-icon-color) !important;}
+.tabbrowser-tab:not([selected])[class*="identity-color-"] .tab-label {
+    filter: brightness(0.55);}
 /* END */
 
 /* New Firefox 145+ hyper round UI is ugly as hell */
