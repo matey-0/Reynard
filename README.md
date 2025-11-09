@@ -55,7 +55,7 @@ Reynard is built on several principles:
   ```cd Reynard```  
 
 #### 2.) Copy files to correct locations
-  **For Native Linux install (pacman, dnf, apt, etc)**  
+  **For Native Linux install (dnf, pacman, apt, brew, zypper, etc)**  
   - Copy the librewolf.overrides.cfg file to the proper path  
   ```cp librewolf.overrides/librewolf.overrides.cfg ~/.librewolf/```  
 
