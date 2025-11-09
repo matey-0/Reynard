@@ -91,7 +91,7 @@ Reynard is built on several principles:
 A VPN is not essential, but I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN (I set it up with multihop, entry is the closest node geographically to reduce latency, exit is your chosen destination. I also have Mullvad's DNS content blockers enabled: Ads, Trackers, Malware).  
 
 ## Tested On:
-- Framework 13 (Ryzen AI 9) - [Fedora Linux 42]
+- Framework 13 (Ryzen AI 9) - [Fedora Linux 43]
 - 15" M3 MacBook Air - [MacOS 26 Tahoe]
 - Steam Deck OLED - [SteamOS Stable Latest]
 
