@@ -4,6 +4,12 @@
 ## What is a librewolf.overrides.cfg?
 The librewolf.overrides.cfg file is a simple JavaScript file that stores, sets, and overrides preferences. It's a more efficient way of mass-applying advanced preferences than using the about:config pane built into LibreWolf/Firefox. Due to LibreWolf's browser policies, some preferences aren't able to be modified using the GUI, so you must use the librewolf.overrides.cfg file to change them.
 
+> **Note on Firefox compatibility:**  
+> With my `librewolf.overrides.cfg` file, there is very little reason to actually use Firefox.  
+> - However, if you really need to use Firefox for some reason, the `librewolf.overrides.cfg` file could just be renamed to `user.js`, and then installed in the typical manner: placed in your Firefox user-profile.  
+> - Whilst this is possible, it is not recommended, because Reynard's `librewolf.overrides.cfg` file assumes LibreWolf's hardening is applied by default. LibreWolf removes all the Firefox telemetry, analytics, and also significantly hardens Firefox in numerous other ways.
+> - If you decide to adapt Reynard's `librewolf.overrides.cfg` file into a `user.js` file, I highly recommend you follow either BrainF+ck Sec's hardening guide, or the Arkenfox guide (Linked later in this guide, and in the main README).
+
 ## What's included in *this* librewolf.overrides.cfg file?
 This librewolf.overrides.cfg file contains:
 * Preferences to increase privacy & security
@@ -16,12 +22,6 @@ This librewolf.overrides.cfg file contains:
 * Minimal, annoyance free everything
 * Betterfox-based preferences
     * Smoothfox, Fastfox, Peskyfox, Securefox
-
-> **Note on Firefox compatibility:**  
-> With my `librewolf.overrides.cfg` file, there is very little reason to actually use Firefox.  
-> - However, if you really need to use Firefox for some reason, the `librewolf.overrides.cfg` file could just be renamed to `user.js`, and then installed in the typical manner: placed in your Firefox user-profile.  
-> - Whilst this is possible, it is not recommended, because Reynard's `librewolf.overrides.cfg` file assumes LibreWolf's hardening is applied by default. LibreWolf removes all the Firefox telemetry, analytics, and also significantly hardens Firefox in numerous other ways.
-> - If you decide to adapt Reynard's `librewolf.overrides.cfg` file into a `user.js` file, I highly recommend you follow either BrainF+ck Sec's hardening guide, or the Arkenfox guide (Linked later in this guide, and in the main README).
 
 ## Regarding VPNs
 > VPNs don't make you anonymous, they are just an extra layer of security/privacy. They are mainly useful for preventing your ISP from tracking you, circumventing location or network-based censorship, and for preventing IP-address based tracking.  
