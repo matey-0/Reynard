@@ -24,6 +24,7 @@ Reynard transforms LibreWolf into a faster, more comfortable browser without maj
 Figure it out yourself. If you can't do that, you probably shouldn't be using anything here.
 
 ## Reference
+### Resources
 - [Betterfox](https://github.com/yokoffing/Betterfox) - Smoothfox, Peskyfox, Fastfox, Securefox configs
 - [BrainF+ck](https://brainfucksec.github.io/firefox-hardening-guide-2025) - Comprehensive hardening guide with good explanations
 - [Arkenfox](https://github.com/arkenfox/user.js) - The reference hardening user.js for a reason
