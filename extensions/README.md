@@ -16,11 +16,10 @@ My curated list of LibreWolf/Firefox extensions. Minimal, focused on privacy and
 
 **Note:** For uBlock Origin configuration, see my [Hard Mode guide](../ublock/README.md).
 
-## Extensions I Keep Disabled (Not Mandatory for Reynard Setup - Only For Convenience)
+## Extensions use sometimes
 
 | Extension | Why It's Disabled | Link |
 |-----------|-------------------|------|
-| **Bypass Paywalls Clean** | Useful for bypassing news paywalls, but I only enable it when needed. | [GitFlic.ru](https://gitflic.ru/project/magnolia1234/bypass-paywalls-firefox-clean/release/0facfab5-936b-43ab-8b88-be067ee6a81a)|
 | **Dark Reader** | Forces dark mode on all sites. It is quite slow, so I only use sometimes, and only at night. Also another fingerprinting and tracking vector. | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/darkreader/) |
 
 ## See Also
