@@ -280,7 +280,6 @@ To:
 **i.e.** delete the `* * 3rd-party block` line  
 3. Commit & Save
 
-
 **Result:** Most sites work out-of-the-box. You still block the dangerous stuff (scripts, frames) but allow images, fonts, CSS from 3rd-parties. You can also use medium mode on a per site basis: for example, I have github set to medium mode, because it breaks in hard mode.
 
 #### Normal Mode (uBlock Origin default blocking mode)
@@ -313,7 +312,6 @@ Hard Mode is more performant than default uBlock Origin setups:
 - Initial mental overhead
 - Occasional 5-10 seconds fixing a broken site
 
-
 Hard Mode is faster & lighter than default uBlock setups, and you have complete control over what runs in your browser. 
 
 ## Related/Further reading/cross-references
@@ -325,26 +323,6 @@ Hard Mode is faster & lighter than default uBlock setups, and you have complete 
 - [uBlock Origin Wiki - Blocking Mode: Hard Mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-hard-mode)
 - [uBlock Origin Wiki - Dynamic Filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering)
 - [uBlock Origin Wiki - Per-site Switches](https://github.com/gorhill/uBlock/wiki/Per-site-switches)
-
-## Contributing 
-**Found a CDN that should be nooped globally?**
-
-If you've discovered a widely-used CDN, API, JS framework, etc that should be in the `trimmed-dynamic-rules.txt` list, feel free to open an issue with:
-
-1. Domain name (e.g., `example-cdn.com`)
-2. What it's used for (e.g., "Serves images for WordPress sites")
-3. Where you encountered it (e.g., "Broke 5+ news sites I visit")
-
-I maintain the CDN allowlist based on my browsing habits, so suggestions for common infrastructure domains are welcome.
-
-**Not accepting:**
-- Tracking/analytics domains (those should stay blocked)
-- Site-specific domains (noop those per-site, for yourself)
-
-**Other contributions welcome:**
-- Documentation improvements (typos, clarity, examples)
-- Troubleshooting tips for common issues
-- Better explanations of Hard Mode concepts
 
 ## Credits
 **uBlock Origin:**
