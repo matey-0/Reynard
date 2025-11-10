@@ -15,7 +15,7 @@ Reynard transforms LibreWolf into a faster, more comfortable browser without maj
 
 ## Requirements
 - Latest LibreWolf version
-- Linux-based operating system (preferable), macOS support work in progress
+- Linux system (preferable), or macOS (support work in progress)
   - Windows support is not planned, I don't have access to a Windows machine, and I refuse to support Windows
 - Troubleshooting skills, basic ability to research
 - Being comfortable with mild site breakage
