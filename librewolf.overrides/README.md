@@ -98,38 +98,9 @@ Reynard's librewolf.overrides.cfg file includes Linux-specific optimizations for
 
 **On macOS:** Most of these prefs either apply, do nothing, or are harmless. However, I've had issues with webrender on macOS in the past using different preferences. If your Mac is using CPU rendering instead of GPU, try disabling `gfx.webrender.all` in the config.
 
-**On Windows:** Not tested, not supported: Might be completely broken.
+**On Windows:** Not tested, not supported: Might be completely broken, idk
 
 The platform-specific preferences are documented in the config file. Read the inline comments for details on what each one does.
-
-### Philosophy
-
-This setup is already better than 99% of browser configurations. LibreWolf's baseline hardening (no telemetry, no Mozilla bloat, strict defaults) does the heavy lifting. I make trade-offs where they matter:
-
-**Where I reduce privacy:**
-* Referer policy relaxed (breaks payment processors, banking sites)
-- WebGL enabled (disabling this breaks interactive maps, some games)
-- etc (see the file itself for a complete list)
-
-These break too many things. The alternative is constantly troubleshooting or maintaining site-specific exceptions.  
-
-
-**Where I increase privacy:**
-- Disk caching disabled (writes browsing data to disk—hard no)
-- Geolocation disabled
-- Push notifications disabled
-- etc (see the file itself for a complete list)
-
-These break almost nothing and have decent payoffs.
-
-### The Trade-off Principle
-
-**I reduce privacy only when breakage is high. I increase privacy when breakage is low.**
-
-If you want maximum hardening at all costs, just use stock LibreWolf: they follow Arkenfox fairly closely. Reynard is for people who want a hardened browser that actually works well for daily driving.
-
-All specific privacy/security preferences are documented in the config file with inline comments.
-
 
 ## Common Customisations
 
@@ -141,6 +112,10 @@ All specific privacy/security preferences are documented in the config file with
 
 Most/all preferences are documented in the config file. Search for the preference name, adjust the value, save, restart.
 
+## Regarding VPNs
+> **Note:** VPNs don't make you anonymous, they are just an extra layer of security/privacy. They are mainly useful for preventing your ISP from tracking you, circumventing location or network-based censorship, and for preventing IP-address based tracking.   
+
+A VPN is not essential, but I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN (I set it up with multihop, entry is the closest node geographically to reduce latency, exit is your chosen destination. I also have Mullvad's DNS content blockers enabled: Ads, Trackers, Malware).    
 
 ## Credits/See Also 
 ### Credits:
