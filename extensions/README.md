@@ -16,7 +16,7 @@ My curated list of LibreWolf/Firefox extensions. Minimal, focused on privacy and
 
 **Note:** For uBlock Origin configuration, see my [Hard Mode guide](../ublock/README.md).
 
-## Extensions use sometimes
+## Extensions I use only sometimes
 
 | Extension | Why It's Disabled | Link |
 |-----------|-------------------|------|
