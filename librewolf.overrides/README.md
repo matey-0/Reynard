@@ -7,12 +7,12 @@ The librewolf.overrides.cfg file is a simple JavaScript file that stores, sets, 
 ## What's included in *this* librewolf.overrides.cfg file?
 This librewolf.overrides.cfg file contains:
 * Preferences to increase privacy & security
-* Optimisations for Linux on Wayland (macOS is a work in progress)
+* Optimisations for Linux on Wayland (macOS stuff is a work in progress)
 * Hardware-specific optimisations to increase speed
-	* Specific device templates for my Framework 13, Steam Deck OLED, and 15" MacBook Air M3
+	* Specific device templates for my Framework 13, Steam Deck OLED, and 15" M3 MacBook Air
 	* Generic templates for several 'tiers' of devices
 * Personal preferences 
-* Intelligent trade-offs in privacy for maximum usability
+* Maximum usability
 * Betterfox-based preferences
     * Smoothfox, Fastfox, Peskyfox, Securefox
 
