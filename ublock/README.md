@@ -1,7 +1,7 @@
 # Reynard - uBlock Origin Docs 
 
 ## What is 'Hard Mode', and Why Should I use It?
-When you connect to an average domain, it requests dozens (_sometimes even hundreds!_) of resources. These resources could be images, JavaScript, CSS, additional content, etc. They could also be trackers, ads, telemetry, fingerprinting scripts, or other malicious content.  
+When you connect to an average website, it requests dozens (_sometimes even hundreds!_) of resources. These resources could be images, JavaScript, CSS, additional content, etc. They could also be trackers, ads, telemetry, fingerprinting scripts, or other malicious content.  
 
 Instead of using a list with millions of trackers, ads, malware, telemetry, and bad actors that quickly gets out of date. You can instead deny everything by default, and punch little holes allowing 'good' websites & content. Because the amount of 'bad' content is ever growing (at an exponential rate), and the amount of 'good' content is relatively stable, you could never keep up with all the 'badness'. However, you could certainly keep up with all the 'goodness'. This policy of denying everything but the 'goodness' is called, somewhat predictably, a 'default deny policy', and it's a great idea.
 
