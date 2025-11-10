@@ -23,9 +23,6 @@ Reynard transforms LibreWolf into a faster, more comfortable browser without maj
 ## Installation
 Figure it out yourself. If you can't do that, you probably shouldn't be using anything here.
 
-## About Reynard
-I've been hardening my browser for the past two years, starting with Firefox when I was ~14. In Febuary of this 2025, after the Firefox drama around advertising and data collection (amongst other things, I was looking to switch before that anyways), I switched to LibreWolf and rebuilt my entire configuration from the ground up. I created this repo in October of 2025 (When I was 16), and I've been updating it since. I'm no privacy expert or browser engineer, just interested in & aware of what's out there. Reynard has been tested on the three hardware platforms I own (Framework 13, MacBook Air M3, Steam Deck OLED) and refined through daily use. The configurations are very opinionated and reflect my specific priorities, but they're decently documented so you can understand the trade-offs and adapt them to your needs.  
-
 ## Reference
 - [Betterfox](https://github.com/yokoffing/Betterfox) - Smoothfox, Peskyfox, Fastfox, Securefox configs
 - [BrainF+ck](https://brainfucksec.github.io/firefox-hardening-guide-2025) - Comprehensive hardening guide with good explanations
