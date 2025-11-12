@@ -6,8 +6,8 @@ The librewolf.overrides.cfg file is a simple JavaScript file that stores, sets, 
 
 **Note on Firefox compatibility:**  
 > With my `librewolf.overrides.cfg` file, there is very little reason to actually use Firefox.  
-> - However, if you really need to use Firefox for some reason, the `librewolf.overrides.cfg` file could just be renamed to `user.js`, and then installed in the typical manner: placed in your Firefox user-profile.  
-> - Whilst this is possible, it is not recommended, because Reynard's `librewolf.overrides.cfg` file assumes LibreWolf's hardening is applied by default. LibreWolf removes all the Firefox telemetry, analytics, and also significantly hardens Firefox in numerous other ways.
+> - However, if you really need to use Firefox for some reason, the `librewolf.overrides.cfg` file could just be renamed to `user.js`, each 'pref' named to 'user_pref', then installed in the typical manner: placed in your Firefox user-profile.  
+> - Whilst this is possible, it is not recommended. This is because Reynard's `librewolf.overrides.cfg` file assumes LibreWolf's hardening is applied by default. LibreWolf removes all the Firefox telemetry, analytics, and also significantly hardens Firefox in numerous other ways.
 > - If you decide to adapt Reynard's `librewolf.overrides.cfg` file into a `user.js` file, I highly recommend you follow either BrainF+ck Sec's hardening guide, or the Arkenfox guide (Linked later in this guide, and in the main README).
 
 ## What's included in *this* librewolf.overrides.cfg file?
