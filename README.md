@@ -30,6 +30,7 @@ Figure it out yourself. If you can't do that, you probably shouldn't be using an
 - [Arkenfox](https://github.com/arkenfox/user.js) - The reference hardening user.js for a reason
 - [RFPTargets](https://searchfox.org/firefox-main/source/toolkit/components/resistfingerprinting/RFPTargets.inc) - For resist fingerprinting targets reference
 - [uBlock Wiki](https://github.com/gorhill/uBlock/wiki/) - Very useful toolkit for learning about uBlock Origin features
+- [Pythom2's LibreWolf Hardening Guide](https://github.com/phytom2/Librefox-Hardening-Guide) - Interesting 'missed' prefs
 
 ### Useful Test Pages
 - [Baldur's Gate 3 - Patch 7 Release Notes](https://baldursgate3.game/news/patch-7-now-live_121) - for testing scrolling performance     
