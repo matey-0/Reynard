@@ -23,7 +23,7 @@ This librewolf.overrides.cfg file contains:
 * Betterfox-based preferences
     * Smoothfox, Fastfox, Peskyfox, Securefox
 
-If you decide to use this config file for whatever reason, you will have to modify it for yourself.  
+If you decide to use this config file for whatever reason, you will have to modify it for yourself; including changing the performance profile.  
 
 ## Regarding VPNs
 > VPNs don't make you anonymous, they are just an extra layer of security/privacy. They are mainly useful for preventing your ISP from tracking you, circumventing location or network-based censorship, and for preventing IP-address based tracking.  
@@ -35,7 +35,9 @@ A VPN is not essential, but I recommend using a well-regarded VPN in addition to
 - [Betterfox](https://github.com/yokoffing/Betterfox) - Smoothfox, Peskyfox, Fastfox, Securefox configs
 - [BrainF+ck](https://brainfucksec.github.io/firefox-hardening-guide-2025) - Comprehensive hardening guide with good explanations
 - [Arkenfox](https://github.com/arkenfox/user.js) - The reference hardening user.js for a reason
-- [Firefox Source Docs](https://firefox-source-docs.mozilla.org/index.html) - Useful for understanding prefs
+- [RFPTargets](https://searchfox.org/firefox-main/source/toolkit/components/resistfingerprinting/RFPTargets.inc) - For resist fingerprinting targets reference
+- [uBlock Wiki](https://github.com/gorhill/uBlock/wiki/) - Very useful toolkit for learning about uBlock Origin features
+- [Pythom2's LibreWolf Hardening Guide](https://github.com/phytom2/Librefox-Hardening-Guide) - Interesting 'missed' prefs
 ### See Also:
 - [Main Reynard README](../README.md)
 - [uBlock Origin Hard Mode Guide](../ublock/README.md)
