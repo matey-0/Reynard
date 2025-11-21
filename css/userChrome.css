@@ -55,13 +55,24 @@
 .menuitem-iconic.searchmode-switcher-addEngine,
 #searchbar-engine-one-off-item-engine--1,
 .searchbar-search-icon-overlay {
-    display: none !important;}
+    display: none !important;
+    visibility: collapse !important;
+    padding: 0px !important;
+    width: 0.5px}
+:root {--toolbarbutton-inner-padding: 2px !important;}
+:root {--urlbar-container-padding: 0px !important;}
+#toolbar-menubar {
+  margin-top: -1px !important;
+  margin-bottom: -1px !important;
+  padding-top: -2px !important;
+  padding-bottom: -2px !important;}
+#TabsToolbar {margin-bottom: -2px !important;}
 /* END */
 
 /* Make the tabs slightly thinner - looks best with compact mode */
 /* START */
 #TabsToolbar {
-    height: 30px !important;
+    height: 28px !important;
     padding-block: 0px !important;}
 .tab-background {
     height: 30px !important;
@@ -71,10 +82,8 @@
     padding-left: -2px !important;
     display: flex !important;
     align-items: center !important;}
-.tab-close-button {
-    align-self: center !important;}
-:root {
-    --tab-min-height: 30px !important;}
+.tab-close-button {align-self: center !important;}
+:root {--tab-min-height: 20px !important;}
 /* END */
 
 /* remove container indicator line, instead make tab text colour match chosen containers' colour */
@@ -84,7 +93,7 @@
 .tabbrowser-tab[class*="identity-color-"] .tab-label {
     color: var(--identity-icon-color) !important;}
 .tabbrowser-tab:not([selected])[class*="identity-color-"] .tab-label {
-    filter: brightness(0.55);}
+    filter: brightness(0.60);}
 /* END */
 
 /* New Firefox 145+ hyper round UI is ugly as hell */
@@ -95,12 +104,13 @@
     border-radius: 4px !important;}
 :root {
     --toolbarbutton-border-radius: 4px !important;
+    --tab-border-radius: 4px !important;
     --urlbar-border-radius: 4px !important;}
 /* END */
 
 /* Give tab favicons a very slight rounded effect, for consistency and aesthetics */
 .tab-icon-image {
-    border-radius: 1px !important;
+    border-radius: 4px !important;
     opacity: 1 !important
 }
    
