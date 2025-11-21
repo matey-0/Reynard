@@ -59,14 +59,14 @@
     visibility: collapse !important;
     padding: 0px !important;
     width: 0.5px}
-:root {--toolbarbutton-inner-padding: 2px !important;}
 :root {--urlbar-container-padding: 0px !important;}
 #toolbar-menubar {
   margin-top: -1px !important;
   margin-bottom: -1px !important;
   padding-top: -2px !important;
   padding-bottom: -2px !important;}
-#TabsToolbar {margin-bottom: -2px !important;}
+#TabsToolbar{margin-bottom: -2px !important;}
+.urlbar-input-container{border-radius: 4px !important;}
 /* END */
 
 /* Make the tabs slightly thinner - looks best with compact mode */
@@ -83,7 +83,6 @@
     display: flex !important;
     align-items: center !important;}
 .tab-close-button {align-self: center !important;}
-:root {--tab-min-height: 20px !important;}
 /* END */
 
 /* remove container indicator line, instead make tab text colour match chosen containers' colour */
