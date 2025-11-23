@@ -1,6 +1,5 @@
 # Reynard 
-
-<img width="2880" height="1856" alt="image" src="https://github.com/user-attachments/assets/91d47e17-d7e6-4ba8-bba6-7a419f410309" />  
+<img width="2880" height="1856" alt="image" src="https://github.com/user-attachments/assets/1349d0e1-66f0-4933-aed2-1d31f2039cb9" />  
 
 > **Note:** Reynard is my personal LibreWolf configuration, shared publicly in case it's useful to others. Consider this a beta/work-in-progress, configurations, preference, settings are tested on my hardware & operating system, but may need adjustments for yours.
 
@@ -45,24 +44,11 @@ Figure it out yourself. If you can't do that, you probably shouldn't be using an
 - https://fingerprint.com/  
 - https://arkenfox.github.io/TZP/tzp.html  
 
+## **Simple Browsing Example**
+![browsing](https://github.com/user-attachments/assets/4fa513e8-4f8a-4c03-a05f-64b59b074f3c)  
+
 ## Related Projects:
-- [Personal-Filterlists](https://github.com/Mateo-Grgic/Personal-Filterlists) - My custom uBlock Origin filter lists
-
-## Preview Images
-**New Tab Page**  
-<img width="2880" height="1856" alt="blank tab" src="https://github.com/user-attachments/assets/6935e53e-e43d-40f4-aee8-051202653d36" />
-
-**On a webpage (Kagi Search)**  
-<img width="2880" height="1856" alt="kagi search" src="https://github.com/user-attachments/assets/ed6c62a4-3ad2-4c77-8efc-776d91209981" />
-
-**Searching styles**  
-<img width="2880" height="1856" alt="image" src="https://github.com/user-attachments/assets/c14dc715-3029-44a0-937d-09cdbfbe97cd" />  
-
-**Closing a tab style**  
-<img width="2880" height="1856" alt="closing tab" src="https://github.com/user-attachments/assets/5ce1fc47-6455-4a1c-b41d-65dbd17e78f7" />
-
-**Simple Browsing Example**
-![browsing](https://github.com/user-attachments/assets/28516635-83f9-4d55-8d9f-9a0d315f0623)  
+- [Personal-Filterlists](https://github.com/Mateo-Grgic/Personal-Filterlists) - My custom uBlock Origin filter lists  
 
 ## License (MIT)
 Feel free to use, modify, and distribute. Attribution not required for personal projects. For public projects, attribution appreciated greatly, but not required.
