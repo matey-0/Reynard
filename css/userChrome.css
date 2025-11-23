@@ -61,10 +61,7 @@
     width: 0.5px}
 :root {--urlbar-container-padding: 0px !important;}
 #toolbar-menubar {
-  margin-top: -1px !important;
-  margin-bottom: -1px !important;
-  padding-top: -2px !important;
-  padding-bottom: -2px !important;}
+  margin-top: -2.5px !important;}
 #TabsToolbar{margin-bottom: -2px !important;}
 .urlbar-input-container{border-radius: 4px !important;}
 /* END */
