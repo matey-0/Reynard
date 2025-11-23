@@ -44,11 +44,11 @@ Figure it out yourself. If you can't do that, you probably shouldn't be using an
 - https://fingerprint.com/  
 - https://arkenfox.github.io/TZP/tzp.html  
 
-## Related Projects:
-- [Personal-Filterlists](https://github.com/Mateo-Grgic/Personal-Filterlists) - My custom uBlock Origin filter lists
-
-**Simple Browsing Example**
+## **Simple Browsing Example**
 ![browsing](https://github.com/user-attachments/assets/4fa513e8-4f8a-4c03-a05f-64b59b074f3c)  
+
+## Related Projects:
+- [Personal-Filterlists](https://github.com/Mateo-Grgic/Personal-Filterlists) - My custom uBlock Origin filter lists  
 
 ## License (MIT)
 Feel free to use, modify, and distribute. Attribution not required for personal projects. For public projects, attribution appreciated greatly, but not required.
