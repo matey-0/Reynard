@@ -56,7 +56,7 @@ Figure it out yourself. If you can't do that, you probably shouldn't be using an
 <img width="2880" height="1856" alt="kagi search" src="https://github.com/user-attachments/assets/ed6c62a4-3ad2-4c77-8efc-776d91209981" />
 
 **Searching styles**  
-<img width="2880" height="1856" alt="image" src="https://github.com/user-attachments/assets/c14dc715-3029-44a0-937d-09cdbfbe97cd" />  
+<img width="2880" height="1856" alt="image" src="https://github.com/user-attachments/assets/bd30da04-569b-411f-a856-b94f2050dad3" />  
 
 **Closing a tab style**  
 <img width="2880" height="1856" alt="closing tab" src="https://github.com/user-attachments/assets/5ce1fc47-6455-4a1c-b41d-65dbd17e78f7" />
