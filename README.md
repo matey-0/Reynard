@@ -20,7 +20,7 @@ Reynard transforms LibreWolf into a faster, more comfortable browser without maj
 - Being comfortable with mild site breakage
 
 ## Installation
-Figure it out yourself. If you can't do that, you probably shouldn't be using anything here.
+Figure it out yourself. If you can't do that, you probably shouldn't be using anything here. (Not to gatekeep, I'm just too lazy to write installation instructions.)  
 
 ## Reference
 ### Resources
