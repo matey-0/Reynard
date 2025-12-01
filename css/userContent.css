@@ -1,10 +1,8 @@
-/* Remove the settings icon on the new tab page */
-@-moz-document url("about:home"),
-
-url("about:newtab"), url("about:blank"), url("about:home") {
-
-    .personalize-button,
-    .search-inner-wrapper {
-        display: none !important;
-    }
+/* Remove everything from the new tab pages */
+@-moz-document url("about:home"), url("about:newtab") {
+* {pointer-events: none !important;
+   visibility: collapse !important;
+   opacity: 0 !important;
+   --background-color: 000000 !important;
+  }
 }
