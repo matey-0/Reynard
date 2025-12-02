@@ -15,18 +15,17 @@ Reynard transforms LibreWolf into a faster, more comfortable browser without maj
 ## Requirements
 - Latest LibreWolf version
 - Linux system (preferable), or macOS (support work in progress)
-  - Windows support is not planned as I don't have access to a Windows machine.  
-- Troubleshooting skills, basic ability to research
+  - Windows support is not planned as I don't have access to a Windows machine.
 - Being comfortable with mild site breakage  
 
 ## Reference
 ### Resources
-- [Betterfox](https://github.com/yokoffing/Betterfox) - Smoothfox, Peskyfox, Fastfox, Securefox configs
-- [BrainF+ck](https://brainfucksec.github.io/firefox-hardening-guide-2025) - Comprehensive hardening guide with good explanations
+- [Betterfox](https://github.com/yokoffing/Betterfox) - Smoothfox, Peskyfox, Fastfox, Securefox configs which this project relies heavily upon
+- [BrainF+ck](https://brainfucksec.github.io/firefox-hardening-guide-2025) - Comprehensive hardening guide with really good explanations for prefs
 - [Arkenfox](https://github.com/arkenfox/user.js) - The reference hardening user.js for a reason
 - [RFPTargets](https://searchfox.org/firefox-main/source/toolkit/components/resistfingerprinting/RFPTargets.inc) - For resist fingerprinting targets reference
 - [uBlock Wiki](https://github.com/gorhill/uBlock/wiki/) - Very useful toolkit for learning about uBlock Origin features
-- [Pythom2's LibreWolf Hardening Guide](https://github.com/phytom2/Librefox-Hardening-Guide) - Interesting 'missed' prefs
+- [Pythom2's LibreWolf Hardening Guide](https://github.com/phytom2/Librefox-Hardening-Guide) - Interesting 'missed' prefs in LibreWolf
 
 ### Useful Test Pages
 - [Baldur's Gate 3 - Patch 7 Release Notes](https://baldursgate3.game/news/patch-7-now-live_121) - for testing scrolling performance     
