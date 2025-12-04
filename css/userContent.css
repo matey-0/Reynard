@@ -1,5 +1,4 @@
-/* Remove non-removable things from the new tab pages */
-/* Known issue: on a new container tab, there is a brief flash of unstyled content */
+/* Ensure a blank new tab page: remove everything */
 @-moz-document url("about:home"), url("about:newtab"), url("about:blank") {
     .personalize-button {
         display: none;
