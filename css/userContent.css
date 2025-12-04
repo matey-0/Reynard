@@ -1,8 +1,21 @@
-/* Remove everything from the new tab pages */
-@-moz-document url("about:home"), url("about:newtab") {
-div {pointer-events: none !important;
-       visibility: collapse !important;
-       opacity: 1 !important;
-      }
-:root {--background-color: 000000 !important;}
+/* Remove non-removable things from the new tab pages */
+/* Known issue: on a new container tab, there is a brief flash of unstyled content */
+@-moz-document url("about:home"), url("about:newtab"), url("about:blank") {
+    .personalize-button {
+        display: none;
+        visibility: collapse;
+    }
+
+    * {
+        --background-color: #000000 !important;
+        background-color: #000000 !important;
+        visibility: collapse !important;
+        opacity: 0 !important;
+        overflow: hidden !important;
+        margin: 10000 !important;
+    }
+
+    div {
+        display: none
+    }
 }
