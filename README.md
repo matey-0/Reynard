@@ -41,7 +41,7 @@ Reynard transforms LibreWolf into a faster, more comfortable browser without maj
 - https://arkenfox.github.io/TZP/tzp.html  
 
 ## **Simple Browsing Example**
-![browsing](https://github.com/user-attachments/assets/4fa513e8-4f8a-4c03-a05f-64b59b074f3c)  
+![browsing](https://github.com/user-attachments/assets/c12c96c3-2ea5-4dd1-b8ba-5ed44870a95c)  
 
 ## Related Projects:
 - [Personal-Filterlists](https://github.com/Mateo-Grgic/Personal-Filterlists) - My custom uBlock Origin filter lists  
