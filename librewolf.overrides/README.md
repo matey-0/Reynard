@@ -30,7 +30,7 @@ If you decide to use this config file for whatever reason, you will have to modi
 
 A VPN is not essential, but I recommend using a well-regarded VPN in addition to this setup. Mullvad VPN or Proton VPN are good options (no-logging, fast, good privacy policies, etc); I personally use Mullvad VPN (I set it up with multihop, entry is the closest node geographically to reduce latency, exit is your chosen destination. I also have Mullvad's DNS content blockers enabled: Ads, Trackers, Malware).  
 
-## Credits/See Also 
+## Credits
 ### Credits:
 - [Betterfox](https://github.com/yokoffing/Betterfox) - Smoothfox, Peskyfox, Fastfox, Securefox configs
 - [BrainF+ck](https://brainfucksec.github.io/firefox-hardening-guide-2025) - Comprehensive hardening guide with good explanations
@@ -38,6 +38,3 @@ A VPN is not essential, but I recommend using a well-regarded VPN in addition to
 - [RFPTargets](https://searchfox.org/firefox-main/source/toolkit/components/resistfingerprinting/RFPTargets.inc) - For resist fingerprinting targets reference
 - [uBlock Wiki](https://github.com/gorhill/uBlock/wiki/) - Very useful toolkit for learning about uBlock Origin features
 - [Pythom2's LibreWolf Hardening Guide](https://github.com/phytom2/Librefox-Hardening-Guide) - Interesting 'missed' prefs
-### See Also:
-- [Main Reynard README](../README.md)
-- [uBlock Origin Hard Mode Guide](../ublock/README.md)
