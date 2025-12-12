@@ -44,7 +44,7 @@ Reynard transforms LibreWolf into a faster, more comfortable browser without maj
 ![browsing](https://github.com/user-attachments/assets/c12c96c3-2ea5-4dd1-b8ba-5ed44870a95c)  
 
 ## Related Projects:
-- [Personal-Filterlists](https://github.com/matey0o/Personal-Filterlists) - My custom uBlock Origin filter lists  
+- [Personal-Filterlists](https://github.com/matey-0/Personal-Filterlists) - My custom uBlock Origin filter lists  
 
 ## License (MIT)
 Feel free to use, modify, and distribute. Attribution not required for personal projects. For public projects, attribution appreciated greatly, but not required.
