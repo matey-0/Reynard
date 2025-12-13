@@ -39,7 +39,7 @@ My setup uses **all of the default uBlock Origin lists** (ads, privacy, malware,
 - [Bypass Paywalls Clean Filter](https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt)
 - [Fanboy's Annoyances](https://secure.fanboy.co.nz/fanboy-annoyance_ubo.txt) - Social widgets, annoying UI elements
 - [I don't care about cookies](https://www.i-dont-care-about-cookies.eu/abp/) - Cookie banners
-- [Personal Unified Filterlist](https://raw.githubusercontent.com/Mateo-Grgic/Personal-Filterlists/refs/heads/main/Unified.txt) - My personal filterlists, combined into one list. 
+- [Personal Unified Filterlist](https://raw.githubusercontent.com/matey-0/Personal-Filterlists/refs/heads/main/Unified.txt) - My personal filterlists, combined into one list. 
 
 **Why this combination?**  
 The default lists provide extremely comprehensive baseline coverage. Custom lists fill gaps in annoyance blocking and tracking protection that the uBlock team *choose* to not filter (Not maliciously, just not to break everything & bloat the default lists. Somes lists are also agressive or experimental). My personal lists are extremely aggressive. Consider them optional or use as inspiration for your own rules.
