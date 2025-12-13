@@ -17,6 +17,7 @@ no-scripting: www.tomshardware.com true
 * 1492916055.rsc.cdn77.org * noop
 * 1plus1.video * noop
 * 365dm.com * noop
+* 3dsintegrator.com * noop
 * 729solutions.com * noop
 * accentuate.io * noop
 * acsbapp.com * noop
@@ -56,6 +57,7 @@ no-scripting: www.tomshardware.com true
 * archive.ph * noop
 * archive.vn * noop
 * ajax.aspnetcdn.com * noop
+* avatars.githubusercontent.com * noop
 * aws.dev * noop
 * awsstatic.com * noop
 * awswaf.com * noop
@@ -70,6 +72,7 @@ no-scripting: www.tomshardware.com true
 * bbycastatic.ca * noop
 * apps.bdimg.com * noop
 * betacdn.net * noop
+* bfldr.com * noop
 * bigcommerce.com * noop
 * blogspot.com * noop
 * cdn.bootcdn.net * noop
@@ -92,6 +95,7 @@ no-scripting: www.tomshardware.com true
 * log.byteoversea.com * block
 * ca.cdn.cloudflare.net * noop
 * cachefly.net * noop
+* camo.githubusercontent.com * noop
 * canada.ca * noop
 * captcha-delivery.com * noop
 * cargo.site * noop
@@ -100,7 +104,9 @@ no-scripting: www.tomshardware.com true
 * cdn77.org * noop
 * cdngslb.com * noop
 * cdnst.net * noop
+* cdtapps.com * noop
 * chargebee.com * noop
+* chargebeestaticv2.com * noop
 * chatgpt.com * noop
 * chimpstatic.com * noop
 * classifiedscloud.io * noop
@@ -116,11 +122,14 @@ no-scripting: www.tomshardware.com true
 * cloudflarestorage.com * noop
 * cloudflarestream.com * noop
 * cloudfront.net * noop
+* cloudimg.io * noop
 * cloudinary.com * noop
 * com.akadns.net * noop
 * com.cdn.cloudflare.net * noop
 * use.fontawesome.com.cdn.cloudflare.net * noop
 * contentful.com * noop
+* contentstack.com * noop
+* coveo.com * noop
 * code.createjs.com * noop
 * creativecdn.com * noop
 * crystalcommerce.info * noop
@@ -137,6 +146,8 @@ no-scripting: www.tomshardware.com true
 * dscg.akamaiedge.net * noop
 * dscr.akamai.net * noop
 * dscx.akamaiedge.net * noop
+* dynamics.com * noop
+* dynamics365commerce.ms * noop
 * ecwid.com * noop
 * edgecdn.ru * noop
 * editmysite.com * noop
@@ -145,6 +156,7 @@ no-scripting: www.tomshardware.com true
 * embedly.com * noop
 * exactdn.com * noop
 * fastly.net * noop
+* fb-t-msedge.net * noop
 * fbcd.co * noop
 * fbcdn.net * noop
 * fcdn.me * noop
@@ -152,10 +164,12 @@ no-scripting: www.tomshardware.com true
 * firebaseio.com * noop
 * firefox.etp * noop
 * flagcdn.com * noop
+* fmgsuite.com * noop
 * fontawesome.com * noop
 * use.fontawesome.com * noop
 * fonts.googleapis.com * block
 * forter.com * noop
+* framerusercontent.com * noop
 * frontastic.live * noop
 * fuseplatform.net * noop
 * futurecdn.net * noop
@@ -194,6 +208,7 @@ no-scripting: www.tomshardware.com true
 * hcaptcha.com * noop
 * hclsoftware.cloud * noop
 * hdnux.com * noop
+* helpjuice.com * noop
 * hsforms.net * noop
 * hubspot.com * noop
 * hurimg.com * noop
@@ -347,6 +362,7 @@ no-scripting: www.tomshardware.com true
 * lb.sae.sina.com.cn * noop
 * skimresources.com * noop
 * sl1bas.blogspot.com * block
+* space48apps.com * noop
 * speedsize.com * noop
 * sphdigital.com.sg * noop
 * sqspcdn.com * noop
@@ -380,7 +396,9 @@ no-scripting: www.tomshardware.com true
 * analytics-sg.tiktok.com * block
 * business-api.tiktok.com * block
 * timeincuk.net * noop
+* tiqcdn.com * noop
 * townnews.com * noop
+* transcend-cdn.com * noop
 * tripadvisor.com * block
 * truehits.in.th * block
 * truehits.net * block
@@ -390,6 +408,7 @@ no-scripting: www.tomshardware.com true
 * turner.com * noop
 * twitter.com * block
 * ads-api.twitter.com * block
+* typeform.com * noop
 * typekit.net * noop
 * uconnectlabs.com * noop
 * ufabet678.com * block
@@ -409,6 +428,7 @@ no-scripting: www.tomshardware.com true
 * vimeocdn.com * noop
 * vox-cdn.com * noop
 * w3.org * noop
+* wdfiles.com * noop
 * webdamdb.com * noop
 * website-files.com * noop
 * website-files * noop
@@ -568,8 +588,6 @@ www.pinterest.com pinimg.com * noop
 proton.me protonweb.com * noop
 www.reddit.com cdn77.org * noop
 www.reddit.com redd.it * noop
-www.reddit.com redgifs.com * noop
-www.reddit.com www.redgifs.com * noop
 www.reddit.com rlcdn.com * noop
 www.speedtest.net * 3p noop
 www.speedtest.net fibernetics.ca * noop
