@@ -1,0 +1,149 @@
+// Low-end device performance template, modify as needed (requires third-party testing)
+// Target hardware: 8GB RAM, 2-4 core CPU, older integrated GPU
+// Important: Only one performance template should be active at one time
+/*
+pref("browser.preferences.defaultPerformanceSettings.enabled", false); // Firefox default perf settings are conservative
+pref("dom.ipc.processCount", 2); // set to physical core count +/- 2
+pref("dom.ipc.processCount.webIsolated", 2); // set to physical core count +/- 2
+pref("dom.ipc.processCount.privilegedabout", 1); // set to 2 on more powerful systems, 1 by default 
+pref("dom.ipc.processPrelaunch.delayMs", 1500); // default is 1000, faster CPUs can have this set to 500
+pref("javascript.options.mem.gc_allocation_threshold_mb", 27); // Higher numbers use more RAM, default is 27mb
+pref("image.mem.decode_bytes_at_a_time", 16384); // Image rendering chunk size, faster devices get higher numbers (default is 32kb)
+pref("image.mem.max_decoded_image_kb", 65536); // How many uncompressed images to keep in cache
+pref("browser.cache.memory.max_entry_size", 5120); // How big can the cache be? Increased 10x for high-end systems from the default value
+pref("media.memory_caches_combined_limit_pc_sysmem", 30); // What precent of system RAM is LibreWolf allowed to use?
+pref("browser.low_commit_space_threshold_percent", 20); // What precent of system RAM usage is required for offloading to start?
+pref("browser.sessionhistory.max_total_viewers", 4); // how many tabs are stored in history? Higher numbers use more RAM
+pref("browser.tabs.min_inactive_duration_before_unload", 200000); // how long until tabs are unloaded
+pref("browser.cache.disk.enable", false); // enable disk caching, lower privacy higher speed
+
+*/
+
+// Weaker device performance template, modify as needed (requires third-party testing)
+// Target hardware: 8GB RAM, 6 core CPU, integrated GPU
+// Important: Only one performance template should be active at one time
+/*
+pref("dom.ipc.processCount", 6); // set to physical core count +/- 2
+pref("dom.ipc.processCount.webIsolated", 6); // set to physical core count +/- 2
+pref("dom.ipc.processCount.privilegedabout", 1); // set to 2 on more powerful systems, 1 by default 
+pref("dom.ipc.processPrelaunch.delayMs", 1000); // default is 1000, faster CPUs can have this set to 500
+pref("javascript.options.mem.gc_allocation_threshold_mb", 27); // Higher numbers use more RAM, default is 27mb
+pref("image.mem.decode_bytes_at_a_time", 32768); // Image rendering chunk size, faster devices get higher numbers (default is 32kb)
+pref("image.mem.max_decoded_image_kb", 262144); // How many uncompressed images to keep in cache
+pref("browser.cache.memory.max_entry_size", 2560); // How big can the cache be? Increased 10x for high-end systems from the default value
+pref("media.memory_caches_combined_limit_pc_sysmem", 20); // What precent of system RAM is LibreWolf allowed to use?
+pref("browser.low_commit_space_threshold_percent", 10); // What precent of system RAM usage is required for offloading to start?
+pref("browser.sessionhistory.max_total_viewers", 6); // how many tabs are stored in history? Higher numbers use more RAM
+pref("browser.tabs.min_inactive_duration_before_unload", 300000); // how long until tabs are unloaded
+*/
+
+// Mid-range device performance template, modify as needed
+// Target hardware: 16GB RAM, 8 core CPU, decent integrated GPU, or weaker dedicated GPU
+// Important: Only one performance template should be active at one time
+/* 
+pref("dom.ipc.processCount", 8); // set to physical core count +/- 2
+pref("dom.ipc.processCount.webIsolated", 8); // set to physical core count +/- 2
+pref("dom.ipc.processCount.privilegedabout", 2); // set to 2 on more powerful systems, 1 by default 
+pref("dom.ipc.processPrelaunch.delayMs", 750); // default is 1000, faster CPUs can have this set to 500
+pref("javascript.options.mem.gc_allocation_threshold_mb", 30); // Higher numbers use more RAM, default is 27mb
+pref("image.mem.decode_bytes_at_a_time", 65536); // Image rendering chunk size, faster devices get higher numbers (default is 32kb)
+pref("image.mem.max_decoded_image_kb", 1048576); // How many uncompressed images to keep in cache
+pref("browser.cache.memory.max_entry_size", 51200); // How big can the cache be? Increased 10x for high-end systems from the default value
+pref("media.memory_caches_combined_limit_pc_sysmem", 20); // What precent of system RAM is LibreWolf allowed to use?
+pref("browser.low_commit_space_threshold_percent", 10); // What precent of system RAM usage is required for offloading to start?
+pref("browser.sessionhistory.max_total_viewers", 8); // how many tabs are stored in history? Higher numbers use more RAM
+pref("browser.tabs.min_inactive_duration_before_unload", 600000); // how long until tabs are unloaded
+*/
+
+// High-end device performance template, modify as needed
+// Target hardware: 64GB RAM+, 16 core CPU, good integrated GPU, dedicated GPU
+// Important: Only one performance template should be active at one time
+/* 
+pref("dom.ipc.processCount", 16); // set to physical core count +/- 2
+pref("dom.ipc.processCount.webIsolated", 16); // set to physical core count +/- 2
+pref("dom.ipc.processCount.privilegedabout", 2); // set to 2 on more powerful systems, 1 by default 
+pref("dom.ipc.processPrelaunch.delayMs", 500); // default is 1000, faster CPUs can have this set to 500
+pref("javascript.options.mem.gc_allocation_threshold_mb", 35); // Higher numbers use more RAM, default is 27mb
+pref("image.mem.decode_bytes_at_a_time", 65536); // Image rendering chunk size, faster devices get higher numbers (default is 32kb)
+pref("image.mem.max_decoded_image_kb", 4194304); // How many uncompressed images to keep in cache
+pref("browser.cache.memory.max_entry_size", 51200); // How big can the cache be? Increased 10x for high-end systems from the default value
+pref("media.memory_caches_combined_limit_pc_sysmem", 15); // What precent of system RAM is LibreWolf allowed to use?
+pref("browser.low_commit_space_threshold_percent", 7); // What precent of system RAM usage is required for offloading to start?
+pref("browser.sessionhistory.max_total_viewers", -1); // how many tabs are stored in history? Higher numbers use more RAM
+pref("browser.tabs.min_inactive_duration_before_unload", 900000); // how long until tabs are unloaded
+*/
+
+// Common form factor specific overrides
+/* 
+pref("layout.frame_rate", 120); // match to display framerate, or double if you're so inclined
+pref("browser.tabs.tabMinWidth", 110); // min tab width in pixels, set to preference (default is ~75)
+pref("mousewheel.default.delta_multiplier_y", 100); // change scrolling speed to preference, [x,y,z] typically should match, but it's up to you
+pref("mousewheel.default.delta_multiplier_z", 100);
+pref("mousewheel.default.delta_multiplier_x", 100);
+*/
+
+///
+/* CURRENTLY ACTIVE CONFIGURATION, COMMENT OUT AND CHOOSE YOUR PERSONAL PROFILE BEFORE USE */
+///
+// My Personal Framework 13 Overrides
+// Important: Only one performance template should be active at one time
+// Performance overrides (128gb RAM [16gb VRAM, 112gb RAM], 12c/24t CPU) 
+pref("dom.ipc.processCount", 14);
+pref("dom.ipc.processCount.webIsolated", 14);
+pref("dom.ipc.processCount.privilegedabout", 2);
+pref("dom.ipc.processPrelaunch.delayMs", 500);
+pref("javascript.options.mem.gc_allocation_threshold_mb", 35);
+pref("image.mem.decode_bytes_at_a_time", 131072);
+pref("image.mem.max_decoded_image_kb", 4194304);
+pref("browser.cache.memory.max_entry_size", 204800);
+pref("media.memory_caches_combined_limit_pc_sysmem", 15);
+pref("browser.low_commit_space_threshold_percent", 7);
+pref("browser.sessionhistory.max_total_viewers", -1); 
+pref("browser.tabs.min_inactive_duration_before_unload", 900000);
+// Form factor specific overrides
+pref("layout.frame_rate", 120);
+pref("browser.tabs.tabMinWidth", 110);
+pref("mousewheel.default.delta_multiplier_y", 90);
+pref("mousewheel.default.delta_multiplier_z", 90);
+pref("mousewheel.default.delta_multiplier_x", 90);
+
+// Steam Deck OLED Overrides
+// Important: Only one performance template should be active at one time
+/*
+// Performance overrides (16gb RAM, 4c/8t CPU, SteamOS Linux) 
+pref("dom.ipc.processCount", 4);
+pref("dom.ipc.processCount.webIsolated", 4);
+pref("dom.ipc.processCount.privilegedabout", 1);
+pref("image.mem.decode_bytes_at_a_time", 32768);
+pref("image.mem.max_decoded_image_kb", 524288); // How many uncompressed images to keep in cache
+pref("media.memory_caches_combined_limit_pc_sysmem", 30);
+pref("browser.low_commit_space_threshold_percent", 20);
+pref("browser.tabs.min_inactive_duration_before_unload", 150000);
+// Form factor specific overrides
+pref("layout.frame_rate", 90);
+pref("browser.tabs.tabMinWidth", 75);
+pref("mousewheel.default.delta_multiplier_y", 50); // Linux scrolling is too fast, steam deck scrolling is too fast
+pref("mousewheel.default.delta_multiplier_z", 50);
+pref("mousewheel.default.delta_multiplier_x", 50);
+pref("sidebar.verticalTabs", true);
+*/
+
+// 15" M3 MacBook Air Overrides
+// Important: Only one performance template should be active at one time
+/*
+// Peformance overrides (24gb RAM, 8c/8t CPU, macOS) 
+pref("dom.ipc.processCount", 8);
+pref("geo.provider.use_corelocation", false);
+pref("dom.ipc.processCount.webIsolated", 8);
+pref("dom.ipc.processCount.privilegedabout", 2);
+pref("media.memory_caches_combined_limit_pc_sysmem", 20);
+pref("browser.low_commit_space_threshold_percent", 15);
+pref("browser.tabs.min_inactive_duration_before_unload", 300000);
+pref("image.mem.max_decoded_image_kb", 1048576); // How many uncompressed images to keep in cache
+// Form factor specific overrides
+pref("layout.frame_rate", 60);
+pref("browser.tabs.tabMinWidth", 125);
+pref("mousewheel.default.delta_multiplier_y", 160); // macOS Firefox/LibreWolf scrolling is too slow
+pref("mousewheel.default.delta_multiplier_z", 160);
+pref("mousewheel.default.delta_multiplier_x", 160);
+*/
