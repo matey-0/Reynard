@@ -23,7 +23,7 @@ This librewolf.overrides.cfg file contains:
 * Betterfox-based preferences
     * Smoothfox, Fastfox, Peskyfox, Securefox
 
-If you decide to use this config file for whatever reason, you will have to modify it for yourself; including changing the performance profile.  
+If you decide to use this config file for whatever reason, you will have to modify it for yourself; including changing the performance profile. Remove/comment out my Framework 13 performance profile (around line 177, only do this if your hardware isn't similar to mine in performance), and replace it with a different, better matching profile. You can find the alternate profiles in performance_profiles.txt.  
 
 ## Regarding VPNs
 > VPNs don't make you anonymous, they are just an extra layer of security/privacy. They are mainly useful for preventing your ISP from tracking you, circumventing location or network-based censorship, and for preventing IP-address based tracking.  
