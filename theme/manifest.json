@@ -1,0 +1,54 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Static Dark Space",
+  "theme": {
+    "images": {},
+    "properties": {},
+    "colors": {
+      "toolbar": "rgb(16, 16, 16)",
+      "toolbar_text": "rgb(212, 212, 212)",
+      "frame": "rgb(0, 0, 0)",
+      "tab_background_text": "rgb(125, 125, 125)",
+      "toolbar_field": "rgb(0, 0, 0)",
+      "toolbar_field_text": "rgb(204, 204, 204)",
+      "tab_line": "rgb(32, 32, 32)",
+      "popup": "rgb(16, 16, 16)",
+      "popup_text": "rgb(212, 212, 212)",
+      "button_background_active": "rgb(40, 40, 40)",
+      "button_background_hover": "rgb(40, 40, 40)",
+      "frame_inactive": "rgb(0, 0, 0)",
+      "icons_attention": "rgb(212, 212, 212)",
+      "icons": "rgb(212, 212, 212)",
+      "ntp_background": "rgb(0, 0, 0)",
+      "ntp_text": "rgb(212, 212, 212)",
+      "popup_border": "rgb(48, 48, 48)",
+      "popup_highlight_text": "rgb(255, 255, 255)",
+      "popup_highlight": "rgb(48, 48, 48)",
+      "sidebar_border": "rgb(48, 48, 48)",
+      "sidebar_highlight_text": "rgb(255, 255, 255)",
+      "sidebar_highlight": "rgb(51, 51, 51)",
+      "sidebar_text": "rgb(255, 255, 255)",
+      "sidebar": "rgb(16, 16, 16)",
+      "tab_background_separator": "rgb(32, 32, 32)",
+      "tab_loading": "rgb(255, 255, 255)",
+      "tab_selected": "rgb(20, 20, 20)",
+      "tab_text": "rgb(255, 255, 255)",
+      "toolbar_bottom_separator": "rgb(14, 14, 14)",
+      "toolbar_field_border_focus": "rgb(48, 48, 48)",
+      "toolbar_field_border": "rgb(16, 16, 16)",
+      "toolbar_field_focus": "rgb(16, 16, 16)",
+      "toolbar_field_highlight_text": "rgb(255, 255, 255)",
+      "toolbar_field_highlight": "rgb(51, 51, 51)",
+      "toolbar_field_separator": "rgb(14, 14, 14)",
+      "toolbar_field_text_focus": "rgb(255, 255, 255)",
+      "toolbar_top_separator": "rgb(14, 14, 14)",
+      "toolbar_vertical_separator": "rgb(14, 14, 14)"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{5a278bfb-0162-40d9-b6c9-ea0760ed0a97}"
+    }
+  }
+}
