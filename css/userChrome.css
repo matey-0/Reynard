@@ -130,6 +130,14 @@
     visibility: collapse !important;
 }
 
-/********************** END **********************/
+/* Hide the container tabs extension URL bar icon */
+#pageAction-urlbar-_testpilot-containers.urlbar-page-action.urlbar-addon-page-action{
+    display: none !important;
+    visibility: collapse !important;
+}
 
+/* Hide the tridactyl icon when editing in a textbox */
+--tridactyl-logo: url("");
+
+/********************** END **********************/
 
