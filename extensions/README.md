@@ -16,7 +16,7 @@ My curated list of LibreWolf/Firefox extensions. Minimal, focused on privacy and
 | **uBlock Origin** | The content blocker. Efficient, lightweight, highly configurable. | See [the Reynard Hard Mode guide](../ublock/README.md) for (my) setup. | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) |
 | **Violentmonkey** | Userscript manager; flexible tool when you need it, can replace most extensions. Open source (unlike Tampermonkey), supports tons of scripts for site customization and automation. | Userscripts are just as dangerous as installing more extensions; they have full access (dangerous), increase fingerprinting surface, and add more attack vectors. I typically use them sparingly, review the code properly, and most of the time modify/write scripts instead of using stock scripts. | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/) |
 
-**Note:** For uBlock Origin configuration, see my [Hard Mode guide](../ublock/README.md).
+**Note:** For uBlock Origin configuration, see my [Hard Mode guide](../ublock/README.md).  
 **Note2:** I feel that this extension list is already super bloated (but trimming back makes me lose so many useful features!). If you can, try to just use uBlock Origin alone, anything more sets yourself up for fingerprinting if you're not careful. I'm almost certainly unique just because of these extensions.
 
 ## Extensions I use only sometimes
