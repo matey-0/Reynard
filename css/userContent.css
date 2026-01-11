@@ -12,9 +12,13 @@
         opacity: 0 !important;
         overflow: hidden !important;
         margin: 10000 !important;
+        color: #000000 !important;
     }
 
     div {
         display: none
     }
 }
+
+/* Hide the tridactyl icon when editing in a textbox */
+:root {--tridactyl-logo: none !important}
