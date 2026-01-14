@@ -1,0 +1,1 @@
+This is PseudoVim, it adds some simple vim keybinds. You need to create a systemctl startup service for the python script to be running at startup. I also assume you're using terminal vim & Ghostty, so change those if you aren't
