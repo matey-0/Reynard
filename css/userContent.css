@@ -19,6 +19,3 @@
         display: none
     }
 }
-
-/* Hide the tridactyl icon when editing in a textbox */
-:root {--tridactyl-logo: none !important}
