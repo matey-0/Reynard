@@ -1,6 +1,7 @@
+// Important: Only one performance template should be active at one time
+
 // Low-end device performance template, modify as needed (requires third-party testing)
 // Target hardware: 8GB RAM, 2-4 core CPU, older integrated GPU
-// Important: Only one performance template should be active at one time
 /*
 pref("browser.preferences.defaultPerformanceSettings.enabled", false); // Firefox default perf settings are conservative
 pref("dom.ipc.processCount", 2); // set to physical core count +/- 2
@@ -16,12 +17,10 @@ pref("browser.low_commit_space_threshold_percent", 20); // What precent of syste
 pref("browser.sessionhistory.max_total_viewers", 4); // how many tabs are stored in history? Higher numbers use more RAM
 pref("browser.tabs.min_inactive_duration_before_unload", 200000); // how long until tabs are unloaded
 pref("browser.cache.disk.enable", false); // enable disk caching, lower privacy higher speed
-
 */
 
 // Weaker device performance template, modify as needed (requires third-party testing)
 // Target hardware: 8GB RAM, 6 core CPU, integrated GPU
-// Important: Only one performance template should be active at one time
 /*
 pref("dom.ipc.processCount", 6); // set to physical core count +/- 2
 pref("dom.ipc.processCount.webIsolated", 6); // set to physical core count +/- 2
@@ -39,7 +38,6 @@ pref("browser.tabs.min_inactive_duration_before_unload", 300000); // how long un
 
 // Mid-range device performance template, modify as needed
 // Target hardware: 16GB RAM, 8 core CPU, decent integrated GPU, or weaker dedicated GPU
-// Important: Only one performance template should be active at one time
 /* 
 pref("dom.ipc.processCount", 8); // set to physical core count +/- 2
 pref("dom.ipc.processCount.webIsolated", 8); // set to physical core count +/- 2
@@ -57,7 +55,6 @@ pref("browser.tabs.min_inactive_duration_before_unload", 600000); // how long un
 
 // High-end device performance template, modify as needed
 // Target hardware: 64GB RAM+, 16 core CPU, good integrated GPU, dedicated GPU
-// Important: Only one performance template should be active at one time
 /* 
 pref("dom.ipc.processCount", 16); // set to physical core count +/- 2
 pref("dom.ipc.processCount.webIsolated", 16); // set to physical core count +/- 2
@@ -82,12 +79,9 @@ pref("mousewheel.default.delta_multiplier_z", 100);
 pref("mousewheel.default.delta_multiplier_x", 100);
 */
 
-///
-/* CURRENTLY ACTIVE CONFIGURATION, COMMENT OUT AND CHOOSE YOUR PERSONAL PROFILE BEFORE USE */
-///
+/*
 // My Personal Framework 13 Overrides
-// Important: Only one performance template should be active at one time
-// Performance overrides (128gb RAM [16gb VRAM, 112gb RAM], 12c/24t CPU) 
+// Performance overrides (128gb RAM [4gb VRAM, 124gb system RAM], 12c/24t CPU) 
 pref("dom.ipc.processCount", 14);
 pref("dom.ipc.processCount.webIsolated", 14);
 pref("dom.ipc.processCount.privilegedabout", 2);
@@ -106,9 +100,9 @@ pref("browser.tabs.tabMinWidth", 110);
 pref("mousewheel.default.delta_multiplier_y", 90);
 pref("mousewheel.default.delta_multiplier_z", 90);
 pref("mousewheel.default.delta_multiplier_x", 90);
+*/
 
 // Steam Deck OLED Overrides
-// Important: Only one performance template should be active at one time
 /*
 // Performance overrides (16gb RAM, 4c/8t CPU, SteamOS Linux) 
 pref("dom.ipc.processCount", 4);
@@ -129,7 +123,6 @@ pref("sidebar.verticalTabs", true);
 */
 
 // 15" M3 MacBook Air Overrides
-// Important: Only one performance template should be active at one time
 /*
 // Peformance overrides (24gb RAM, 8c/8t CPU, macOS) 
 pref("dom.ipc.processCount", 8);
