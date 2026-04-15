@@ -42,10 +42,10 @@
 #tracking-protection-icon-container {
     display: none !important;}
 #identity-box {
-    max-width: 3px !important;
-    min-width: 3px !important;
+    max-width: 0px !important;
+    min-width: 0px !important;
     padding-top: 8px !important;
-    padding-left: 3.2px !important;
+    padding-left: 0px !important;
     margin: 0 !important;
     border: none !important;
     opacity: 0 !important;
@@ -135,6 +135,16 @@
     display: none !important;
     visibility: collapse !important;
 }
+
+/* Remove the new—as of LibreWolf 149—trust icon */ 
+#trust-icon-container{display: none !important}
+
+/* Fix new UI bug that comes with LibreWolf 149: dynamically thinning tabs */
+.titlebar-spacer{height:37px !important}
+#alltabs-button{height:37px !important}
+.tabbrowser-tab{
+    height: 37px !important;
+    margin-top: 1px !important}
 
 /********************** END **********************/
 
