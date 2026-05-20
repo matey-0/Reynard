@@ -1,6 +1,7 @@
 # Reynard - uBlock Origin Docs 
 
 ## What is 'Hard Mode', and Why Should I Use It?
+
 When you connect to an average website, it requests dozens (_sometimes even hundreds!_) of resources. These resources could be images, JavaScript, CSS, additional content, etc. They could also be trackers, ads, telemetry, fingerprinting scripts, or other malicious content.  
 
 Instead of using a list with millions of trackers, ads, malware, telemetry, and bad actors that quickly gets out of date, you can instead deny everything by default and punch little holes allowing 'good' websites and content. Because the amount of 'bad' content is ever-growing (at an exponential rate), and the amount of 'good' content is relatively stable, you could never keep up with all the 'badness'. However, you could certainly keep up with all the 'goodness'. This policy of denying everything but the 'goodness' is called, somewhat predictably, a 'default deny policy', and it's a great idea.
@@ -23,13 +24,15 @@ However, this breaks nearly every website on the modern internet. So, instead of
 If a certain website requires site-specific helper content, you can also 'noop' on a per-site basis.  
 
 From uBlock Origin Wiki:
+
 > Characteristics [of uBlock Origin Hard Mode]:
+>
 > * Web pages will load fast.
 > * Your privacy exposure to 3rd parties is reduced to a minimum.
 > * You no longer depend mostly on 3rd-party filter lists to dictate what is blocked or not.
 > * The static filter lists are still used to mop up whatever network requests are not blocked in this mode — so double protection.
 > * Very high likelihood of web pages being broken: you have to be ready and willing to fix them when this happens.
-> *Keep in mind though that as you build your ruleset for the sites you usually visit, you will spend less and less time fixing web pages.*  
+>   *Keep in mind though that as you build your ruleset for the sites you usually visit, you will spend less and less time fixing web pages.*  
 
 — [uBlock Origin Wiki - Blocking Mode: Hard Mode](https://github.com/gorhill/ublock/wiki/Blocking-mode:-hard-mode)
 
@@ -56,6 +59,7 @@ This directory contains most/everything needed to replicate my uBlock Origin Har
 ## Installation & Setup
 
 ### Prerequisites
+
 - LibreWolf (or Firefox-based browser) with uBlock Origin installed
 - Familiarity with browser extensions (for setup; usage requires a little more knowledge, but don't despair, it's easy enough to learn)
 
@@ -64,9 +68,9 @@ This directory contains most/everything needed to replicate my uBlock Origin Har
 ### Step 1: Enable Advanced User Mode
 
 1. Navigate to uBlock Origin's settings dashboard
-3. Go to the Settings tab (the first tab)
-4. Scroll down and check "I am an advanced user"
-5. A gear icon will appear next to the checkbox; you can either configure advanced settings now or later — order shouldn't matter. For clarity's sake, I'm going to cover it later in the guide. 
+2. Go to the Settings tab (the first tab)
+3. Scroll down and check "I am an advanced user"
+4. A gear icon will appear next to the checkbox; you can either configure advanced settings now or later — order shouldn't matter. For clarity's sake, I'm going to cover it later in the guide. 
 
 ### Step 2: Import Dynamic Rules (~600 CDN Noops)
 
@@ -94,7 +98,7 @@ Fine-tune uBlock's behaviour for optimal Hard Mode performance.
 5. Copy the entire `advanced-settings.txt` file
 6. Select the entire text block and delete it
 7. Paste the entire contents of the `advanced-settings.txt` file
-6. Click Apply changes (top left of the advanced settings pane)
+8. Click Apply changes (top left of the advanced settings pane)
 
 **Note:** This step is optional. The advanced settings file contains minor refinements; Hard Mode will work fine without them.
 
@@ -111,7 +115,7 @@ Time to set up the second filtering layer (static filters).
    - Scroll to the Custom section at the bottom of the Filter lists tab
    - Click Import...
    - Paste each custom list URL from `ublock-filterlists.md`, one at a time
-	- When all lists are in the import box, click the "Apply changes" button (top right)
+   - When all lists are in the import box, click the "Apply changes" button (top right)
 
 **Warning:** My personal cosmetic filter list is extremely aggressive. Consider starting without it and adding it later if you want strict cosmetic filtering.
 
@@ -119,8 +123,8 @@ Time to set up the second filtering layer (static filters).
 
 1. Click the uBlock Origin extension icon on any webpage
 2. First and foremost, the blocked count should be highlighted red
-2. You should also see the dynamic filtering matrix (a grid of coloured cells)
-3. Check that 3rd-party rows have red cells for:
+3. You should also see the dynamic filtering matrix (a grid of coloured cells)
+4. Check that 3rd-party rows have red cells for:
    - script (3rd-party scripts blocked)
    - frame (3rd-party frames blocked)
    - 3rd-party (all other 3rd-party content blocked)
@@ -128,9 +132,11 @@ Time to set up the second filtering layer (static filters).
 **If you see red cells in all three of the 3rd-party rows, Hard Mode is working.**
 
 ### What to Expect on First Use
+
 **Some sites will break.** This is normal and expected, even with ~600 nooped CDNs.
 
 **Common issues you'll encounter:**
+
 - Images don't load (CDN blocked)
 - Videos won't play (media CDN blocked)
 - Login buttons don't work (auth domain blocked)
@@ -143,6 +149,7 @@ Time to set up the second filtering layer (static filters).
 **Hard Mode is a one-time setup cost for long-term control and privacy.** Stick with it for 2–3 weeks and it becomes second nature. You'll thank your protectiveness when you hear about some new domain that pwned people en masse, which you managed to avoid by blocking everything. That's not to say you're 100% safe. You're not, even with the most advanced setup possible (which this is not), or the least advanced setup: user error is still the number one source of failure.
 
 ## How to Use Hard Mode Effectively
+
 ### Daily Workflow
 
 Hard Mode becomes manageable once you learn the pattern. Here's what happens 90% of the time:
@@ -159,11 +166,14 @@ Hard Mode becomes manageable once you learn the pattern. Here's what happens 90%
 After 2–3 weeks of daily browsing, you'll rarely encounter new breakage, and when you do, unbreaking is nearly instant. The setup pain is temporary; the control is permanent. 
 
 ### Understanding the uBlock Origin Matrix
+
 When you click the uBlock Origin icon on any webpage, you'll see the dynamic filtering matrix (if you've expanded uBlock fully):  
+
 > Example image:  
 > <img width="1264" height="1092" alt="image" src="https://github.com/user-attachments/assets/ce2f7d90-5c71-4634-b748-e2e50b26f1d7" />  
 
 **What you're looking at:**
+
 - **Rows:** Resource types (all, image, css, media, script, frame, etc.)
 - **Columns:** Global rules (left) vs Per-site rules (right)
 - **Cell colours:**
@@ -173,22 +183,26 @@ When you click the uBlock Origin icon on any webpage, you'll see the dynamic fil
   - **Dark grey (only on right side):** Inherited rule from global scope
 
 **Hard Mode shows:**
+
 - **3rd-party script row:** Red in both columns (all 3rd-party scripts blocked by default)
 - **3rd-party frame row:** Red in both columns (all 3rd-party frames blocked by default)
 - **3rd-party row:** Red in both columns (all other 3rd-party content blocked by default)
 
 ### How to Noop Domains
+
 #### Global Noop (Allow Everywhere)
+
 Use this only for trusted CDNs, APIs, and infrastructure domains you encounter on multiple sites. Whilst it's best to be careful and conservative, if you're using a comprehensive set of filter lists, you should be fine for the most part if you aren't super careful.
 
 **Steps:**
+
 1. Click the uBlock Origin icon on the broken webpage
 2. Scroll down below the top section of the matrix to see the individual domains blocked
 3. Find likely culprits (CDNs like `cloudflare.com`, APIs like `googleapis.com`, JS frameworks like `jquery.com`)
 4. Click the domain name to add a temporary rule
 5. Click to go from red (blocked) → grey (noop)
-7. Reload the page and test
-6. If you have a winning combo of domains to noop, click the padlock icon at the top to make the rule permanent
+6. Reload the page and test
+7. If you have a winning combo of domains to noop, click the padlock icon at the top to make the rule permanent
 
 **Result:** That domain is now nooped globally — on all websites. It will pass through to your static filter layer unhindered.
 
@@ -197,34 +211,41 @@ Use this only for trusted CDNs, APIs, and infrastructure domains you encounter o
 Use this for domains you don't fully trust, or that are specific to one website.
 
 **Steps:**
+
 1. Same as above, but click the domain in the site-specific column (column on the left)
 2. Click once to noop (grey)
 3. Reload the page to test
-3. Click the padlock icon to make it permanent
+4. Click the padlock icon to make it permanent
 
 **Result:** That domain is only nooped for the current website.
 
 ### Which Domains Should You Noop?
+
 #### Usually Safe to Noop Globally:
 
 **CDNs (Content Delivery Networks):**
 Stuff like:  
+
 - `cloudflare.com`, `akamaihd.net`, `fastly.net`, `jsdelivr.net`, `unpkg.com`, `cloudfront.net`, `azureedge.net`, `stackpathcdn.com`
 
 **Google Infrastructure:**
 Stuff like:  
+
 - `googleapis.com`, `gstatic.com`, `googleusercontent.com`, `google.com` (if needed for fonts, but be cautious with Google. I block Google Fonts by default)
 
 **JS Frameworks & Libraries:**
 Stuff like:  
+
 - `jquery.com`, `bootstrapcdn.com`, `fontawesome.com`
 
 **Media CDNs:**
 Stuff like:  
+
 - `imgur.com`, `giphy.com`, `vimeocdn.com`
 
 **Cloud Storage:**
 Stuff like:  
+
 - `s3.amazonaws.com`, `storage.googleapis.com`
 
 **Rule of thumb:** If it's infrastructure (delivering content) and used across many sites, a global noop is usually fine. Your static filters will still catch trackers and ads served from these domains.
@@ -233,10 +254,12 @@ Stuff like:
 
 **Social Media Widgets:**
 Stuff like:  
+
 - `facebook.com`, `twitter.com`, `linkedin.com`
 - Only noop on sites where you need the widget (e.g., embedded Facebook posts, or on Facebook itself)
 
 **Site-Specific Domains:**
+
 - Anything that looks unique to one company/site
 - Example: `shopify-assets.com` — only needed on Shopify stores, etc.
 
@@ -244,11 +267,13 @@ Stuff like:
 
 **Analytics:**
 Don't noop these ever:  
+
 - `google-analytics.com`, `googletagmanager.com`
 - (Don't noop at all; these are pure tracking)
 
 **Ad Networks:**
 Don't noop these ever: 
+
 - `doubleclick.net`, `adsense.com`
 - (Don't noop; let Hard Mode block them)
 
@@ -259,6 +284,7 @@ Don't noop these ever:
 3. Check my `trimmed-dynamic-rules.txt` for examples; if a domain is in there, I've personally verified it's safe to noop globally
 
 **You can always undo:**
+
 - Go to the My rules tab in the uBlock dashboard
 - Find the rule (format: `example.com example.com * noop`)
 - Delete the line
@@ -269,15 +295,16 @@ Don't noop these ever:
 Blocks 3rd-party scripts and frames but allows other 3rd-party content (images, CSS, etc.).
 
 **How to switch:**
+
 1. uBlock Origin dashboard → **My rules** tab
-2. Change global rules from:
-```* * 3rd-party-script block```  
-```* * 3rd-party-frame block```  
-```* * 3rd-party block```  
-To:  
-```* * 3rd-party-script block```  
-```* * 3rd-party-frame block```  
-**i.e.,** delete the `* * 3rd-party block` line  
+2. Change global rules from:  
+	```* * 3p block```  
+	```* * 3p-frame block```  
+	```* * 3p-script block```  
+	To:    
+	```* * 3p-frame block```  
+	```* * 3p-script block```  
+*i.e. delete the* `* * 3rd-party block` *line*
 3. Commit & Save
 
 **Result:** Most sites work out of the box. You still block the dangerous stuff (scripts, frames) but allow images, fonts, and CSS from 3rd parties. You can also use Medium Mode on a per-site basis: for example, I have GitHub set to Medium Mode because it breaks in Hard Mode.
@@ -332,3 +359,4 @@ Hard Mode is faster and lighter than default uBlock setups, and you have complet
 - Dandelion Sprout, Fanboy, AdGuard, EasyList team, and all filter list maintainers whose work powers all the filter lists we rely on
 
 **Reynard** is my personal implementation of Hard Mode principles, refined over six plus months of daily use. All mistakes are mine, not uBlock or anyone else's.
+```
