@@ -331,4 +331,4 @@ Hard Mode is faster and lighter than default uBlock setups, and you have complet
 **Filter List Maintainers:**
 - Dandelion Sprout, Fanboy, AdGuard, EasyList team, and all filter list maintainers whose work powers all the filter lists we rely on
 
-**Reynard** is my personal implementation of Hard Mode principles, refined over six months of daily use. All mistakes are mine, not uBlock or anyone else's.
+**Reynard** is my personal implementation of Hard Mode principles, refined over six plus months of daily use. All mistakes are mine, not uBlock or anyone else's.
