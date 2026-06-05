@@ -124,7 +124,9 @@ pref("sidebar.verticalTabs", true);
 
 // 15" M3 MacBook Air Overrides
 /*
-// Peformance overrides (24gb RAM, 8c/8t CPU, macOS) 
+// Peformance overrides (24gb RAM, 8c/8t CPU, macOS)
+// As of June 5 2026, I don't support macOS anymore—these prefs could be
+broken, but I'm keeping them here just in case they're useful
 pref("dom.ipc.processCount", 8);
 pref("geo.provider.use_corelocation", false);
 pref("dom.ipc.processCount.webIsolated", 8);
