@@ -7,40 +7,64 @@
     display: -moz- !important;
     opacity: 0;
     visibility: collapse !important;
-    transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;}
+    transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
 .tabbrowser-tab:not([pinned]):hover .tab-close-button {
     opacity: 1;
     visibility: visible !important;
-    transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;}
+    transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
 .tabbrowser-tab:not([pinned]):hover .tab-close-button:hover {
     fill: #FF0000 !important;
-    transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;}
+    transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
 .tabbrowser-tab {
-    --tab-label-mask-size: 1em !important;}
+    --tab-label-mask-size: 1em !important;
+}
+
 .close-icon {
-    transition: fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;}
+    transition: fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
 .close-icon:hover {
-    fill: #FF0000 !important;}
+    fill: #FF0000 !important;
+}
+
 /* END */
 
 /* Minimalist URL bar & search experience */
 /* START */
 #urlbar {
     padding-left: 0px !important;
-    padding-right: 0px !important;}
+    padding-right: 0px !important;
+}
+
 .urlbarView-favicon {
-    visibility: collapse !important;}
+    visibility: collapse !important;
+}
+
 .search-one-offs {
-    padding-block: 4px !important}
+    padding-block: 4px !important
+}
+
 .urlbarView-body-outer {
     padding: 0px !important;
     display: none !important;
-    visibility: collapse !important;}
+    visibility: collapse !important;
+}
+
 .urlbarView {
     padding-left: 1px !important;
-    padding-right: 1px !important;}
+    padding-right: 1px !important;
+}
+
 #tracking-protection-icon-container {
-    display: none !important;}
+    display: none !important;
+}
+
 #identity-box {
     max-width: 0px !important;
     min-width: 0px !important;
@@ -50,7 +74,9 @@
     border: none !important;
     opacity: 0 !important;
     overflow: hidden !important;
-    pointer-events: none !important;}
+    pointer-events: none !important;
+}
+
 #urlbar-engine-one-off-item-engine--1,
 .menuitem-iconic.searchmode-switcher-addEngine,
 #searchbar-engine-one-off-item-engine--1,
@@ -58,38 +84,88 @@
     display: none !important;
     visibility: collapse !important;
     padding: 0px !important;
-    width: 0.5px}
-:root {--urlbar-container-padding: 0px !important;}
+    width: 0.5px
+}
+
+:root {
+    --urlbar-container-padding: 0px !important;
+}
+
 #toolbar-menubar {
-  margin-top: -1.4px !important;}
-#TabsToolbar{margin-bottom: -1px !important;}
-.urlbar-input-container{border-radius: 4px !important;}
+    margin-top: -1.4px !important;
+}
+
+#TabsToolbar {
+    margin-bottom: -1px !important;
+}
+
+.urlbar-input-container {
+    border-radius: 4px !important;
+}
+
+/* Fix for URL bar as of Firefox 153 */
+.urlbar-input-container {
+    padding-left: 4px !important;
+}
+
+#urlbar[focused]:not([breakout-extend]) .urlbar-input-container {
+    padding-left: 4px !important;
+}
+
+.urlbar-input-container:focus-within {
+    padding-left: 9px !important;
+}
+
+#identity-box.localResource {
+    display: none !important;
+    padding: 0px !important
+}
+
+#identity-box {
+    padding-block: 0px !important
+}
+
 /* END */
 
 /* Make the tabs slightly thinner - looks best with compact mode */
 /* START */
 #TabsToolbar {
     height: 28px !important;
-    padding-block: 0px !important;}
+    padding-block: 0px !important;
+}
+
 .tab-background {
     height: 30px !important;
-    margin-block: auto !important;}
+    margin-block: auto !important;
+}
+
 .tab-content {
     padding: -1px -1px !important;
     padding-left: -2px !important;
     display: flex !important;
-    align-items: center !important;}
-.tab-close-button {align-self: center !important;}
+    align-items: center !important;
+}
+
+.tab-close-button {
+    align-self: center !important;
+}
+
 /* END */
 
 /* remove container indicator line, instead make tab text colour match chosen containers' colour */
 /* START */
 #tabbrowser-tabs .tab-context-line {
-    display: none;}
+    display: none;
+}
+
 .tabbrowser-tab[class*="identity-color-"] .tab-label {
-    color: var(--identity-icon-color) !important;}
+    color: var(--identity-icon-color) !important;
+}
+
 .tabbrowser-tab:not([selected])[class*="identity-color-"] .tab-label {
-    filter: brightness(0.60);}
+    filter: brightness(0.60);
+}
+
 /* END */
 
 /* New Firefox 145+ hyper round UI is ugly as hell */
@@ -97,11 +173,15 @@
 #nav-bar *,
 #PersonalToolbar *,
 .toolbar-items * {
-    border-radius: 4px !important;}
+    border-radius: 4px !important;
+}
+
 :root {
     --toolbarbutton-border-radius: 4px !important;
     --tab-border-radius: 4px !important;
-    --urlbar-border-radius: 4px !important;}
+    --urlbar-border-radius: 4px !important;
+}
+
 /* END */
 
 /* Give tab favicons a very slight rounded effect, for consistency and aesthetics */
@@ -109,7 +189,7 @@
     border-radius: 4px !important;
     opacity: 1 !important
 }
-   
+
 /* Hide misc stupid elements */
 .urlbar-go-button,
 .search-setting-button,
@@ -131,19 +211,27 @@
 }
 
 /* Hide the container tabs extension URL bar icon */
-#pageAction-urlbar-_testpilot-containers.urlbar-page-action.urlbar-addon-page-action{
+#pageAction-urlbar-_testpilot-containers.urlbar-page-action.urlbar-addon-page-action {
     display: none !important;
     visibility: collapse !important;
 }
 
-/* Remove the new—as of LibreWolf 149—trust icon */ 
-#trust-icon-container{display: none !important}
+/* Remove the new—as of LibreWolf 149—trust icon */
+#trust-icon-container {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    visibility: collapse !important;
+    width: 0px !important;
+    display: none !important
+}
 
 /* Fix new UI bug that comes with LibreWolf 149: dynamically thinning tabs */
-.tabbrowser-tab, #alltabs-button, .titlebar-spacer, #tabs-newtab-button{
+.tabbrowser-tab,
+#alltabs-button,
+.titlebar-spacer,
+#tabs-newtab-button {
     height: 37px !important;
-    margin-top: 0.7px !important}
-#tabs-newtab-button{margin-top: 1.1px !important}
+    margin-top: 1px !important
+}
 
 /********************** END **********************/
-
