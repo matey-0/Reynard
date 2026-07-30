@@ -13,7 +13,6 @@
 .urlbarView-body-outer,
 .urlbarView-favicon,
 #tracking-protection-icon-container,
-#identity-box,
 #urlbar-engine-one-off-item-engine--1,
 .menuitem-iconic.searchmode-switcher-addEngine,
 #searchbar-engine-one-off-item-engine--1,
@@ -22,12 +21,9 @@
 .urlbar-go-button,
 .search-setting-button,
 .tab-icon-overlay,
-#vertical-spacer,
-/* forced space w/ vertical tabs */
-#pageAction-urlbar-_testpilot-containers,
-/* container tabs URL bar icon */
-#trust-icon-container {
-    /* LibreWolf 149 trust icon */
+#vertical-spacer, /* forced space w/ vertical tabs */
+#pageAction-urlbar-_testpilot-containers, /* container tabs URL bar icon */
+#trust-icon-container { /* LibreWolf 149 trust icon */
     display: none !important;
 }
 
@@ -60,9 +56,9 @@
 }
 
 .urlbar-input-container {
+    /* FF 153 fix */
     border-radius: 4px !important;
     padding-left: 2px !important;
-    /* FF 153 fix */
 }
 
 .urlbar-input-container:focus-within {
@@ -79,6 +75,25 @@
 
 .search-one-offs {
     padding-block: 4px !important;
+}
+
+#identity-box.localResource {
+    display: none !important;
+    padding: 0px !important;
+}
+
+/* While this CSS is ugly, all these rules need to be used instead of 'display: none' for popups to work properly */
+#identity-box {
+    max-width: 0px !important;
+    min-width: 0px !important;
+    padding-top: 8px !important;
+    padding-left: 0px !important;
+    padding-block: 0px !important;
+    margin: 0 !important;
+    border: none !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
 }
 
 /* Make the tabs slightly thinner - looks best with compact mode */
