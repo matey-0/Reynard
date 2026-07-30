@@ -22,9 +22,12 @@
 .urlbar-go-button,
 .search-setting-button,
 .tab-icon-overlay,
-#vertical-spacer,   /* forced space w/ vertical tabs */
-#pageAction-urlbar-_testpilot-containers,   /* container tabs URL bar icon */
-#trust-icon-container {   /* LibreWolf 149 trust icon */
+#vertical-spacer,
+/* forced space w/ vertical tabs */
+#pageAction-urlbar-_testpilot-containers,
+/* container tabs URL bar icon */
+#trust-icon-container {
+    /* LibreWolf 149 trust icon */
     display: none !important;
 }
 
@@ -43,7 +46,7 @@
 .close-icon {
     align-self: center !important;
     transition: opacity 200ms ease-in-out,
-                fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+        fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
 }
 
 .tab-close-button:hover,
@@ -58,7 +61,8 @@
 
 .urlbar-input-container {
     border-radius: 4px !important;
-    padding-left: 2px !important;   /* FF 153 fix */
+    padding-left: 2px !important;
+    /* FF 153 fix */
 }
 
 .urlbar-input-container:focus-within {
