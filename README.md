@@ -27,6 +27,7 @@ Reynard transforms LibreWolf into a faster, more comfortable browser without maj
 - [RFPTargets](https://searchfox.org/firefox-main/source/toolkit/components/resistfingerprinting/RFPTargets.inc) - For resist fingerprinting targets reference
 - [uBlock Wiki](https://github.com/gorhill/uBlock/wiki/) - Very useful toolkit for learning about uBlock Origin features
 - [Pythom2's LibreWolf Hardening Guide](https://github.com/phytom2/Librefox-Hardening-Guide) - Interesting 'missed' prefs in LibreWolf
+- [CachyOS-firefox-settings](https://github.com/CachyOS/CachyOS-PKGBUILDS/blob/master/cachyos-firefox-settings/cachyos.js) - Additional performance settings
 
 ### Useful Test Pages
 - [Baldur's Gate 3 - Patch 7 Release Notes](https://baldursgate3.game/news/patch-7-now-live_121) - for testing scrolling performance     
