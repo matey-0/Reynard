@@ -21,6 +21,7 @@
 .urlbar-go-button,
 .search-setting-button,
 .tab-icon-overlay,
+#identity-box.localResource, /* magnifying glass icon */
 #vertical-spacer, /* forced space w/ vertical tabs */
 #pageAction-urlbar-_testpilot-containers, /* container tabs URL bar icon */
 #trust-icon-container { /* LibreWolf 149 trust icon */
@@ -55,20 +56,6 @@
     padding-inline: 0 !important;
 }
 
-.urlbar-input-container {
-    /* FF 153 fix */
-    border-radius: 4px !important;
-    padding-left: 2px !important;
-}
-
-.urlbar-input-container:focus-within {
-    padding-left: 9px !important;
-}
-
-#urlbar[focused]:not([breakout-extend]) .urlbar-input-container {
-    padding-left: 2px !important;
-}
-
 .urlbarView {
     padding-inline: 1px !important;
 }
@@ -77,9 +64,21 @@
     padding-block: 4px !important;
 }
 
-#identity-box.localResource {
-    display: none !important;
-    padding: 0px !important;
+/* fix for firefox 154 */
+#urlbar .urlbar-input-container {
+    gap: 0 !important;
+    column-gap: 0 !important;
+    padding-inline: 0 !important;
+}
+
+#urlbar .urlbar-input-box {
+    margin-inline-start: 0 !important;
+    padding-inline-start: 2px !important;
+}
+
+#urlbar[breakout-extend] .urlbar-input-box {
+    padding-inline-start: 8px !important;
+    transition: none !important;
 }
 
 /* While this CSS is ugly, all these rules need to be used instead of 'display: none' for popups to work properly */
@@ -89,6 +88,7 @@
     padding-top: 8px !important;
     padding-left: 0px !important;
     padding-block: 0px !important;
+    padding: 0px !important;
     margin: 0 !important;
     border: none !important;
     opacity: 0 !important;
@@ -100,7 +100,7 @@
 #TabsToolbar {
     height: 28px !important;
     padding-block: 0 !important;
-    margin-bottom: -1px !important;
+    margin-bottom: -0.5px !important;
 }
 
 #toolbar-menubar {
@@ -142,7 +142,8 @@
 /* New Firefox 145+ hyper round UI is ugly as hell */
 #nav-bar *,
 #PersonalToolbar *,
-.toolbar-items * {
+.toolbar-items *, 
+.urlbar-input-container {
     border-radius: 4px !important;
 }
 
@@ -151,3 +152,4 @@
     border-radius: 4px !important;
     opacity: 1 !important;
 }
+
