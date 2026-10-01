@@ -1,24 +1,24 @@
 /* Reynard userChrome.css */
 /* Refactored with GPT-6 Astra (I can do this manually, but it would've taken a tonne of time. I manually did edit many values here though, so this wasn't just done autonomously */
 
-/* ==========================================================
-   1. Configuration
-   ========================================================== */
+/* ── Configuration ─────────────────────────────────────────── */
 
 :root {
     /* Layout */
     --reynard-tab-strip: 26px;
     --reynard-tab-height: 24px;
+    --reynard-tab-max-width: 200px;
     --reynard-nav-height: 30px;
-    --reynard-field-height: 24px;
+    --reynard-field-height: 22px;
     --reynard-font-size: 13px;
 
-    /* Icons */
+    /* Icons and search buttons */
     --reynard-tab-icon-size: 13px;
     --reynard-nav-icon-size: 14px;
-    --reynard-engine-icon-size: 13px;
+    --reynard-engine-icon-size: 14px;
+    --reynard-engine-button-size: 24px;
 
-    /* Firefox sizing variables */
+    /* Firefox sizing */
     --toolbarbutton-border-radius: 4px !important;
     --toolbarbutton-inner-padding: 3px !important;
     --tab-border-radius: 4px !important;
@@ -33,9 +33,7 @@
 }
 
 
-/* ==========================================================
-   2. Hidden elements
-   ========================================================== */
+/* ── Hidden elements ───────────────────────────────────────── */
 
 .urlbarView-body-outer,
 .urlbarView-favicon,
@@ -56,13 +54,12 @@
     display: none !important;
 }
 
-/* Collapse rather than remove the identity box, preserving
-   the existing popup-compatibility workaround. */
+/* Keep the identity box in the DOM for popup compatibility. */
 #identity-box {
     min-width: 0 !important;
     max-width: 0 !important;
-    padding: 0 !important;
     margin: 0 !important;
+    padding: 0 !important;
     border: 0 !important;
     opacity: 0 !important;
     overflow: hidden !important;
@@ -70,16 +67,14 @@
 }
 
 
-/* ==========================================================
-   3. Tab layout
-   ========================================================== */
+/* ── Tab layout ────────────────────────────────────────────── */
 
 #TabsToolbar {
     min-height: var(--reynard-tab-strip) !important;
     height: var(--reynard-tab-strip) !important;
     max-height: var(--reynard-tab-strip) !important;
-    padding-block: 0 !important;
     margin: 0 !important;
+    padding-block: 0 !important;
     border: 0 !important;
 }
 
@@ -87,16 +82,36 @@
 #TabsToolbar .customization-target,
 #tabbrowser-tabs,
 #tabbrowser-arrowscrollbox,
-#TabsToolbar .tabbrowser-tab {
+#TabsToolbar .tabbrowser-tab,
+#TabsToolbar :is(
+    #alltabs-button,
+    #tabs-newtab-button,
+    #new-tab-button,
+    .titlebar-spacer
+) {
     min-height: 0 !important;
     height: var(--reynard-tab-strip) !important;
     max-height: var(--reynard-tab-strip) !important;
     padding-block: 0 !important;
 }
 
-#TabsToolbar .tabbrowser-tab {
+#TabsToolbar .tabbrowser-tab,
+#TabsToolbar :is(
+    #alltabs-button,
+    #tabs-newtab-button,
+    #new-tab-button,
+    .titlebar-spacer
+) {
     margin-block: 0 !important;
+}
+
+#TabsToolbar .tabbrowser-tab {
+    padding-inline: 0.5px !important;
     font-size: var(--reynard-font-size) !important;
+}
+
+#tabbrowser-tabs[orient="horizontal"] {
+    --tab-max-width: var(--reynard-tab-max-width) !important;
 }
 
 #TabsToolbar .tab-stack,
@@ -105,7 +120,6 @@
     height: var(--reynard-tab-strip) !important;
 }
 
-/* Equal 1px gaps above and below the tab body. */
 #TabsToolbar .tab-background {
     min-height: 0 !important;
     height: var(--reynard-tab-height) !important;
@@ -121,28 +135,23 @@
     align-items: center !important;
 }
 
-#TabsToolbar :is(
-    #alltabs-button,
-    #tabs-newtab-button,
-    #new-tab-button,
-    .titlebar-spacer
-) {
-    min-height: 0 !important;
-    height: var(--reynard-tab-strip) !important;
-    max-height: var(--reynard-tab-strip) !important;
-    margin-block: 0 !important;
-    padding-block: 0 !important;
-}
-
 #TabsToolbar .titlebar-spacer {
     width: 6px !important;
 }
 
-/* Compact tab-group labels. */
+
+/* ── Tab groups ────────────────────────────────────────────── */
+
 #TabsToolbar .tab-group-label-container {
     min-height: 0 !important;
     margin-block: 0 !important;
     padding-block: 0 !important;
+}
+
+#TabsToolbar #tabbrowser-tabs[orient="horizontal"]
+    .tab-group-label-container {
+    margin-inline: 1.5px !important;
+    padding-inline: 0 !important;
 }
 
 #TabsToolbar .tab-group-label {
@@ -152,12 +161,19 @@
     border-radius: 4px !important;
 }
 
+/* Prevent collapsed tabs from leaving coloured slivers. */
+#TabsToolbar #tabbrowser-tabs[orient="horizontal"]
+    tab-group[collapsed]
+    > .tabbrowser-tab:not([visuallyselected], [multiselected]) {
+    min-width: 0 !important;
+    max-width: 0 !important;
+    margin-inline: 0 !important;
+    padding-inline: 0 !important;
+}
 
-/* ==========================================================
-   4. Tab icons, labels and close buttons
-   ========================================================== */
 
-/* Preserve the default outside the horizontal tab toolbar. */
+/* ── Tab icons and labels ──────────────────────────────────── */
+
 .tab-icon-image {
     width: 16px !important;
     height: 16px !important;
@@ -173,11 +189,7 @@
     align-self: center !important;
 }
 
-#TabsToolbar :is(
-    .tab-icon-image,
-    .tab-icon-pending,
-    .tab-throbber
-) {
+#TabsToolbar :is(.tab-icon-image, .tab-icon-pending, .tab-throbber) {
     width: var(--reynard-tab-icon-size) !important;
     height: var(--reynard-tab-icon-size) !important;
     min-width: 0 !important;
@@ -190,6 +202,11 @@
     position: relative !important;
 }
 
+/* Pinned tabs have no title requiring an icon-to-text gap. */
+#TabsToolbar .tabbrowser-tab[pinned] .tab-icon-stack {
+    margin-inline-end: 0 !important;
+}
+
 /* Container-coloured text replaces the indicator line. */
 .tabbrowser-tab[class*="identity-color-"] .tab-label {
     color: var(--identity-icon-color) !important;
@@ -199,7 +216,9 @@
     filter: brightness(0.60);
 }
 
-/* Show unpinned tabs' close buttons only on hover. */
+
+/* ── Tab-close buttons ─────────────────────────────────────── */
+
 .tabbrowser-tab:not([pinned]) .tab-close-button {
     opacity: 0;
     visibility: collapse !important;
@@ -210,7 +229,7 @@
     visibility: visible !important;
 }
 
-/* Rounded-square 18px button with a 10px glyph. */
+/* 18px rounded square containing a 10px glyph. */
 #TabsToolbar .tab-close-button {
     box-sizing: border-box !important;
     width: 18px !important;
@@ -234,9 +253,7 @@
 }
 
 
-/* ==========================================================
-   5. Navigation toolbar and toolbar icons
-   ========================================================== */
+/* ── Navigation toolbar and buttons ────────────────────────── */
 
 #nav-bar {
     min-height: var(--reynard-nav-height) !important;
@@ -257,12 +274,15 @@
     padding-block: 0 !important;
 }
 
-/* Standard buttons and extension badge containers:
-   22px box with 4px padding leaves a 14px graphic. */
-#nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
-#TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon,
-#nav-bar .toolbarbutton-1 > .toolbarbutton-badge-stack,
-#TabsToolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
+/* Standard buttons: 22px box, 4px padding, 14px graphic. */
+#nav-bar .toolbarbutton-1 > :is(
+    .toolbarbutton-icon,
+    .toolbarbutton-badge-stack
+),
+#TabsToolbar .toolbarbutton-1 > :is(
+    .toolbarbutton-icon,
+    .toolbarbutton-badge-stack
+) {
     box-sizing: border-box !important;
     width: 22px !important;
     height: 22px !important;
@@ -273,7 +293,7 @@
     align-self: center !important;
 }
 
-/* Keep navigation-icon sizing independently adjustable. */
+/* Retain independently adjustable navigation-icon sizing. */
 #nav-bar :is(
     #back-button,
     #forward-button,
@@ -285,12 +305,12 @@
     height: calc(var(--reynard-nav-icon-size) + 8px) !important;
     min-width: 0 !important;
     min-height: 0 !important;
-    padding: 4px !important;
     margin-block: 0 !important;
+    padding: 4px !important;
     align-self: center !important;
 }
 
-/* Size extension graphics separately from their badges. */
+/* Extension graphics are sized separately from their badges. */
 #nav-bar .toolbarbutton-badge-stack > .toolbarbutton-icon,
 #TabsToolbar .toolbarbutton-badge-stack > .toolbarbutton-icon {
     width: 14px !important;
@@ -299,17 +319,15 @@
 }
 
 
-/* ==========================================================
-   6. Address-bar geometry and native decoration
-   ========================================================== */
+/* ── Address-bar geometry ──────────────────────────────────── */
 
 #urlbar-container {
     --urlbar-container-padding-block: 0px !important;
 
     min-height: 0 !important;
     height: var(--reynard-field-height) !important;
-    padding-block: 0 !important;
     margin-block: 0 !important;
+    padding-block: 0 !important;
 }
 
 #urlbar {
@@ -320,18 +338,17 @@
     --urlbar-background-border-radius: 4px !important;
     --urlbar-background-border-top-radius-open: 4px !important;
 
-    /* Prevent focus or opening from expanding the field. */
+    /* No expansion or text movement on focus/open. */
     --urlbar-background-overhang-open: 0px !important;
     --urlbar-input-growth-open-inline: 0px !important;
     --urlbar-input-growth-open-block: 0px !important;
     --urlbar-component-gap: 0px !important;
     --urlbar-input-gap: 0px !important;
     --urlbar-input-container-padding: 0px !important;
-
-    --urlbar-basic-component-size: 22px !important;
+    --urlbar-basic-component-size: 20px !important;
     --urlbar-icon-padding: 3px !important;
 
-    /* Disable native strokes so only our focus outline remains. */
+    /* Prevent native borders from stacking with our focus ring. */
     --urlbar-background-border: 0 !important;
     --urlbar-background-border-focused: 0 !important;
     --urlbar-background-border-open: 0 !important;
@@ -344,7 +361,6 @@
     height: var(--reynard-field-height) !important;
     padding: 0 !important;
     font-size: var(--reynard-font-size) !important;
-
     background: transparent !important;
     border: 0 !important;
     outline: none !important;
@@ -358,7 +374,7 @@
     box-shadow: none !important;
 }
 
-/* Preserve the theme's native background surfaces. */
+/* Keep the theme's background surfaces, without animation. */
 #urlbar #urlbar-background,
 #urlbar .urlbar-background,
 #urlbar .urlbarView-background {
@@ -367,25 +383,20 @@
 }
 
 
-/* ==========================================================
-   7. Address input and focus appearance
-   ========================================================== */
+/* ── Address input and focus ring ───────────────────────────── */
 
-/* Fixed geometry in all states: 4px start / 6px end inset. */
 #urlbar .urlbar-input-container {
     box-sizing: border-box !important;
     min-height: 0 !important;
     height: var(--reynard-field-height) !important;
     max-height: var(--reynard-field-height) !important;
-
     margin: 0 !important;
     padding: 0 6px !important;
     padding-inline-start: 4px !important;
     gap: 0 !important;
 }
 
-/* Idle has no outline. Explicit active selectors also suppress
-   native active-state decoration without changing geometry. */
+/* Idle: no ring. Active selectors retain the decoration reset. */
 #urlbar .urlbar-input-container,
 #urlbar:is([focused], [open], :focus-within) .urlbar-input-container {
     background: transparent !important;
@@ -395,7 +406,7 @@
     box-shadow: none !important;
 }
 
-/* Identical subtle outline when focused or showing the dropdown. */
+/* Focused and open: the same faint ring. */
 #urlbar:is([focused], [open], :focus-within) .urlbar-input-container {
     box-shadow: inset 0 0 0 1.5px color-mix(
         in srgb, currentColor 10%, transparent
@@ -418,9 +429,9 @@
     padding: 0 !important;
     line-height: var(--reynard-field-height) !important;
     font-size: var(--reynard-font-size) !important;
+    background: transparent !important;
     border: 0 !important;
     outline: none !important;
-    background: transparent !important;
 }
 
 #urlbar:is([focused], [open], :focus-within) #urlbar-input {
@@ -432,32 +443,27 @@
     opacity: 0.65 !important;
 }
 
-/* Address-bar actions, including the bookmark star. */
-#urlbar .urlbar-icon {
-    box-sizing: content-box !important;
-    width: 14px !important;
-    height: 14px !important;
-    min-width: 0 !important;
-    min-height: 0 !important;
-    padding: 3px !important;
-    align-self: center !important;
-}
-
-/* Shrink the container graphic without changing its label. */
+/* Address-bar actions and container indicator. */
+#urlbar .urlbar-icon,
 #urlbar #userContext-indicator {
     box-sizing: content-box !important;
     width: 14px !important;
     height: 14px !important;
     min-width: 0 !important;
     min-height: 0 !important;
-    padding: 0 !important;
     align-self: center !important;
 }
 
+#urlbar .urlbar-icon {
+    padding: 3px !important;
+}
 
-/* ==========================================================
-   8. Search dropdown and engine buttons
-   ========================================================== */
+#urlbar #userContext-indicator {
+    padding: 0 !important;
+}
+
+
+/* ── Search dropdown ───────────────────────────────────────── */
 
 #urlbar .urlbarView {
     --urlbarView-margin-inline: 0px !important;
@@ -466,18 +472,15 @@
     --urlbarView-joint-background-outset-block: 0px !important;
 
     box-sizing: border-box !important;
-    margin: 0 !important;
-    padding: 0 6px !important;
-
-    /* Let the popup anchor determine the width. */
     width: auto !important;
     min-width: 0 !important;
-
+    margin: 0 !important;
+    padding: 0 6px !important;
+    font-size: var(--reynard-font-size) !important;
     background: transparent !important;
     border: 0 !important;
     outline: none !important;
     box-shadow: none !important;
-    font-size: var(--reynard-font-size) !important;
 }
 
 #urlbar .urlbarView:popover-open {
@@ -485,16 +488,12 @@
     justify-self: stretch !important;
 }
 
-/* Keep .urlbarView-background present: it supplies the
-   dropdown's theme background. */
-
-/* Compact engine row: 1px gap above, no separator. */
+/* Keep .urlbarView-background: it provides the theme surface. */
 #urlbar .search-one-offs {
     box-sizing: border-box !important;
-    min-height: 28px !important;
+    min-height: 24px !important;
     margin: 1px 0 0 !important;
-    padding: 2px 0 !important;
-
+    padding: 1px 0 3px !important;
     background: transparent !important;
     border: 0 !important;
     border-radius: 0 !important;
@@ -513,6 +512,10 @@
     opacity: 0.75 !important;
 }
 
+
+/* ── Search-engine buttons ─────────────────────────────────── */
+
+/* Retain defaults for engine buttons outside .search-one-offs. */
 #urlbar .searchbar-engine-one-off-item {
     min-width: 28px !important;
     min-height: 24px !important;
@@ -522,71 +525,92 @@
     border-radius: 4px !important;
 }
 
+/* Square highlights, 4px between buttons, centred icons.
+   Move each whole button down—not the icon inside it. */
 #urlbar .search-one-offs .searchbar-engine-one-off-item {
     box-sizing: border-box !important;
-    min-width: 28px !important;
-    min-height: 24px !important;
-    height: 24px !important;
-    padding: 4px !important;
+    flex: 0 0 auto !important;
+
+    width: var(--reynard-engine-button-size) !important;
+    min-width: var(--reynard-engine-button-size) !important;
+    max-width: var(--reynard-engine-button-size) !important;
+    height: var(--reynard-engine-button-size) !important;
+    min-height: var(--reynard-engine-button-size) !important;
+    max-height: var(--reynard-engine-button-size) !important;
+
+    margin: 0 2px !important;
+    padding: 0 !important;
+    border-radius: 4px !important;
     align-items: center !important;
     justify-content: center !important;
+    transform: translateY(2px) !important;
 }
 
 #urlbar .search-one-offs .searchbar-engine-one-off-item > .button-box {
+    display: flex !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
     align-items: center !important;
     justify-content: center !important;
 }
 
-/* Small graphics with a 1px optical adjustment.
-   Button targets remain larger than the graphics. */
 #urlbar .search-one-offs .searchbar-engine-one-off-item
     :is(.button-icon, .toolbarbutton-icon) {
     box-sizing: content-box !important;
+    flex: 0 0 auto !important;
     width: var(--reynard-engine-icon-size) !important;
     height: var(--reynard-engine-icon-size) !important;
     min-width: 0 !important;
     min-height: 0 !important;
     max-width: var(--reynard-engine-icon-size) !important;
     max-height: var(--reynard-engine-icon-size) !important;
-
-    padding: 0 !important;
     margin: 0 !important;
+    padding: 0 !important;
+    align-self: center !important;
     object-fit: contain !important;
-    transform: translateY(1px) !important;
+    transform: none !important;
 }
 
-/* Slimmer address field in every state. */
-:root {
-    --reynard-field-height: 22px;
+/* Compact search-mode label inside the address bar. */
+#urlbar #urlbar-search-mode-indicator {
+    box-sizing: border-box !important;
+    min-height: 0 !important;
+    height: 18px !important;
+    margin-block: 0 !important;
+    margin-inline: 0 3px !important;
+    padding: 0 !important;
+    border-radius: 3px !important;
+    align-self: center !important;
+    align-items: center !important;
 }
 
-#urlbar {
-    --urlbar-basic-component-size: 20px !important;
+/* Minimal left inset and smaller text. */
+#urlbar #urlbar-search-mode-indicator-title {
+    margin: 0 !important;
+    padding-block: 0 !important;
+    padding-inline: 2px 3px !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
 }
 
-/* Tighter spacing between tabs */
-#TabsToolbar .tabbrowser-tab {
-    padding-inline: 0.5px !important;
+/* Small rounded-square close button. */
+#urlbar #urlbar-search-mode-indicator-close {
+    box-sizing: border-box !important;
+    width: 16px !important;
+    height: 16px !important;
+    min-width: 16px !important;
+    min-height: 16px !important;
+    margin: 0 !important;
+    padding: 3px !important;
+    border-radius: 3px !important;
+    align-self: center !important;
 }
 
-/* Collapsed group tabs must not retain inter-tab spacing. */
-#TabsToolbar #tabbrowser-tabs[orient="horizontal"]
-    tab-group[collapsed]
-    > .tabbrowser-tab:not([visuallyselected], [multiselected]) {
-    padding-inline: 0 !important;
-    margin-inline: 0 !important;
-    min-width: 0 !important;
-    max-width: 0 !important;
+/* Search-mode label flush with the address field's left edge. */
+#urlbar #urlbar-search-mode-indicator {
+    margin-inline-start: -2px !important;
 }
 
-/* Tight spacing between tab-group labels. */
-#TabsToolbar #tabbrowser-tabs[orient="horizontal"]
-    .tab-group-label-container {
-    margin-inline: 1.5px !important;
-    padding-inline: 0 !important;
-}
-
-/* Narrower full-sized tabs; retain normal shrinking behaviour. */
-#tabbrowser-tabs[orient="horizontal"] {
-    --tab-max-width: 200px !important;
-}
