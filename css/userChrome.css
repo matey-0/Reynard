@@ -1,5 +1,4 @@
 /* Reynard userChrome.css */
-/* Refactored with GPT-6 Astra (I can do this manually, but it would've taken a tonne of time. I manually did edit many values here though, so this wasn't just done autonomously */
 
 /* ── Configuration ─────────────────────────────────────────── */
 
@@ -50,7 +49,8 @@
 #identity-box.localResource,
 #vertical-spacer,
 #pageAction-urlbar-_testpilot-containers,
-#trust-icon-container {
+#trust-icon-container,
+#picture-in-picture-button{
     display: none !important;
 }
 
@@ -614,3 +614,7 @@
     margin-inline-start: -2px !important;
 }
 
+/* patch for 158. Fix url bar look; remove the "search with" section */ 
+#urlbar-results .urlbarView-row:first-child {
+  display: none !important;
+}
